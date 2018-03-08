@@ -29,7 +29,14 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            const response = JSON.stringify({ text: text_response });
+            const response = { 
+                recipient: { 
+                    id: sender_psid 
+                }, 
+                message: { 
+                    text: text_response 
+                } 
+            };
             callSendAPI(sender_psid, response);
             break;
         }
@@ -343,7 +350,6 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 *
 */
 function callSendAPI(sender_psid, body, callback) {
-
     // Send the HTTP request to the Messenger Platform
     request({
       "uri": "https://graph.facebook.com/v2.6/me/messages",
