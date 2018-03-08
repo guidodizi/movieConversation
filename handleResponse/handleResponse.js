@@ -205,6 +205,15 @@ function handleTemplateResponse(sender_psid, text_response, context) {
             if (!response.attachment.payload.elements.length) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             }
+            const end_response = { 
+                recipient: { 
+                    id: sender_psid 
+                }, 
+                message: { 
+                    text: "¿Te puedo ayudar en algo más?" 
+                } 
+            };
+            callSendAPI(sender_psid, end_response);
             // Clear conversation context
             userContext.updateUserContext(sender_psid, {});
             break;
