@@ -1,6 +1,6 @@
 const request = require('request');
 const moment = require('moment-timezone');
-
+const { setTimeout } = require('timers')
 const database = require('../database');
 const userContext = require('../userContext');
 const constants = require('../constants');
@@ -336,7 +336,9 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
     
     sendTypingOn(sender_psid);
-    sendTypingOff(sender_psid);
+    setTimeout(() => {
+        sendTypingOff(sender_psid);  
+    }, 2000);
     return callSendAPI(sender_psid, response);
 }
 
