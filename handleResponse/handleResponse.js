@@ -375,7 +375,7 @@ function sendAPI(sender_psid, response) {
     //let typing_off_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
     
     //Start typing
-    callSendAPI(sender_psid, typing_body);
+    callSendAPI(sender_psid, typing_on_body);
     setTimeout(() => {
         //callSendAPI(sender_psid, typing_off_body);
         callSendAPI(sender_psid, request_body);
