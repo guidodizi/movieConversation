@@ -117,7 +117,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
             
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
@@ -149,7 +149,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
             
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE_PLACE": {
@@ -188,7 +188,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
             
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_SCHEDULE": {
@@ -223,26 +223,27 @@ function handleTemplateResponse(sender_psid, text_response, context) {
             if (!response.attachment.payload.elements.length) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             }
-            const end_response = { 
-                recipient: { 
-                    id: sender_psid 
-                }, 
-                message: { 
-                    text: "¿Te puedo ayudar en algo más?" 
-                } 
-            };
-            //End response
-            callSendAPI(sender_psid, end_response);
-
-            // Clear conversation context
-            userContext.updateUserContext(sender_psid, {});
-
+            
             /**
              * Response is now nurtured for user to receive it, send it to user
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
             
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response).then(() => {
+                const end_response = { 
+                    recipient: { 
+                        id: sender_psid 
+                    }, 
+                    message: { 
+                        text: "¿Te puedo ayudar en algo más?" 
+                    } 
+                };
+                //End response
+                callSendAPI(sender_psid, end_response);
+    
+                // Clear conversation context
+                userContext.updateUserContext(sender_psid, {});
+            })
             break;
         }
     }
@@ -301,7 +302,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
              * Response is now nurtured for user to receive it, send it to user
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         };
         case "QUICK_REPLIES_DATE": {
@@ -343,7 +344,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
              * Response is now nurtured for user to receive it, send it to user
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         }
         case "QUICK_REPLIES_DATE_PLACE": {
@@ -389,7 +390,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
              * Response is now nurtured for user to receive it, send it to user
              */
             console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            await sendAPI(sender_psid, response)
+            sendAPI(sender_psid, response)
             break;
         }
     };
