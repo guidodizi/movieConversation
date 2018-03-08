@@ -197,11 +197,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
     
-    sendTypingOn(sender_psid);
-    setTimeout(() => {
-        sendTypingOff(sender_psid); 
-        callSendAPI(sender_psid, response);
-    }, 1000);
+    sendAPI(sender_psid, response)
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -339,36 +335,21 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
     
-    sendTypingOn(sender_psid);
-    setTimeout(() => {
-        sendTypingOff(sender_psid); 
-        callSendAPI(sender_psid, response);
-    }, 1000);
+    sendAPI(sender_psid, response)
 }
 
 /*
 * Sends response messages via the Send API to Facebook
 *
 */
-function callSendAPI(sender_psid, response, messageData, callback) {
-    // Construct the message body
-    let request_body = {
-      "recipient": {
-        "id": sender_psid
-      },
-      "message": response
-    }
-
-    // if messageData is send, override request_body
-    if (messageData)
-        request_body = messageData
+function callSendAPI(sender_psid, body, callback) {
 
     // Send the HTTP request to the Messenger Platform
     request({
       "uri": "https://graph.facebook.com/v2.6/me/messages",
       "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
       "method": "POST",
-      "json": request_body
+      "json": body
     }, (err, res, body) => {
       if (!err) {
         console.log('message sent!')
@@ -379,30 +360,18 @@ function callSendAPI(sender_psid, response, messageData, callback) {
   
   }
   
-/*
- * Turn typing indicator on
- *
+/**
+ * Respond to user on messenger via Send API with the sense of typing
  */
-function sendTypingOn(sender_psid) {  
-    var messageData = {
-      recipient: {
-        id: sender_psid
-      },
-      sender_action: "typing_on"
-    };
-    callSendAPI(sender_psid, undefined, messageData);
-  }
-  
-  /*
-   * Turn typing indicator off
-   *
-   */
-  function sendTypingOff(sender_psid) {
-    var messageData = {
-      recipient: {
-        id: sender_psid
-      },
-      sender_action: "typing_off"
-    };
-    callSendAPI(sender_psid, undefined, messageData);
-  }
+function sendAPI(sender_psid, response) {
+    let request_body = { recipient: { id: sender_psid }, message: response }
+    let typing_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
+    let typing_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
+    
+    //Start typing
+    callSendAPI(sender_psid, typing_body);
+    setTimeout(() => {
+        callSendAPI(sender_psid, sendTypingOff);
+        callSendAPI(sender_psid, request_body);
+    }, 2000)
+}
