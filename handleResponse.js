@@ -125,7 +125,8 @@ function handleTemplateResponse(context, sender_psid) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
 
             }
-
+            // Clear conversation context
+            userContext.updateUserContext(sender_psid, {}); 
             break;
         }
     }
@@ -153,6 +154,7 @@ function handelQuickRepliesResponse(text_response, context, sender_psid) {
                         cinemaShow.shows.some(show => {
                             var show_date = moment(show.date).dayOfYear();
                             var user_date = moment(context.data.date).dayOfYear();
+                            // shows for selected date
                             if (show_date === user_date) {
                                 response.quick_replies.push({
                                     content_type: "text",
@@ -250,6 +252,7 @@ function handelQuickRepliesResponse(text_response, context, sender_psid) {
             //No posible response
             if (!response.quick_replies.length) {
                 response = { text: `Lo siento! No hay horarios para ${context.data.movie} en ${context.data.place}` };
+                // Clear conversation context
                 userContext.updateUserContext(sender_psid, {});                
             }
             break;
