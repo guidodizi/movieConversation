@@ -34,7 +34,6 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
             break;
         }
     }
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
 }
 
 // MOVIE MAIN PROCESS: date -> movie -> place
@@ -196,6 +195,8 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     /**
      * Response is now nurtured for user to receive it, send it to user
      */
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    
     return callSendAPI(sender_psid, response);
 }
 /*
@@ -332,6 +333,8 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
     /**
      * Response is now nurtured for user to receive it, send it to user
      */
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    
     return callSendAPI(sender_psid, response);
 }
 
