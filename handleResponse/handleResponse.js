@@ -112,12 +112,6 @@ function handleTemplateResponse(sender_psid, text_response, context) {
                 response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
                 userContext.updateUserContext(sender_psid, {});            
             }
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            
-            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
@@ -144,12 +138,6 @@ function handleTemplateResponse(sender_psid, text_response, context) {
                 }
 
             });
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            
-            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE_PLACE": {
@@ -183,12 +171,6 @@ function handleTemplateResponse(sender_psid, text_response, context) {
                 }
 
             });
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            
-            sendAPI(sender_psid, response)
             break;
         }
         case "GENERIC_TEMPLATE_SCHEDULE": {
@@ -223,30 +205,15 @@ function handleTemplateResponse(sender_psid, text_response, context) {
             if (!response.attachment.payload.elements.length) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             }
-            
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            
-            sendAPI(sender_psid, response).then(() => {
-                const end_response = { 
-                    recipient: { 
-                        id: sender_psid 
-                    }, 
-                    message: { 
-                        text: "¿Te puedo ayudar en algo más?" 
-                    } 
-                };
-                //End response
-                callSendAPI(sender_psid, end_response);
-    
-                // Clear conversation context
-                userContext.updateUserContext(sender_psid, {});
-            })
             break;
         }
     }
+    /**
+     * Response is now nurtured for user to receive it, send it to user
+     */
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    
+    sendAPI(sender_psid, response)
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -298,11 +265,6 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
             if (!response.quick_replies.length) {
                 response = { text: `Lo siento! No hay lugares donde pasen ${context.data.movie}` };
             }
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            sendAPI(sender_psid, response)
             break;
         };
         case "QUICK_REPLIES_DATE": {
@@ -340,11 +302,6 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
             if (!response.quick_replies.length) {
                 response = { text: `Lo siento! No hay días que pasen ${context.data.movie}` };
             }
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            sendAPI(sender_psid, response)
             break;
         }
         case "QUICK_REPLIES_DATE_PLACE": {
@@ -386,14 +343,15 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
                 // Clear conversation context
                 userContext.updateUserContext(sender_psid, {});
             }
-            /**
-             * Response is now nurtured for user to receive it, send it to user
-             */
-            console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-            sendAPI(sender_psid, response)
+            
             break;
         }
     };
+    /**
+     * Response is now nurtured for user to receive it, send it to user
+     */
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    sendAPI(sender_psid, response)
 }
 
 /*
@@ -420,7 +378,7 @@ function callSendAPI(sender_psid, body, callback) {
 /**
  * Respond to user on messenger via Send API with the sense of typing
  */
-async function sendAPI(sender_psid, response) {
+function sendAPI(sender_psid, response) {
     let request_body = { recipient: { id: sender_psid }, message: response }
     let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };    
     //Start typing
