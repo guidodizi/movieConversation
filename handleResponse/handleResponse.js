@@ -371,13 +371,13 @@ function callSendAPI(sender_psid, body, callback) {
  */
 function sendAPI(sender_psid, response) {
     let request_body = { recipient: { id: sender_psid }, message: response }
-    let typing_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
-    let typing_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
+    let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
+    //let typing_off_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
     
     //Start typing
     callSendAPI(sender_psid, typing_body);
     setTimeout(() => {
-        callSendAPI(sender_psid, sendTypingOff);
+        //callSendAPI(sender_psid, typing_off_body);
         callSendAPI(sender_psid, request_body);
     }, 2000)
 }
