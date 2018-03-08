@@ -63,6 +63,18 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     //Generate elements
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
+            //Answer user that search has began
+            const response = { 
+                recipient: { 
+                    id: sender_psid 
+                }, 
+                message: { 
+                    text: "Déjame mostrarte..." 
+                } 
+            };
+            callSendAPI(sender_psid, response);
+
+            
             const id_movie_for_date = [];
             database.schedules.contentCinemaShows.forEach(contentCinema => {
                 //Find content for selected movie
@@ -371,13 +383,11 @@ function callSendAPI(sender_psid, body, callback) {
  */
 function sendAPI(sender_psid, response) {
     let request_body = { recipient: { id: sender_psid }, message: response }
-    let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
-    //let typing_off_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };
-    
+    let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };    
     //Start typing
     callSendAPI(sender_psid, typing_on_body);
     setTimeout(() => {
         //callSendAPI(sender_psid, typing_off_body);
         callSendAPI(sender_psid, request_body);
-    }, 2000)
+    }, 1200)
 }
