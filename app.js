@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const Conversation = require('watson-developer-cloud/conversation/v1');
 const database = require('./database');
-const handleResponse = require('./handleResponse');
+const handleResponse = require('./handleResponse/handleResponse');
 const userContext = require('./userContext');
 
 
@@ -17,7 +17,10 @@ app.use(bodyParser.json()); // creates express http server
 const port = process.env.PORT || 1337;
 app.listen(port, () => console.log('webhook is listening on: ' + port));
 
-//Create Watson conversation
+/*
+* Create Watson conversation
+*
+*/
 var conversation = new Conversation({
   username: process.env.WATSON_USERNAME,
   password: process.env.WATSON_PASSWORD,
@@ -25,7 +28,10 @@ var conversation = new Conversation({
   version_date: '2018-02-16'
 });
 
-// Adds support for GET requests to our webhook
+/*
+* Adds support for GET requests to our webhook
+*
+*/
 app.get('/webhook', (req, res) => {
   let VERIFY_TOKEN = "MOVIE";
   let mode = req.query['hub.mode'];
@@ -44,7 +50,10 @@ app.get('/webhook', (req, res) => {
   }
 });
 
-// Creates the endpoint for our webhook 
+/*
+* Endpoint for receiving POST requests with messeges
+*
+*/
 app.post('/webhook', (req, res) => {
   console.log('WEBHOOK_POST_STARTED');
   let body = req.body;
@@ -52,16 +61,20 @@ app.post('/webhook', (req, res) => {
   if (body.object === 'page') {
     // Iterates over each entry - there may be multiple if batched
     body.entry.forEach(function (entry) {
-      let webhook_event = entry.messaging[0];
-      console.log(webhook_event);
-      let sender_psid = webhook_event.sender.id;
-
-      if (webhook_event.message) {
-        handleMessage(sender_psid, webhook_event.message);
-      } else if (webhook_event.postback) {
-        handlePostback(sender_psid, webhook_event.postback);
-      }
+      
+      //Iterate over messaging events
+      entry.messaging.forEach(messagingEvent => {
+        if (messagingEvent.message) {
+          handleMessage(webhook_event);
+        } else if (messagingEvent.postback) {
+          handlePostback(webhook_event);
+        }
+      })
     });
+    // Assume all went well.
+    //
+    // You must send back a 200, within 20 seconds, to let us know you've
+    // successfully received the callback. Otherwise, the request will time out.
     res.status(200).send('EVENT_RECEIVED');
   } else {
     // Returns a '404 Not Found' if event is not from a page subscription
@@ -70,18 +83,26 @@ app.post('/webhook', (req, res) => {
 
 });
 
-// Handles messages events
-function handleMessage(sender_psid, received_message) {
-  // Check if the message contains text
-  let user_response = received_message.text;
-  if (received_message.quick_reply) { 
-    user_response = received_message.quick_reply.payload 
+/*
+* Handles messages events
+*
+*/
+function handleMessage(event) {
+  const sender_psid = event.sender.id;
+  const message = event.message;
+  console.log("Received message for user %d with message:",
+  sender_psid );
+  console.log(JSON.stringify(message));
+
+  let messageText = message.text;
+  // if message came with quick_reply, text is on payload
+  if (message.quick_reply) { 
+    messageText = message.quick_reply.payload 
   }
 
-  console.log('IM SAYING TO WATSON ' + user_response)
   conversation.message(
     {
-      input: { text: user_response },
+      input: { text: messageText },
       context: userContext.getUserContext(sender_psid),
       workspace_id: process.env.WORKSPACE_ID
     },
@@ -91,11 +112,12 @@ function handleMessage(sender_psid, received_message) {
       } else {
         //Save user context
         userContext.updateUserContext(sender_psid, watsonResponse.context);
-        console.log("WATSON RESPONSE @!@!@")
-        console.log(watsonResponse)
+        console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
+
+        //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach( text_response => {
           //Generate response from Watson and send it          
-          callSendAPI(sender_psid, handleResponse(sender_psid, watsonResponse.context, text_response));
+          handleResponse(sender_psid, watsonResponse.context, text_response);
         })
       }
     }
@@ -103,13 +125,13 @@ function handleMessage(sender_psid, received_message) {
 }
 
 // Handles messaging_postbacks events
-function handlePostback(sender_psid, received_postback) {
-  let response;
-  // Get the payload for the postback
-  const text_response = received_postback.payload;
+function handlePostback(event) {
+  const sender_psid = event.sender.id;
+  const payload = event.postback.payload;
+
   conversation.message(
     {
-      input: { text: text_response },
+      input: { text: payload },
       context: userContext.getUserContext(sender_psid),
       workspace_id: process.env.WORKSPACE_ID
     },
@@ -119,11 +141,12 @@ function handlePostback(sender_psid, received_postback) {
       } else {
         //Save user context
         userContext.updateUserContext(sender_psid, watsonResponse.context);
-        console.log("WATSON RESPONSE @!@!@")
-        console.log(watsonResponse)
+        console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
+
+        //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach( text_response => {
           //Generate response from Watson and send it          
-          callSendAPI(sender_psid, handleResponse(sender_psid, watsonResponse.context, text_response));
+          handleResponse(sender_psid, watsonResponse.context, text_response);
         })
       }
     }
@@ -131,59 +154,3 @@ function handlePostback(sender_psid, received_postback) {
 }
 
 
-// Sends response messages via the Send API
-function callSendAPI(sender_psid, response, callback) {
-  // Construct the message body
-  let request_body = {
-    "recipient": {
-      "id": sender_psid
-    },
-    "message": response
-  }
-  // Send the HTTP request to the Messenger Platform
-  request({
-    "uri": "https://graph.facebook.com/v2.6/me/messages",
-    "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
-    "method": "POST",
-    "json": request_body
-  }, (err, res, body) => {
-    if (!err) {
-      console.log('message sent!')
-    } else {
-      console.error("Unable to send message:" + err);
-    }
-  });
-
-}
-
-
-//HANDLE USER INPUT OF ATTACHMENTS
-// else if (received_message.attachments) {
-  //   // Gets the URL of the message attachment
-  //   let attachment_url = received_message.attachments[0].payload.url;
-  //   response = {
-  //     "attachment": {
-  //       "type": "template",
-  //       "payload": {
-  //         "template_type": "generic",
-  //         "elements": [{
-  //           "title": "Is this the right picture?",
-  //           "subtitle": "Tap a button to answer.",
-  //           "image_url": attachment_url,
-  //           "buttons": [
-  //             {
-  //               "type": "postback",
-  //               "title": "Yes!",
-  //               "payload": "yes",
-  //             },
-  //             {
-  //               "type": "postback",
-  //               "title": "No!",
-  //               "payload": "no",
-  //             }
-  //           ],
-  //         }]
-  //       }
-  //     }
-  //   }
-  //}     

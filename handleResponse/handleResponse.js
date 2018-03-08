@@ -1,18 +1,56 @@
-const database = require('./database');
-const userContext = require('./userContext');
-const moment = require('moment-timezone')
 
+/*
+* Handle the response to what the user said, based on Waton's response. 
+* We end up responding the user on Facebook messenger with a coherent response.
+* The response to user is based on Watson context, specifically on context.message_type
+* template: respond user with a template
+* quick_replies: respond user with quick replies options
+* text: simply reply with the text Watson gave
+*
+*/
+module.exports = function handleResponse(sender_psid, context, text_response) {
+    const message_type = context.message_type;
 
+    console.log('CONTEXT: ' + JSON.stringify(context, null))
+    console.log('TEXT RESPONSE: ' + text_response)
+    switch (message_type) {
+        case "template": {
+            handleTemplateResponse(sender_psid, text_response, context);
+            break;
+        }
+        case "quick_replies": {
+            handelQuickRepliesResponse(sender_psid, text_response, context);
+            break;
+        }
+        default: {
+            // Directly respond to user
+            const response = JSON.stringify({ text: text_response });
+            callSendAPI(sender_psid, response);
+            break;
+        }
+    }
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    
+    //Return response object as a string
+    return JSON.stringify(response, null, 2);
+}
 
 // MOVIE MAIN PROCESS: date -> movie -> place
-function handleTemplateResponse(context, sender_psid) {
+/*
+* Handle responses which are template-based, in which we dont simply reply a text, but a generic/list/.. template
+* This templates are based on Facebook Messenger's possibilities
+* Watson sets the metadata for the template on context:
+*   template type: context.payload.template_type
+*   image aspect ratio: context.payload.image_aspect_ratio
+*   data to put on template: context.payload.data
+*
+*/
+function handleTemplateResponse(sender_psid, text_response, context) {
     const watson_payload = context.payload;
 
     //Base response for templates
     let response = { attachment: { type: "template", payload: { elements: [] } } };
-    //Set template type
     response.attachment.payload.template_type = watson_payload.template_type || "generic";
-    //Set image aspect ratio
     response.attachment.payload.image_aspect_ratio = watson_payload.image_aspect_ratio || "horizontal"
     //Generate elements
     switch (watson_payload.data) {
@@ -146,17 +184,25 @@ function handleTemplateResponse(context, sender_psid) {
             })
             if (!response.attachment.payload.elements.length) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
-
             }
             // Clear conversation context
             userContext.updateUserContext(sender_psid, {});
             break;
         }
     }
-    return response;
-}
 
-function handelQuickRepliesResponse(text_response, context, sender_psid) {
+    /**
+     * Response is now nurtured for user to receive it, send it to user
+     */
+    return callSendAPI(sender_psid, response);
+}
+/*
+* Handle responses which we offer Quick Replies. 
+* Data for specifically what quick reply is given to user is set on Watson
+* data for quick replies:  context.payload.data
+*
+*/
+function handelQuickRepliesResponse(sender_psid, text_response, context) {
     const watson_payload = context.payload;
     let response = { text: text_response, quick_replies: [] };
 
@@ -281,33 +327,37 @@ function handelQuickRepliesResponse(text_response, context, sender_psid) {
             break;
         }
     };
-
-
-    return response;
+    /**
+     * Response is now nurtured for user to receive it, send it to user
+     */
+    return callSendAPI(sender_psid, response);
 }
 
-module.exports = function generateResponse(sender_psid, context, text_response) {
-    const message_type = context.message_type;
-
-    console.log('CONTEXT @!@!@!@' + JSON.stringify(context, null))
-    console.log('TEXT RESPONSE @!@!@!@' + text_response)
-    let response;
-
-    switch (message_type) {
-        case "template": {
-            response = handleTemplateResponse(context, sender_psid);
-            break;
-        }
-        case "quick_replies": {
-            response = handelQuickRepliesResponse(text_response, context, sender_psid);
-            break;
-        }
-        default: {
-            response = { text: text_response };
-            break;
-        }
+/*
+* Sends response messages via the Send API to Facebook
+*
+*/
+function callSendAPI(sender_psid, response, callback) {
+    // Construct the message body
+    let request_body = {
+      "recipient": {
+        "id": sender_psid
+      },
+      "message": response
     }
-    console.log('\n\n GENERATED RESPONSE @!@! \n' + JSON.stringify(response, null, 1))
-    //Return response object as a string
-    return JSON.stringify(response, null, 2);
-}
+    // Send the HTTP request to the Messenger Platform
+    request({
+      "uri": "https://graph.facebook.com/v2.6/me/messages",
+      "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
+      "method": "POST",
+      "json": request_body
+    }, (err, res, body) => {
+      if (!err) {
+        console.log('message sent!')
+      } else {
+        console.error("Unable to send message:" + err);
+      }
+    });
+  
+  }
+  
