@@ -64,7 +64,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
             //Answer user that search has began
-            const response = { 
+            const begin_response = { 
                 recipient: { 
                     id: sender_psid 
                 }, 
@@ -72,7 +72,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
                     text: "Déjame mostrarte..." 
                 } 
             };
-            callSendAPI(sender_psid, response);
+            callSendAPI(sender_psid, begin_response);
 
             
             const id_movie_for_date = [];
