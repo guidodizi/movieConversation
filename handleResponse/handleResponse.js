@@ -205,6 +205,10 @@ function handleTemplateResponse(sender_psid, text_response, context) {
             if (!response.attachment.payload.elements.length) {
                 response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             }
+
+            //End of dialog, clear context
+            userContext.updateUserContext(sender_psid, {});
+            
             break;
         }
     }
@@ -343,7 +347,6 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
                 // Clear conversation context
                 userContext.updateUserContext(sender_psid, {});
             }
-            
             break;
         }
     };
