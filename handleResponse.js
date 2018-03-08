@@ -51,6 +51,7 @@ function handleTemplateResponse(context, sender_psid) {
             })
             if (!response.attachment.payload.elements.length){
                 response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
+                userContext.updateUserContext(sender_psid, {});            
             }
             break;
         }
