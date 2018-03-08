@@ -41,7 +41,1203 @@ exports.movies_id = JSON.parse(`[
   }
 ]`);
 
-exports.movies = JSON.parse(`{
+exports.movies = JSON.parse(`[
+  {
+    "content": {
+      "id": "eac6bc25-f495-451c-85fe-5e651697ea13",
+      "title": "Deseo de Matar",
+      "releaseDate": "2018-03-08T00:00:00",
+      "duration": 105,
+      "synopsis": "La historia se basa en una novela del mismo nombre donde el protagonista es un arquitecto, felizmente casado, y con una hija adorable. Pero la desgracia quiere que madre e hija sean víctimas de tres desaprensivos que las siguen a la salida de un supermercado hasta la casa de la primera. Allí serán asaltadas brutalmente, a resultas de lo cual muere la madre y la otra queda absolutamente traumatizada. Tras comprobar que muy poco cabe esperar de la policía, el protagonista inicia una venganza por su cuenta, al enfrentarse con todo delincuente que se le ponga a tiro.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/nfDJb74uME8",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Acción, Drama, Policial",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cdeseo de matar.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/deseodematar.jpg",
+      "urlSlug": "deseo-de-matar",
+      "isPreSale": false,
+      "people": [
+        "Bruce Willis",
+        "Elisabeth Shue",
+        "Vincent D'Onofrio"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "eac6bc25-f495-451c-85fe-5e651697ea13",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Elisabeth ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Bruce ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Eli ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Vincent ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Eli Roth"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM18",
+      "ratingAlt": "Apta + 18",
+      "ratingDescription": "Apta para mayores de 18 años. Presentar cedula de identidad. Menores de 18 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "deseodematar.jpg",
+      "openingDate": "2018-03-08T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "183633a7-b069-466e-bab5-3a3d2c6cab1c",
+      "title": "Más Fuerte que el Destino",
+      "releaseDate": "2018-03-08T00:00:00",
+      "duration": 120,
+      "synopsis": "Es la inspiradora historia real de Jeff Bauman, un hombre común que capturó el corazón de su ciudad y del mundo para convertirse en un símbolo de esperanza después del infame bombardeo en el Maratón de Boston del 2013. Es el relato tan profundamente personal de la heroica travesía que pone a prueba el vínculo familiar, define el orgullo de una comunidad e inspira su valentía interna para sobreponerse a una devastadora adversidad.\r\n",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/D3Su9CySsoU",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Drama",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cmas-fuerte-que-el-destino.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/eldestino.jpg",
+      "urlSlug": "mas-fuerte-que-el-destino",
+      "isPreSale": false,
+      "people": [
+        "Jake Gyllenhaal",
+        "Miranda Richardson",
+        "Tatiana Maslany"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "183633a7-b069-466e-bab5-3a3d2c6cab1c",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jake ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Miranda",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "David ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Tatiana ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "David Gordon Green"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM9",
+      "ratingAlt": "Apta + 9",
+      "ratingDescription": "Apta para mayores de 9 años. Presentar cedula de identidad. Menores de 9 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "eldestino.jpg",
+      "openingDate": "2018-03-08T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "34b5b56e-45b3-4e01-bf3f-143b0f3417bd",
+      "title": "Se Ocultan en la Oscuridad",
+      "releaseDate": "2018-03-08T00:00:00",
+      "duration": 95,
+      "synopsis": "Al poco tiempo de mudarse a un pequeño pueblo de Pennsylvania, John y su familia comenzarán a vivir situaciones extremas, luego de que John empiece a experimentar todas las noches parálisis de sueño.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/vgjAfxj9dYA",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Terror",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cse_ocultan_en_la_oscuridad_tres.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/oscuridad.jpg",
+      "urlSlug": "se-ocultan-en-la-oscuridad",
+      "isPreSale": false,
+      "people": [
+        "Brian Krause",
+        "Kevin Grevioux",
+        "Louis Herthum"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "34b5b56e-45b3-4e01-bf3f-143b0f3417bd",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Louis ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Brian",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Kevin",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Brian",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Brian Krause"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "oscuridad.jpg",
+      "openingDate": "2018-03-08T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "251c1d79-80dc-4a6c-ae2d-619ac3cb17d9",
+      "title": "El Último Traje",
+      "releaseDate": "2018-03-01T00:00:00",
+      "duration": 85,
+      "synopsis": "Abraham Bursztein, un sastre judío de 88 años, huye de Buenos Aires rumbo a Polonia, donde se propone encontrar a un amigo que lo salvó de una muerte segura en el final de la ocupación Nazi. Contra todo pronóstico, y después de más de 7 décadas sin tener ningún contacto con él, Don Abraham intentará encontrar a su viejo amigo y cumplir su promesa de volver un día y contarle la vida que vivió gracias a él. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/v3b8OWbXGMY",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Drama",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CMG_9715.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/traje.jpg",
+      "urlSlug": "el-ultimo-traje",
+      "isPreSale": false,
+      "people": [
+        "Ángela Molina",
+        "Martín Piroyansky",
+        "Miguel Angel Solá"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "251c1d79-80dc-4a6c-ae2d-619ac3cb17d9",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Pablo ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Miguel Angel ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Martín ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Ángela ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Pablo Solarz"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "traje.jpg",
+      "openingDate": "2018-03-01T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "88acf254-22f2-4cbc-80cf-76bc2932c69a",
+      "title": "Noche de Juegos",
+      "releaseDate": "2018-03-01T00:00:00",
+      "duration": 100,
+      "synopsis": "Max y Annie, son pareja y todas las semanas participan de una noche de juegos con amigos. Una de esas noches el grado de complejidad se eleva cuando Brooks, el carismático hermano de Max, organiza una fiesta temática de “Crimen Misterioso”, con criminales y agentes federales falsos. Pero entonces, el secuestro de Brooks es parte del juego... ¿cierto? Estos 6 jugadores ultracompetitivos intentarán resolver el caso para ganar, pero en el proceso descubrirán que ni el “juego” ni Brooks son lo que aparentan.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/wSJjLxxg_Ao",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Comedia, Acción",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cnoche de juegos.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/noche.jpg",
+      "urlSlug": "noche-de-juegos",
+      "isPreSale": false,
+      "people": [
+        "Jason Bateman",
+        "Rachel McAdams"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "88acf254-22f2-4cbc-80cf-76bc2932c69a",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "John ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Rachel ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jason ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jonathan M",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "John Francis Daley",
+        "Jonathan M Goldstein"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM12",
+      "ratingAlt": "Apta + 12",
+      "ratingDescription": "Apta para mayores de 12 años. Presentar cedula de identidad. Menores de 12 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "noche.jpg",
+      "openingDate": "2018-03-01T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "f998e62e-1d1f-43c4-9936-89ce1332b408",
+      "title": "Operación Red Sparrow",
+      "releaseDate": "2018-03-01T00:00:00",
+      "duration": 140,
+      "synopsis": "Basada en la novela “The Red Sparrow” por Jason Matthews. Dominika Egorova (Jennifer Lawrence) es reclutada contra su voluntad para convertirse en “gorrión”, una mujer seductora entrenada por el servicio de seguridad ruso. Dominika aprende a utilizar su cuerpo como arma, pero lucha por mantener su sentido de identidad durante el deshumanizador proceso de entrenamiento. Al encontrar su poder en un sistema injusto, Dominika emerge como una de las herramientas más eficaces del programa. Su primer objetivo es Nate Nash (Joel Edgerton), un agente de la CIA que, por su lado, está encargado de infiltrarse en los altos mandos de la inteligencia rusa. Los dos agentes jóvenes caen en un espiral de atracción y decepción, que amenaza sus carreras, lealtades y la seguridad de ambos países. \r\n",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/Dr6WqoFWoFI",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Suspenso",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cred sparrow.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/sparrow.jpg",
+      "urlSlug": "operacion-red-sparrow",
+      "isPreSale": false,
+      "people": [
+        "Jennifer Lawrence",
+        "Joel Edgerton"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "f998e62e-1d1f-43c4-9936-89ce1332b408",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Francis",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jennifer ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Joel ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Francis Lawrence"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM18",
+      "ratingAlt": "Apta + 18",
+      "ratingDescription": "Apta para mayores de 18 años. Presentar cedula de identidad. Menores de 18 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "sparrow.jpg",
+      "openingDate": "2018-03-01T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "b682dbb6-5cb0-418b-be6d-78e1d2be4221",
+      "title": "Dunkerque",
+      "releaseDate": "2018-02-22T00:00:00",
+      "duration": 105,
+      "synopsis": "Ganadora de 3 premios Oscar. La Batalla de Dunkerque se desarrolló en la localidad francesa que lleva su nombre, dentro del escenario de operaciones de la Segunda Guerra Mundial y enfrentó a los Aliados y la Alemania nazi. Como parte de la Batalla de Francia en el Frente Occidental, la batalla de Dunkerque fue la defensa y evacuación de las fuerzas británicas y aliadas en Europa desde el 26 de mayo al 4 de junio de 1940, en el momento en el que los Nazis se expandieron por la costa oeste europea tras arrasar Francia y arrinconaron a las fuerzas aliadas que se tuvieron que replegar de manera forzosa a las islas británicas.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/XNupATI9P0Q",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Acción, Drama, Bélica",
+      "bannerUrl": "https://movieprodportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CDUNKERQUE.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/DUNKERQUE.jpg",
+      "urlSlug": "dunkerque",
+      "isPreSale": false,
+      "people": [
+        "Cillian Murphy",
+        "Harry Styles",
+        "Tom Hardy"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "b682dbb6-5cb0-418b-be6d-78e1d2be4221",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Cillian ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Tom ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Christopher ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Harry ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Christopher Nolan"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM12",
+      "ratingAlt": "Apta + 12",
+      "ratingDescription": "Apta para mayores de 12 años. Presentar cedula de identidad. Menores de 12 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "DUNKERQUE.jpg",
+      "openingDate": "2018-02-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "8b021913-c670-4da8-9911-a32159271100",
+      "title": "La Maldición de la Casa Winchester",
+      "releaseDate": "2018-02-22T00:00:00",
+      "duration": 100,
+      "synopsis": "Basada en la historia de la mansión Winchester situada en California. Esta mansión victoriana fue construida por la heredera del creador de los rifles Winchester, Sarah Winchester, interpretada por Mirren, y su convicción de que los fantasmas la acosaban la llevó a construir más de 160 habitaciones, escaleras que no llevaban a ninguna parte y puertas que al abrirse descubrían un muro... todo con la intención de esquivar a los seres del otro mundo.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/81LcG2yrFkw",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Terror",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cwinchester.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/casawinchester.jpg",
+      "urlSlug": "la-maldicion-de-la-casa-winchester",
+      "isPreSale": false,
+      "people": [
+        "Helen Mirren",
+        "Jason Clarke",
+        "Sarah Snook"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "8b021913-c670-4da8-9911-a32159271100",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Helen ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Michael ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Peter ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Sarah ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jason ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Michael Spierig",
+        "Peter Spierig"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "casawinchester.jpg",
+      "openingDate": "2018-02-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "0a36613f-2d6f-4aa1-a1f5-f403521d9ade",
+      "title": "Recreo",
+      "releaseDate": "2018-02-22T00:00:00",
+      "duration": 95,
+      "synopsis": "Tres parejas con sus hijos. Un fin de semana largo en el campo. El reencuentro entre amigos, el disfrute y las risas son el punto de partida de una convivencia en la que pronto aparecerán antiguos conflictos, secretos ocultos, cruces inesperados. Como una radiografía de los 40 años, “Recreo” profundiza en la dualidad de la vida familiar, la fantasía de volver a la adolescencia, las cuentas pendientes, la contradictoria vida burguesa, y el tiempo que se escapa. Una historia coral situada en un contexto poco habitual: un campo sobrevolado por globos aerostáticos, alterado por la misteriosa muerte de un perro y regado por litros de buen vino tinto. Una comedia ácida sobre sexo, pañales y rock and roll.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/UEF7nP7rTog",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Comedia",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Crecreo.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/Recreo.jpg",
+      "urlSlug": "recreo",
+      "isPreSale": false,
+      "people": [
+        "Carla Peterson",
+        "Fernán Mirás"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "0a36613f-2d6f-4aa1-a1f5-f403521d9ade",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Jazmín",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Fernán ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Carla ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Hernán ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Hernán Guerschuny",
+        "Jazmín Stuart"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "Recreo.jpg",
+      "openingDate": "2018-02-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
+      "title": "El Cavernícola",
+      "releaseDate": "2018-02-15T00:00:00",
+      "duration": 90,
+      "synopsis": "Dug, humano, y Hognob, jabalí, son los héroes de esta aventura en la que dos civilizaciones, la de la Edad de Piedra y la de Bronce, compiten por hacerse hueco en la historia, mientras que, por casualidad, inventan el fútbol. Dug y Hognob tendrán que ayudar a su tribu, sorteando con gracia y astucia múltiples peligros, y derrotando al malvado Lord Nooth para no perder su hogar.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/d8kj0awgTF4",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CCavernícola.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/Cavernicola.jpg",
+      "urlSlug": "el-cavernicola",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Nick ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Nick Park"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "APTA",
+      "ratingAlt": "APTA",
+      "ratingDescription": "Apta para todo público.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "Cavernicola.jpg",
+      "openingDate": "2018-02-15T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  }
+]`)
+exports.schedules = JSON.parse(`{
   "contentCinemaShows": [
     {
       "contentId": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
