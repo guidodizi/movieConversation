@@ -35,9 +35,6 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
     }
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    
-    //Return response object as a string
-    return JSON.stringify(response, null, 2);
 }
 
 // MOVIE MAIN PROCESS: date -> movie -> place
