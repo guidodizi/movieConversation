@@ -3,9 +3,7 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const request = require('request');
 const Conversation = require('watson-developer-cloud/conversation/v1');
-const database = require('./database');
 const handleResponse = require('./handleResponse/handleResponse');
 const userContext = require('./userContext');
 

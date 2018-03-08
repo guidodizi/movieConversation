@@ -1,4 +1,9 @@
+const request = require('request');
+const moment = require('moment-timezone');
 
+const database = require('../database');
+const userContext = require('../userContext');
+const constants = require('../constants');
 /*
 * Handle the response to what the user said, based on Waton's response. 
 * We end up responding the user on Facebook messenger with a coherent response.
