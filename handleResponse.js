@@ -2,6 +2,9 @@ const database = require('./database');
 const userContext = require('./userContext');
 const moment = require('moment-timezone')
 
+
+
+// MOVIE MAIN PROCESS: date -> movie -> place
 function handleTemplateResponse(context, sender_psid) {
     const watson_payload = context.payload;
 
@@ -15,22 +18,37 @@ function handleTemplateResponse(context, sender_psid) {
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
             database.movies.forEach(movie => {
-                response.attachment.payload.elements.push(
-                    {
-                        title: movie.content.title,
-                        subtitle: movie.content.synopsis,
-                        image_url: movie.content.posterUrl,
-                        buttons: [
-                            {
-                                type: "postback",
-                                title: "Elegir",
-                                payload: movie.content.title
-                            }
-                        ]
+                //Search if its displayed on selected date
+                database.schedules.contentCinemaShows.forEach(contentCinema => {
+                    //Find content for selected movie
+                    if (contentCinema.contentId === movie.id) {
+                        contentCinema.cinemaShows.forEach(cinemaShow => {
+                            //Check if cinemas is for selected place
+                            cinemaShow.shows.some(show => {
+                                //Check if show is for selected date
+                                var show_date = moment(show.date).dayOfYear();
+                                var user_date = moment(context.data.date).dayOfYear();
+                                if (show_date === user_date) {
+                                    response.attachment.payload.elements.push({
+                                        title: movie.content.title,
+                                        subtitle: movie.content.synopsis,
+                                        image_url: movie.content.posterUrl,
+                                        buttons: [{
+                                                type: "postback",
+                                                title: "Elegir",
+                                                payload: movie.content.title
+                                            }]
+
+                                    })
+                                    //Exit iteration
+                                    return true;
+                                }
+                            });
+                        });
 
                     }
-                )
-            });
+                })
+            })
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
@@ -63,13 +81,13 @@ function handleTemplateResponse(context, sender_psid) {
             database.movies.forEach(movie => {
                 //Example : ['comedia', 'accion']
                 const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-                
+
                 // Movie contains selected genre
                 if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
-                    
-                    movie.cinemasIds.forEach( cinema => {
+
+                    movie.cinemasIds.forEach(cinema => {
                         //Movie is on selected place
-                        if (cinema.name.toLowerCase() === context.data.place.toLowerCase()){
+                        if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
                             response.attachment.payload.elements.push(
                                 {
                                     title: movie.content.title,
@@ -82,7 +100,7 @@ function handleTemplateResponse(context, sender_psid) {
                                             payload: movie.content.title
                                         }
                                     ]
-        
+
                                 }
                             )
                         }
@@ -126,7 +144,7 @@ function handleTemplateResponse(context, sender_psid) {
 
             }
             // Clear conversation context
-            userContext.updateUserContext(sender_psid, {}); 
+            userContext.updateUserContext(sender_psid, {});
             break;
         }
     }
@@ -253,7 +271,7 @@ function handelQuickRepliesResponse(text_response, context, sender_psid) {
             if (!response.quick_replies.length) {
                 response = { text: `Lo siento! No hay horarios para ${context.data.movie} en ${context.data.place}` };
                 // Clear conversation context
-                userContext.updateUserContext(sender_psid, {});                
+                userContext.updateUserContext(sender_psid, {});
             }
             break;
         }
