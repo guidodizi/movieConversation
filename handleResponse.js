@@ -49,6 +49,9 @@ function handleTemplateResponse(context, sender_psid) {
                     }
                 })
             })
+            if (!response.attachment.payload.elements.length){
+                response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
+            }
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
