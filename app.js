@@ -65,9 +65,9 @@ app.post('/webhook', (req, res) => {
       //Iterate over messaging events
       entry.messaging.forEach(messagingEvent => {
         if (messagingEvent.message) {
-          handleMessage(webhook_event);
+          handleMessage(messagingEvent);
         } else if (messagingEvent.postback) {
-          handlePostback(webhook_event);
+          handlePostback(messagingEvent);
         }
       })
     });
