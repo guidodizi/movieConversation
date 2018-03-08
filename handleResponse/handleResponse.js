@@ -197,7 +197,11 @@ function handleTemplateResponse(sender_psid, text_response, context) {
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
     
-    return callSendAPI(sender_psid, response);
+    sendTypingOn(sender_psid);
+    setTimeout(() => {
+        sendTypingOff(sender_psid); 
+        callSendAPI(sender_psid, response);
+    }, 1000);
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -337,9 +341,9 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
     
     sendTypingOn(sender_psid);
     setTimeout(() => {
-        sendTypingOff(sender_psid);  
-    }, 2000);
-    return callSendAPI(sender_psid, response);
+        sendTypingOff(sender_psid); 
+        callSendAPI(sender_psid, response);
+    }, 1000);
 }
 
 /*
