@@ -53,7 +53,7 @@ function sendAPI(sender_psid, response, options = {}) {
             callSendAPI(sender_psid, typing_on_body);
             setTimeout(() => {
                 callSendAPI(sender_psid, request_body, resolve, reject);
-            }, 3000)
+            }, 1500)
         })
     }
     else {
