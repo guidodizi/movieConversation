@@ -113,16 +113,8 @@ function handleMessage(event) {
         console.error(err);
       } else {
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
-
         //Save user context
         updateUserContext(sender_psid, watsonResponse.context);
-        
-        if (getUserContext(sender_psid).user_name === undefined){
-          const data = {
-            user_name: getFirstName(sender_psid)
-          }
-          mergeUserContext(sender_psid, data);
-        }
         
         //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach(text_response => {
@@ -153,12 +145,6 @@ function handlePostback(event) {
         updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
-        if (getUserContext(sender_psid).user_name === undefined){
-          const data = {
-            user_name: getFirstName(sender_psid)
-          }
-          mergeUserContext(sender_psid, data);
-        }
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
