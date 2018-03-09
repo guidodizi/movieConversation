@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 const express = require('express');
+const request = require('request');
 const bodyParser = require('body-parser');
 const Conversation = require('watson-developer-cloud/conversation/v1');
 const handleResponse = require('./handleResponse/handleResponse');
@@ -62,6 +63,9 @@ app.post('/webhook', (req, res) => {
       
       //Iterate over messaging events
       entry.messaging.forEach(messagingEvent => {
+
+        getFirstName(messagingEvent.sender.id)
+        
         if (messagingEvent.message) {
           handleMessage(messagingEvent);
         } else if (messagingEvent.postback) {
@@ -149,6 +153,28 @@ function handlePostback(event) {
       }
     }
   );
+}
+
+
+/*
+* Get User first name
+*
+*/
+function getFirstName(sender_psid) {    
+  // Send the HTTP request to the Messenger Platform
+  request({
+      "uri": "https://graph.facebook.com/v2.6/me/messages",
+      "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN, "fields": "first_name" },
+      "method": "GET",
+  }, (err, res, body) => {
+      if (!err) {
+          console.log('message sent!')
+          console.log(body);
+      } else {
+          console.error("Unable to send message:" + err);
+      }
+  });
+
 }
 
 
