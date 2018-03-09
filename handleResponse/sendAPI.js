@@ -14,7 +14,6 @@ function callSendAPI(sender_psid, body, resolve, reject) {
     }, (err, res, body) => {
         if (!err) {
             console.log('message sent!')
-            console.log(body)
             if (resolve) 
                 resolve();
         } else {
@@ -58,7 +57,7 @@ function sendAPI(sender_psid, response, options = {}) {
         })
     }
     else {
-        return new Promise( resolve => {
+        return new Promise( (resolve, reject) => {
             callSendAPI(sender_psid, request_body, resolve, reject);
         })
     }
