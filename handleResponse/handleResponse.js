@@ -1,9 +1,8 @@
-const request = require('request');
 const moment = require('moment-timezone');
-const { setTimeout } = require('timers')
 const database = require('../database');
 const userContext = require('../userContext');
 const constants = require('../constants');
+const templateResponse = require('./templateResponse');
 /*
 * Handle the response to what the user said, based on Waton's response. 
 * We end up responding the user on Facebook messenger with a coherent response.
@@ -56,47 +55,48 @@ async function handleTemplateResponse(sender_psid, text_response, context) {
     //Generate elements depending on what string Watson gave on context.payload.data
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
-            //Answer user that search has began
-            await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
+            // //Answer user that search has began
+            // await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
 
-            //ids of movies available for selected date
-            const id_movie_for_date = [];
-            database.schedules.contentCinemaShows.forEach(contentCinema => {
-                //Find content for selected movie
-                contentCinema.cinemaShows.forEach(cinemaShow => {
-                    //Check if cinemas is for selected place
-                    cinemaShow.shows.some(show => {
-                        //Check if show is for selected date
-                        var show_date = moment(show.date).dayOfYear();
-                        var user_date = moment(context.data.date).dayOfYear();
-                        if (show_date === user_date) {
-                            id_movie_for_date.push(contentCinema.contentId)
-                            //Exit iteration
-                            return true;
-                        }
-                    });
-                });
+            // //ids of movies available for selected date
+            // const id_movie_for_date = [];
+            // database.schedules.contentCinemaShows.forEach(contentCinema => {
+            //     //Find content for selected movie
+            //     contentCinema.cinemaShows.forEach(cinemaShow => {
+            //         //Check if cinemas is for selected place
+            //         cinemaShow.shows.some(show => {
+            //             //Check if show is for selected date
+            //             var show_date = moment(show.date).dayOfYear();
+            //             var user_date = moment(context.data.date).dayOfYear();
+            //             if (show_date === user_date) {
+            //                 id_movie_for_date.push(contentCinema.contentId)
+            //                 //Exit iteration
+            //                 return true;
+            //             }
+            //         });
+            //     });
 
-            });
-            database.movies.forEach(movie => {
-                if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
-                    response.attachment.payload.elements.push({
-                        title: movie.content.title,
-                        subtitle: movie.content.synopsis,
-                        image_url: movie.content.posterUrl,
-                        buttons: [{
-                            type: "postback",
-                            title: "Elegir",
-                            payload: movie.content.title
-                        }]
+            // });
+            // database.movies.forEach(movie => {
+            //     if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
+            //         response.attachment.payload.elements.push({
+            //             title: movie.content.title,
+            //             subtitle: movie.content.synopsis,
+            //             image_url: movie.content.posterUrl,
+            //             buttons: [{
+            //                 type: "postback",
+            //                 title: "Elegir",
+            //                 payload: movie.content.title
+            //             }]
 
-                    })
-                }
-            });
-            if (!response.attachment.payload.elements.length) {
-                response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
-                userContext.updateUserContext(sender_psid, {});
-            }
+            //         })
+            //     }
+            // });
+            // if (!response.attachment.payload.elements.length) {
+            //     response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
+            //     userContext.updateUserContext(sender_psid, {});
+            // }
+            templateResponse[constants.GENERIC_TEMPLATE_MOVIES](response, context);
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
@@ -199,9 +199,9 @@ async function handleTemplateResponse(sender_psid, text_response, context) {
     /**
      * Response is now nurtured for user to receive it, send it to user
      */
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    //console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
 
-    await sendAPI(sender_psid, response, { with_typing: true })
+    //await sendAPI(sender_psid, response, { with_typing: true })
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -341,61 +341,4 @@ async function handelQuickRepliesResponse(sender_psid, text_response, context) {
     await sendAPI(sender_psid, response, { with_typing: true })
 }
 
-/*
-* Sends response messages via the Send API to Facebook
-*
-*/
-function callSendAPI(sender_psid, body, callback) {    
-    // Send the HTTP request to the Messenger Platform
-    request({
-        "uri": "https://graph.facebook.com/v2.6/me/messages",
-        "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
-        "method": "POST",
-        "json": body
-    }, (err, res, body) => {
-        if (!err) {
-            console.log('message sent!')
-        } else {
-            console.error("Unable to send message:" + err);
-        }
-    });
 
-}
-
-/*
- * Respond to user on messenger via Send API with the sense of typing
- *
- */
-function sendAPI(sender_psid, response, options = {}) {
-    const { with_typing } = options;
-
-    let request_body = { 
-        recipient: { 
-            id: sender_psid 
-        }, 
-        message: response
-    };
-    if (with_typing) {
-        let typing_on_body = { 
-            recipient: { 
-                id: sender_psid 
-            }, 
-            sender_action: "typing_on"
-        };
-        //Start typing
-        return new Promise( resolve => {
-            callSendAPI(sender_psid, typing_on_body);
-            setTimeout(() => {
-                callSendAPI(sender_psid, request_body);
-                resolve();
-            }, 3000)
-        })
-    }
-    else {
-        return new Promise( resolve => {
-            callSendAPI(sender_psid, request_body);
-            resolve();        
-        })
-    }
-
-}

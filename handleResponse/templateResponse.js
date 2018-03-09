@@ -2,9 +2,14 @@ const database = require('../database');
 const userContext = require('../userContext');
 const constants = require('../constants');
 const moment = require('moment-timezone');
+const { sendAPI, callSendAPI } = require('./sendAPI');
 
 
 exports[constants.GENERIC_TEMPLATE_MOVIES] = (response, context) => {
+    //Answer user that search has began
+    await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
+
+    //ids of movies available for selected date
     const id_movie_for_date = [];
     database.schedules.contentCinemaShows.forEach(contentCinema => {
         //Find content for selected movie
@@ -42,4 +47,10 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = (response, context) => {
         response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
         userContext.updateUserContext(sender_psid, {});
     }
+
+    /**
+    * Response is now nurtured for user to receive it, send it to user
+    */
+    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+    await sendAPI(sender_psid, response, { with_typing: true })
 }
