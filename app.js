@@ -102,6 +102,9 @@ function handleMessage(event) {
     messageText = message.quick_reply.payload
   }
 
+  if (getUserContext(sender_psid) === undefined){
+    updateUserContext(sender_psid, { data: { username: getFirstName(sender_psid)}});
+  }
   conversation.message(
     {
       input: { text: messageText },
