@@ -57,7 +57,7 @@ async function handleTemplateResponse(sender_psid, text_response, context) {
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
             //Answer user that search has began
-            await sendAPI(sender_psid, "Déjame mostrarte...");
+            await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
 
             //ids of movies available for selected date
             const id_movie_for_date = [];
