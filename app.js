@@ -63,17 +63,6 @@ app.post('/webhook', (req, res) => {
 
       //Iterate over messaging events
       entry.messaging.forEach(messagingEvent => {
-        const sender_psid = messagingEvent.sender.id;
-
-        //Save on context user name for more human dialog.
-        const context = getUserContext(sender_psid);
-        if (context === undefined || !context.user_name) {
-          console.log('SETTING USER NAME');
-          const data = {
-            user_name: getFirstName(sender_psid)
-          }
-          mergeUserContext(sender_psid, data);
-        }
 
         //Handle message differently depending on type 
         if (messagingEvent.message) {
@@ -123,10 +112,18 @@ function handleMessage(event) {
       if (err) {
         console.error(err);
       } else {
-        //Save user context
-        updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
+        //Save user context
+        updateUserContext(sender_psid, watsonResponse.context);
+        
+        if (getUserContext(sender_psid).user_name === undefined){
+          const data = {
+            user_name: getFirstName(sender_psid)
+          }
+          mergeUserContext(sender_psid, data);
+        }
+        
         //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
@@ -156,6 +153,12 @@ function handlePostback(event) {
         updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
+        if (getUserContext(sender_psid).user_name === undefined){
+          const data = {
+            user_name: getFirstName(sender_psid)
+          }
+          mergeUserContext(sender_psid, data);
+        }
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
@@ -180,9 +183,9 @@ function getFirstName(sender_psid) {
   }, (err, res, body) => {
     if (!err) {
       console.log('message sent!')
-      console.log(body);
-      return body.first_name
+      return body.first_name;
     } else {
+      return '';
       console.error("Unable to send message:" + err);
     }
   });
