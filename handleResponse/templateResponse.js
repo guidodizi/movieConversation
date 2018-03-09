@@ -160,38 +160,41 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 *
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
-    database.movies.forEach(movie => {
-        //Example : ['comedia', 'accion']
-        const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-
-        // Movie contains selected genre
-        if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
-            console.log('LLEGO')
-            
-            movie.cinemasIds.forEach(cinema => {
-    console.log('LLEGO 2')
+    try {
+        database.movies.forEach(movie => {
+            //Example : ['comedia', 'accion']
+            const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
+    
+            // Movie contains selected genre
+            if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
                 
-                //Movie is on selected place
-                if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
-                    response.attachment.payload.elements.push(
-                        {
-                            title: movie.content.title,
-                            subtitle: movie.content.synopsis,
-                            image_url: movie.content.posterUrl,
-                            buttons: [
-                                {
-                                    type: "postback",
-                                    title: "Elegir",
-                                    payload: movie.content.title
-                                }
-                            ]
-
-                        }
-                    )
-                }
-            })
-        }
-    });
+                movie.cinemasIds.forEach(cinema => {               
+                    //Movie is on selected place
+                    if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
+                        response.attachment.payload.elements.push(
+                            {
+                                title: movie.content.title,
+                                subtitle: movie.content.synopsis,
+                                image_url: movie.content.posterUrl,
+                                buttons: [
+                                    {
+                                        type: "postback",
+                                        title: "Elegir",
+                                        payload: movie.content.title
+                                    }
+                                ]
+    
+                            }
+                        )
+                    }
+                })
+            }
+        });
+    }
+    catch (err) {
+        console.log(err);
+    }
+    
     /**
     * Response is now nurtured for user to receive it, send it to user
     */
