@@ -17,25 +17,20 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
 
     console.log('CONTEXT: ' + JSON.stringify(context, null))
     console.log('TEXT RESPONSE: ' + text_response)
-    try {
-        switch (message_type) {
-            case "template": {
-                handleTemplateResponse(sender_psid, text_response, context);
-                break;
-            }
-            case "quick_replies": {
-                handelQuickRepliesResponse(sender_psid, text_response, context);
-                break;
-            }
-            default: {
-                // Directly respond to user
-                sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); } );
-                break;
-            }
+    switch (message_type) {
+        case "template": {
+            handleTemplateResponse(sender_psid, text_response, context);
+            break;
         }
-    }
-    catch (err) {
-        console.log(err)
+        case "quick_replies": {
+            handelQuickRepliesResponse(sender_psid, text_response, context);
+            break;
+        }
+        default: {
+            // Directly respond to user
+            sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); } );
+            break;
+        }
     }
 }
 

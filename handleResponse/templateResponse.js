@@ -166,7 +166,11 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
 
         // Movie contains selected genre
         if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
+            console.log('LLEGO')
+            
             movie.cinemasIds.forEach(cinema => {
+    console.log('LLEGO 2')
+                
                 //Movie is on selected place
                 if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
                     response.attachment.payload.elements.push(
