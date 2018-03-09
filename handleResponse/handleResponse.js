@@ -29,7 +29,7 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            sendAPI(sender_psid, text_response);
+            sendAPI(sender_psid, { text: text_response });
             break;
         }
     }
@@ -345,9 +345,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 * Sends response messages via the Send API to Facebook
 *
 */
-function callSendAPI(sender_psid, body, callback) {
-    console.log("PAGE ACCESS TOKEN: " + process.env.PAGE_ACCESS_TOKEN);
-    
+function callSendAPI(sender_psid, body, callback) {    
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
@@ -375,9 +373,7 @@ function sendAPI(sender_psid, response, options = {}) {
         recipient: { 
             id: sender_psid 
         }, 
-        message: {
-            text: response
-        } 
+        message: response
     };
     if (with_typing) {
         let typing_on_body = { 
@@ -393,8 +389,6 @@ function sendAPI(sender_psid, response, options = {}) {
         }, 1200)
     }
     else {
-        console.log("NO TYPING");
-        console.log("REQUEST BODY: " + JSON.stringify(request_body));
         callSendAPI(sender_psid, request_body);        
     }
 
