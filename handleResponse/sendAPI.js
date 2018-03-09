@@ -4,7 +4,7 @@ const { setTimeout } = require('timers');
 * Sends response messages via the Send API to Facebook
 *
 */
-exports.callSendAPI = function(sender_psid, body, callback) {    
+function callSendAPI(sender_psid, body, callback) {    
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
@@ -28,7 +28,7 @@ exports.callSendAPI = function(sender_psid, body, callback) {
  * and handle code synchronicly
  *
  */
-exports.sendAPI = function (sender_psid, response, options = {}) {
+function sendAPI(sender_psid, response, options = {}) {
     const { with_typing } = options;
 
     let request_body = { 
@@ -59,5 +59,7 @@ exports.sendAPI = function (sender_psid, response, options = {}) {
             resolve();        
         })
     }
-
 }
+
+exports.callSendAPI = callSendAPI;
+exports.sendAPI = sendAPI;
