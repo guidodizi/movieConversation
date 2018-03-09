@@ -7,6 +7,8 @@ module.exports = {
      */
     // Get movies based on a (date)
     GENERIC_TEMPLATE_MOVIES: "GENERIC_TEMPLATE_MOVIES",
+    // Get movies based on a (date, place)
+    GENERIC_TEMPLATE_MOVIES_PLACE: "GENERIC_TEMPLATE_MOVIES_PLACE",
     //Get movies based on (genre, date)
     GENERIC_TEMPLATE_MOVIES_GENRE: "GENERIC_TEMPLATE_MOVIES_GENRE",
     //Get movies based on (genre, date, place)

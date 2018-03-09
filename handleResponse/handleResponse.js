@@ -70,6 +70,10 @@ function handleTemplateResponse(sender_psid, text_response, context) {
             templateResponse[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context);                                    
             break;
         }
+        case constants.GENERIC_TEMPLATE_MOVIES_PLACE: {
+            templateResponse[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context);                                    
+            break;
+        }
     }
 }
 /*
