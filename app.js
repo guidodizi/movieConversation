@@ -60,19 +60,21 @@ app.post('/webhook', (req, res) => {
   if (body.object === 'page') {
     // Iterates over each entry - there may be multiple if batched
     body.entry.forEach(function (entry) {
-      
+
       //Iterate over messaging events
       entry.messaging.forEach(messagingEvent => {
         const sender_psid = messagingEvent.sender.id;
 
         //Save on context user name for more human dialog.
-        if (getUserContext(sender_psid) && !(getUserContext(sender_psid).user_name)){
+        const context = getUserContext(sender_psid);
+        if (!context.user_name) {
+          console.log('SETTING USER NAME');
           const data = {
             user_name: getFirstName(sender_psid)
           }
           mergeUserContext(sender_psid, data);
         }
-        
+
         //Handle message differently depending on type 
         if (messagingEvent.message) {
           handleMessage(messagingEvent);
@@ -102,13 +104,13 @@ function handleMessage(event) {
   const sender_psid = event.sender.id;
   const message = event.message;
   console.log("Received message for user %d with message:",
-  sender_psid );
+    sender_psid);
   console.log(JSON.stringify(message));
 
   let messageText = message.text;
   // if message came with quick_reply, text is on payload
-  if (message.quick_reply) { 
-    messageText = message.quick_reply.payload 
+  if (message.quick_reply) {
+    messageText = message.quick_reply.payload
   }
 
   conversation.message(
@@ -126,7 +128,7 @@ function handleMessage(event) {
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
         //Iterate over Watson Response, procesing each one
-        watsonResponse.output.text.forEach( text_response => {
+        watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
           handleResponse(sender_psid, watsonResponse.context, text_response);
         })
@@ -155,7 +157,7 @@ function handlePostback(event) {
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
         //Iterate over Watson Response, procesing each one        
-        watsonResponse.output.text.forEach( text_response => {
+        watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
           handleResponse(sender_psid, watsonResponse.context, text_response);
         })
@@ -169,20 +171,20 @@ function handlePostback(event) {
 * Get User first name
 *
 */
-function getFirstName(sender_psid) {    
+function getFirstName(sender_psid) {
   // Send the HTTP request to the Messenger Platform
   request({
-      "uri": `https://graph.facebook.com/v2.6/${sender_psid}`,
-      "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN, "fields": "first_name" },
-      "method": "GET",
+    "uri": `https://graph.facebook.com/v2.6/${sender_psid}`,
+    "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN, "fields": "first_name" },
+    "method": "GET",
   }, (err, res, body) => {
-      if (!err) {
-          console.log('message sent!')
-          console.log(body);
-          return body.first_name
-      } else {
-          console.error("Unable to send message:" + err);
-      }
+    if (!err) {
+      console.log('message sent!')
+      console.log(body);
+      return body.first_name
+    } else {
+      console.error("Unable to send message:" + err);
+    }
   });
 
 }
