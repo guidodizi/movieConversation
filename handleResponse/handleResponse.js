@@ -1,10 +1,7 @@
-const moment = require('moment-timezone');
-const database = require('../database');
-const userContext = require('../userContext');
 const constants = require('../constants');
 const templateResponse = require('./templateResponse');
 const quickRepliesResponse = require('./quickRepliesResponse');
-const { sendAPI, callSendAPI } = require('./sendAPI');
+const { sendAPI } = require('./sendAPI');
 
 /*
 * Handle the response to what the user said, based on Waton's response. 
@@ -31,7 +28,7 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            sendAPI(sender_psid, { text: text_response });
+            sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); } );
             break;
         }
     }

@@ -15,10 +15,12 @@ function callSendAPI(sender_psid, body, resolve, reject) {
         if (!err) {
             console.log('message sent!')
             console.log(body)
-            resolve();
+            if (resolve) 
+                resolve();
         } else {
             console.error("Unable to send message:" + err);
-            reject();
+            if (reject)
+                reject();
         }
     });
 
