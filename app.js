@@ -114,7 +114,7 @@ function handleMessage(event) {
   conversation.message(
     {
       input: { text: messageText },
-      context: userContext.getUserContext(sender_psid),
+      context: getUserContext(sender_psid),
       workspace_id: process.env.WORKSPACE_ID
     },
     function (err, watsonResponse) {
@@ -122,7 +122,7 @@ function handleMessage(event) {
         console.error(err);
       } else {
         //Save user context
-        userContext.updateUserContext(sender_psid, watsonResponse.context);
+        updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
         //Iterate over Watson Response, procesing each one
@@ -143,7 +143,7 @@ function handlePostback(event) {
   conversation.message(
     {
       input: { text: payload },
-      context: userContext.getUserContext(sender_psid),
+      context: getUserContext(sender_psid),
       workspace_id: process.env.WORKSPACE_ID
     },
     function (err, watsonResponse) {
@@ -151,7 +151,7 @@ function handlePostback(event) {
         console.error(err);
       } else {
         //Save user context
-        userContext.updateUserContext(sender_psid, watsonResponse.context);
+        updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
         //Iterate over Watson Response, procesing each one        
@@ -179,6 +179,7 @@ function getFirstName(sender_psid) {
       if (!err) {
           console.log('message sent!')
           console.log(body);
+          return body.data.first_name
       } else {
           console.error("Unable to send message:" + err);
       }
