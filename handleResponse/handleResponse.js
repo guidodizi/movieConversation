@@ -3,6 +3,8 @@ const database = require('../database');
 const userContext = require('../userContext');
 const constants = require('../constants');
 const templateResponse = require('./templateResponse');
+const { sendAPI, callSendAPI } = require('./sendAPI');
+
 /*
 * Handle the response to what the user said, based on Waton's response. 
 * We end up responding the user on Facebook messenger with a coherent response.
