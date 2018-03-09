@@ -29,7 +29,14 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            sendAPI(sender_psid, text_response);
+            let request_body = { 
+                messaging_type: "UPDATE",
+                recipient: { 
+                    id: sender_psid 
+                }, 
+                message: text_response 
+            };
+            callSendAPI(sender_psid, request_body);
             break;
         }
     }
@@ -375,6 +382,8 @@ function sendAPI(sender_psid, response, with_typing) {
         message: response 
     };
     console.log(request_body)
+    callSendAPI(sender_psid, request_body);        
+    
     // if (with_typing) {
     //     let typing_on_body = { 
     //         messaging_type: "RESPONSE",
@@ -390,7 +399,6 @@ function sendAPI(sender_psid, response, with_typing) {
     //     }, 1200)
     // }
     // else {
-        callSendAPI(sender_psid, request_body);        
     // }
 
 }
