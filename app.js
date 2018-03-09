@@ -67,7 +67,7 @@ app.post('/webhook', (req, res) => {
 
         //Save on context user name for more human dialog.
         const context = getUserContext(sender_psid);
-        if (!context.user_name) {
+        if (context === undefined || !context.user_name) {
           console.log('SETTING USER NAME');
           const data = {
             user_name: getFirstName(sender_psid)
