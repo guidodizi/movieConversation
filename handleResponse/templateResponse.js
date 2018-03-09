@@ -5,7 +5,7 @@ const moment = require('moment-timezone');
 const { sendAPI, callSendAPI } = require('./sendAPI');
 
 
-exports[constants.GENERIC_TEMPLATE_MOVIES] = (response, context) => {
+exports[constants.GENERIC_TEMPLATE_MOVIES] = async (response, context) => {
     //Answer user that search has began
     await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
 
