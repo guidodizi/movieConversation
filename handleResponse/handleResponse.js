@@ -29,15 +29,7 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            const response = { 
-                recipient: { 
-                    id: sender_psid 
-                }, 
-                message: { 
-                    text: text_response 
-                } 
-            };
-            callSendAPI(sender_psid, response);
+            sendAPI(sender_psid, text_response);
             break;
         }
     }
@@ -209,7 +201,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
 
-    sendAPI(sender_psid, response, true)
+    sendAPI(sender_psid, response, { with_typing: true })
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -346,7 +338,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
      * Response is now nurtured for user to receive it, send it to user
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    sendAPI(sender_psid, response, true)
+    sendAPI(sender_psid, response, { with_typing: true })
 }
 
 /*
@@ -355,32 +347,52 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 */
 function callSendAPI(sender_psid, body, callback) {
     // Send the HTTP request to the Messenger Platform
-    console.log(process.env.PAGE_ACCESS_TOKEN)
     request({
-      "uri": "https://graph.facebook.com/v2.6/me/messages",
-      "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN},
-      "method": "POST",
-      "json": body
+        "uri": "https://graph.facebook.com/v2.6/me/messages",
+        "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
+        "method": "POST",
+        "json": body
     }, (err, res, body) => {
-      if (!err) {
-        console.log('message sent!');
-      } else {
-        console.error("Unable to send message:" + err);
-      }
+        if (!err) {
+            console.log('message sent!')
+        } else {
+            console.error("Unable to send message:" + err);
+        }
     });
-  
-  }
-  
-/**
+
+}
+
+/*
  * Respond to user on messenger via Send API with the sense of typing
+ *
  */
-function sendAPI(sender_psid, response) {
-    let request_body = { recipient: { id: sender_psid }, message: response }
-    let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };    
-    //Start typing
-    callSendAPI(sender_psid, typing_on_body);
-    setTimeout(() => {
-        //callSendAPI(sender_psid, typing_off_body);
-        callSendAPI(sender_psid, request_body);
-    }, 1200)
+function sendAPI(sender_psid, response, options = {}) {
+    const { with_typing } = options;
+
+    
+    let request_body = { 
+        messaging_type: "RESPONSE",
+        recipient: { 
+            id: sender_psid 
+        }, 
+        message: response 
+    };
+    if (with_typing) {
+        let typing_on_body = { 
+            messaging_type: "RESPONSE",
+            recipient: { 
+                id: sender_psid 
+            }, 
+            sender_action: "typing_on"
+        };
+        //Start typing
+        callSendAPI(sender_psid, typing_on_body);
+        setTimeout(() => {
+            callSendAPI(sender_psid, request_body);
+        }, 1200)
+    }
+    else {
+        callSendAPI(sender_psid, request_body);        
+    }
+
 }
