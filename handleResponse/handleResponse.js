@@ -30,13 +30,12 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         default: {
             // Directly respond to user
             let request_body = { 
-                messaging_type: "UPDATE",
                 recipient: { 
                     id: sender_psid 
                 }, 
                 message: text_response 
             };
-            callSendAPI(sender_psid, request_body);
+            callSendAPI(sender_psid, JSON.stringify(request_body, null, 2));
             break;
         }
     }
