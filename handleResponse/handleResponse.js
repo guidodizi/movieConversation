@@ -388,7 +388,7 @@ function sendAPI(sender_psid, response, options = {}) {
             setTimeout(() => {
                 callSendAPI(sender_psid, request_body);
                 resolve();
-            }, 1200)
+            }, 3000)
         })
     }
     else {
