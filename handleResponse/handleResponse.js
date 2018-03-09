@@ -368,7 +368,7 @@ function callSendAPI(sender_psid, body, callback) {
  */
 function sendAPI(sender_psid, response, with_typing) {
     let request_body = { 
-        messaging_type: "RESPONSE",
+        messaging_type: "UPDATE",
         recipient: { 
             id: sender_psid 
         }, 
