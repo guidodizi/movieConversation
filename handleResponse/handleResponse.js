@@ -29,13 +29,15 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
         }
         default: {
             // Directly respond to user
-            let request_body = { 
+            const response = { 
                 recipient: { 
                     id: sender_psid 
                 }, 
-                message: text_response 
+                message: { 
+                    text: text_response 
+                } 
             };
-            callSendAPI(sender_psid, JSON.stringify(request_body, null, 2));
+            callSendAPI(sender_psid, response);
             break;
         }
     }
@@ -354,50 +356,30 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 function callSendAPI(sender_psid, body, callback) {
     // Send the HTTP request to the Messenger Platform
     request({
-        "uri": "https://graph.facebook.com/v2.6/me/messages",
-        "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
-        "method": "POST",
-        "json": body
+      "uri": "https://graph.facebook.com/v2.6/me/messages",
+      "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
+      "method": "POST",
+      "json": body
     }, (err, res, body) => {
-        if (!err) {
-            console.log('message sent!')
-        } else {
-            console.error("Unable to send message:" + err);
-        }
+      if (!err) {
+        console.log('message sent!')
+      } else {
+        console.error("Unable to send message:" + err);
+      }
     });
-
-}
-
-/*
+  
+  }
+  
+/**
  * Respond to user on messenger via Send API with the sense of typing
- *
  */
-function sendAPI(sender_psid, response, with_typing) {
-    let request_body = { 
-        messaging_type: "UPDATE",
-        recipient: { 
-            id: sender_psid 
-        }, 
-        message: response 
-    };
-    console.log(request_body)
-    callSendAPI(sender_psid, request_body);        
-    
-    // if (with_typing) {
-    //     let typing_on_body = { 
-    //         messaging_type: "RESPONSE",
-    //         recipient: { 
-    //             id: sender_psid 
-    //         }, 
-    //         sender_action: "typing_on"
-    //     };
-    //     //Start typing
-    //     callSendAPI(sender_psid, typing_on_body);
-    //     setTimeout(() => {
-    //         callSendAPI(sender_psid, request_body);
-    //     }, 1200)
-    // }
-    // else {
-    // }
-
+function sendAPI(sender_psid, response) {
+    let request_body = { recipient: { id: sender_psid }, message: response }
+    let typing_on_body = { recipient: { id: sender_psid }, sender_action: "typing_on" };    
+    //Start typing
+    callSendAPI(sender_psid, typing_on_body);
+    setTimeout(() => {
+        //callSendAPI(sender_psid, typing_off_body);
+        callSendAPI(sender_psid, request_body);
+    }, 1200)
 }
