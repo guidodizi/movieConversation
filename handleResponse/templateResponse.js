@@ -201,6 +201,9 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
  * 
  */
 exports[constants.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, context) => {
+
+    await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
+    
     //Find id of selected movie
     const selected_movie = database.movies_id.find(movie => {
         return movie.title === context.data.movie;
