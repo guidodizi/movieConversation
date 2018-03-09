@@ -374,23 +374,23 @@ function sendAPI(sender_psid, response, with_typing) {
         }, 
         message: response 
     };
-
-    if (with_typing) {
-        let typing_on_body = { 
-            messaging_type: "RESPONSE",
-            recipient: { 
-                id: sender_psid 
-            }, 
-            sender_action: "typing_on"
-        };
-        //Start typing
-        callSendAPI(sender_psid, typing_on_body);
-        setTimeout(() => {
-            callSendAPI(sender_psid, request_body);
-        }, 1200)
-    }
-    else {
+    console.log(request_body)
+    // if (with_typing) {
+    //     let typing_on_body = { 
+    //         messaging_type: "RESPONSE",
+    //         recipient: { 
+    //             id: sender_psid 
+    //         }, 
+    //         sender_action: "typing_on"
+    //     };
+    //     //Start typing
+    //     callSendAPI(sender_psid, typing_on_body);
+    //     setTimeout(() => {
+    //         callSendAPI(sender_psid, request_body);
+    //     }, 1200)
+    // }
+    // else {
         callSendAPI(sender_psid, request_body);        
-    }
+    // }
 
 }
