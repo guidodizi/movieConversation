@@ -45,7 +45,7 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
 *   data to put on template: context.payload.data
 *
 */
-function handleTemplateResponse(sender_psid, text_response, context) {
+async function handleTemplateResponse(sender_psid, text_response, context) {
     const watson_payload = context.payload;
 
     //Base response for templates
@@ -57,7 +57,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     switch (watson_payload.data) {
         case "GENERIC_TEMPLATE_MOVIES": {
             //Answer user that search has began
-            sendAPI(sender_psid, "Déjame mostrarte...");
+            await sendAPI(sender_psid, "Déjame mostrarte...");
 
             //ids of movies available for selected date
             const id_movie_for_date = [];
@@ -201,7 +201,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
 
-    sendAPI(sender_psid, response, { with_typing: true })
+    await sendAPI(sender_psid, response, { with_typing: true })
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -209,7 +209,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
 * data for quick replies:  context.payload.data
 *
 */
-function handelQuickRepliesResponse(sender_psid, text_response, context) {
+async function handelQuickRepliesResponse(sender_psid, text_response, context) {
     const watson_payload = context.payload;
     let response = { text: text_response, quick_replies: [] };
 
@@ -338,7 +338,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
      * Response is now nurtured for user to receive it, send it to user
      */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    sendAPI(sender_psid, response, { with_typing: true })
+    await sendAPI(sender_psid, response, { with_typing: true })
 }
 
 /*
@@ -383,13 +383,19 @@ function sendAPI(sender_psid, response, options = {}) {
             sender_action: "typing_on"
         };
         //Start typing
-        callSendAPI(sender_psid, typing_on_body);
-        setTimeout(() => {
-            callSendAPI(sender_psid, request_body);
-        }, 1200)
+        return new Promise( resolve => {
+            callSendAPI(sender_psid, typing_on_body);
+            setTimeout(() => {
+                callSendAPI(sender_psid, request_body);
+                resolve();
+            }, 1200)
+        })
     }
     else {
-        callSendAPI(sender_psid, request_body);        
+        return new Promise( resolve => {
+            callSendAPI(sender_psid, request_body);
+            resolve();        
+        })
     }
 
 }
