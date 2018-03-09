@@ -5,9 +5,9 @@ const moment = require('moment-timezone');
 const { sendAPI, callSendAPI } = require('./sendAPI');
 
 
-exports[constants.GENERIC_TEMPLATE_MOVIES] = async (response, context) => {
+exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, context) => {
     //Answer user that search has began
-    await sendAPI(sender_psid, { text: "Déjame mostrarte..." });
+    await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
 
     //ids of movies available for selected date
     const id_movie_for_date = [];
@@ -52,5 +52,5 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (response, context) => {
     * Response is now nurtured for user to receive it, send it to user
     */
     console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true })
+    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
 }

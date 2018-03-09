@@ -98,7 +98,7 @@ async function handleTemplateResponse(sender_psid, text_response, context) {
             //     response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             //     userContext.updateUserContext(sender_psid, {});
             // }
-            templateResponse[constants.GENERIC_TEMPLATE_MOVIES](response, context);
+            templateResponse[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context);
             break;
         }
         case "GENERIC_TEMPLATE_MOVIES_GENRE": {
