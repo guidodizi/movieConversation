@@ -179,7 +179,7 @@ function getFirstName(sender_psid) {
       if (!err) {
           console.log('message sent!')
           console.log(body);
-          return body.data.first_name
+          return body.first_name
       } else {
           console.error("Unable to send message:" + err);
       }
