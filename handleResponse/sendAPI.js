@@ -4,7 +4,7 @@ const { setTimeout } = require('timers');
 * Sends response messages via the Send API to Facebook
 *
 */
-function callSendAPI(sender_psid, body, callback) {    
+function callSendAPI(sender_psid, body, resolve, reject) {    
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
@@ -14,8 +14,11 @@ function callSendAPI(sender_psid, body, callback) {
     }, (err, res, body) => {
         if (!err) {
             console.log('message sent!')
+            console.log(body)
+            resolve();
         } else {
             console.error("Unable to send message:" + err);
+            reject();
         }
     });
 
@@ -45,18 +48,16 @@ function sendAPI(sender_psid, response, options = {}) {
             sender_action: "typing_on"
         };
         //Start typing
-        return new Promise( resolve => {
+        return new Promise( (resolve, reject) => {
             callSendAPI(sender_psid, typing_on_body);
             setTimeout(() => {
-                callSendAPI(sender_psid, request_body);
-                resolve();
+                callSendAPI(sender_psid, request_body, resolve, reject);
             }, 3000)
         })
     }
     else {
         return new Promise( resolve => {
-            callSendAPI(sender_psid, request_body);
-            resolve();        
+            callSendAPI(sender_psid, request_body, resolve, reject);
         })
     }
 }

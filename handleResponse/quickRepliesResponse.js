@@ -41,7 +41,7 @@ exports[constants.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, conte
                 })
             });
             //Update user context with cinema
-            userContext.mergeUserContext(sender_psid, data_to_change);
+            mergeUserContext(sender_psid, data_to_change);
         }
     });
     //No posible response
@@ -144,7 +144,7 @@ exports[constants.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, cont
     if (!response.quick_replies.length) {
         response = { text: `Lo siento! No hay horarios para ${context.data.movie} en ${context.data.place}` };
         // Clear conversation context
-        userContext.updateUserContext(sender_psid, {});
+        updateUserContext(sender_psid, {});
     }
     /**
     * Response is now nurtured for user to receive it, send it to user
