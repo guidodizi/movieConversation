@@ -351,7 +351,7 @@ function callSendAPI(sender_psid, body, callback) {
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
-        "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN },
+        "qs": { "access_token": "EAAFBoi5d2s4BAMJSjShOY9dUIS8g7SsqiZB8i9S9GlbyKn4Ygu07KVY2uclO0gmTeTzy0Rwl7ms8ZAWyOCqbfkaB4y8IAW7ZAhZCell3oKUfl35mkcHmZBh37AFHXvugD1JTQC0FEDOl2fwvBhA2kdaQn7SXdsTbdHRYmSLu4TQZDZD" },
         "method": "POST",
         "json": body
     }, (err, res, body) => {
@@ -392,7 +392,7 @@ function sendAPI(sender_psid, response, options = {}) {
     }
     else {
         console.log("NO TYPING");
-        console.log("REQUEST BODY: " + request_body);
+        console.log("REQUEST BODY: " + JSON.stringify(request_body));
         callSendAPI(sender_psid, request_body);        
     }
 
