@@ -346,6 +346,8 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 *
 */
 function callSendAPI(sender_psid, body, callback) {
+    console.log("PAGE ACCESS TOKEN: " + process.env.PAGE_ACCESS_TOKEN);
+    
     // Send the HTTP request to the Messenger Platform
     request({
         "uri": "https://graph.facebook.com/v2.6/me/messages",
@@ -369,9 +371,7 @@ function callSendAPI(sender_psid, body, callback) {
 function sendAPI(sender_psid, response, options = {}) {
     const { with_typing } = options;
 
-    
     let request_body = { 
-        messaging_type: "RESPONSE",
         recipient: { 
             id: sender_psid 
         }, 
@@ -379,7 +379,6 @@ function sendAPI(sender_psid, response, options = {}) {
     };
     if (with_typing) {
         let typing_on_body = { 
-            messaging_type: "RESPONSE",
             recipient: { 
                 id: sender_psid 
             }, 
@@ -392,6 +391,8 @@ function sendAPI(sender_psid, response, options = {}) {
         }, 1200)
     }
     else {
+        console.log("NO TYPING");
+        console.log("REQUEST BODY: " + request_body);
         callSendAPI(sender_psid, request_body);        
     }
 
