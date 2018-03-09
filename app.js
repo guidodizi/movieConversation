@@ -6,7 +6,7 @@ const request = require('request');
 const bodyParser = require('body-parser');
 const Conversation = require('watson-developer-cloud/conversation/v1');
 const handleResponse = require('./handleResponse/handleResponse');
-const userContext = require('./userContext');
+const { getUserContext, mergeUserContext, updateUserContext } = require('./userContext');
 
 
 const app = express();
@@ -63,9 +63,17 @@ app.post('/webhook', (req, res) => {
       
       //Iterate over messaging events
       entry.messaging.forEach(messagingEvent => {
+        const sender_psid = messagingEvent.sender.id;
 
-        getFirstName(messagingEvent.sender.id)
+        //Save on context user name for more human dialog.
+        if (getUserContext(sender_psid) && !(getUserContext(sender_psid).user_name)){
+          const data = {
+            user_name: getFirstName(sender_psid)
+          }
+          mergeUserContext(sender_psid, data);
+        }
         
+        //Handle message differently depending on type 
         if (messagingEvent.message) {
           handleMessage(messagingEvent);
         } else if (messagingEvent.postback) {
@@ -84,6 +92,7 @@ app.post('/webhook', (req, res) => {
   }
 
 });
+
 
 /*
 * Handles messages events
@@ -163,7 +172,7 @@ function handlePostback(event) {
 function getFirstName(sender_psid) {    
   // Send the HTTP request to the Messenger Platform
   request({
-      "uri": "https://graph.facebook.com/v2.6/me/messages",
+      "uri": `https://graph.facebook.com/v2.6/${sender_psid}`,
       "qs": { "access_token": process.env.PAGE_ACCESS_TOKEN, "fields": "first_name" },
       "method": "GET",
   }, (err, res, body) => {
@@ -176,5 +185,4 @@ function getFirstName(sender_psid) {
   });
 
 }
-
 
