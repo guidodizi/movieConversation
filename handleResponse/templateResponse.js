@@ -62,7 +62,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
         });
 
         //If movies shown are less than total, add the View more button
-        if (end < (database.movies.length - 1)) {
+        if (end <= (database.movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -155,7 +155,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
         });
 
         //If movies shown are less than total, add the View more button
-        if (end < (searched_movies.length - 1)) {
+        if (end <= (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -228,7 +228,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
             )
         })
         //If movies shown are less than total, add the View more button
-        if (end < (searched_movies.length - 1)) {
+        if (end <= (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -310,7 +310,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
             )
         })
         //If movies shown are less than total, add the View more button
-        if (end < (searched_movies.length - 1)) {
+        if (end <= (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
