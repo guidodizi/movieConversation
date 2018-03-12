@@ -31,7 +31,13 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
             });
 
         });
-        database.movies.forEach(movie => {
+
+        //Show always 9 or less movies
+        var start = (context.data.movies_pageview || 0) * 9;
+        var end = start + 8;
+        var movies_shown = database.movies.slice(start, end);
+
+        movies_shown.forEach( movie => {
             if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
                 response.attachment.payload.elements.push({
                     title: movie.content.title,
@@ -46,6 +52,21 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
                 })
             }
         });
+
+        //If movies shown are less than total, add the View more button
+        if (end < (database.movies.length - 1)) {
+            response.attachment.payload.elements.push({
+                title: "Ver más opciones",
+                subtitle: "Clickea el botón debajo para ver más opciones de películas",
+                image_url: "http://iponline.in/images/view-more.png",
+                buttons: [{
+                    type: "postback",
+                    title: "Ver más",
+                    payload: "ver mas"
+                }]
+            })
+        }
+
         if (!response.attachment.payload.elements.length) {
             response = { text: `No encontré peliculas para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
             updateUserContext(sender_psid, {});
