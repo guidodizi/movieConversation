@@ -56,10 +56,6 @@ exports.movies_id = JSON.parse(`[
     "title": "Cincuenta Sombras Liberadas"
   },
   {
-    "id": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
-    "title": "Cincuenta Sombras Liberadas"
-  },
-  {
     "id": "804a3d98-4182-4f27-b310-f1670c610f58",
     "title": "El Pájaro Loco: La Película"
   },

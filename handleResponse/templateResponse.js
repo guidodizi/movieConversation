@@ -32,6 +32,14 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
 
         });
 
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview){
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+        
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 8;
