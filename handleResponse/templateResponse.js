@@ -33,7 +33,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
         });
 
         //Set pageview to 0 on context
-        if (!context.data.movies_pageview){
+        if (!context.data.movies_pageview) {
             const data = {
                 movies_pageview: 0
             }
@@ -45,7 +45,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
         var end = start + 8;
         var movies_shown = database.movies.slice(start, end);
 
-        movies_shown.forEach( movie => {
+        movies_shown.forEach(movie => {
             if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
                 response.attachment.payload.elements.push({
                     title: movie.content.title,
@@ -104,7 +104,6 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
             contentCinema.cinemaShows.forEach(cinemaShow => {
                 //Check if cinemas is for selected place            
                 if (cinemaShow.cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
-
                     cinemaShow.shows.some(show => {
                         //Check if show is for selected date
                         var show_date = moment(show.date).dayOfYear();
@@ -121,38 +120,44 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
             });
 
         });
+        // array of ALL movies that fullfil whats needed
+        const searched_movies = database.movies.map(movie => {
+            if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
+                return movie
+            }
+        });
 
         //Set pageview to 0 on context
-        if (!context.data.movies_pageview){
+        if (!context.data.movies_pageview) {
             const data = {
                 movies_pageview: 0
             }
             mergeUserContext(sender_psid, data)
         }
-        
+
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 8;
-        var movies_shown = database.movies.slice(start, end);
+        // array of 0-9 movies that fullfil whats needed        
+        var movies_shown = searched_movies.slice(start, end);
 
+        //Generate content
         movies_shown.forEach(movie => {
-            if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
-                response.attachment.payload.elements.push({
-                    title: movie.content.title,
-                    subtitle: movie.content.synopsis,
-                    image_url: movie.content.posterUrl,
-                    buttons: [{
-                        type: "postback",
-                        title: "Elegir",
-                        payload: movie.content.title
-                    }]
+            response.attachment.payload.elements.push({
+                title: movie.content.title,
+                subtitle: movie.content.synopsis,
+                image_url: movie.content.posterUrl,
+                buttons: [{
+                    type: "postback",
+                    title: "Elegir",
+                    payload: movie.content.title
+                }]
 
-                })
-            }
+            })
         });
 
         //If movies shown are less than total, add the View more button
-        if (end < (database.movies.length - 1)) {
+        if (end < (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -185,44 +190,50 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
+        // array of ALL movies that fullfil whats needed        
+        const searched_movies = database.movies.map(movie => {
+            //Example : ['comedia', 'accion']
+            const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
+            if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
+                // Movie contains selected genre
+                return movie;
+            }
+        });
+
         //Set pageview to 0 on context
-        if (!context.data.movies_pageview){
+        if (!context.data.movies_pageview) {
             const data = {
                 movies_pageview: 0
             }
             mergeUserContext(sender_psid, data)
         }
-        
+
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 8;
-        var movies_shown = database.movies.slice(start, end);
+        // array of 0-9 movies that fullfil whats needed        
+        var movies_shown = searched_movies.slice(start, end);
 
+        //Generate content        
         movies_shown.forEach(movie => {
-            //Example : ['comedia', 'accion']
-            const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-            if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
-                // Movie contains selected genre
-                response.attachment.payload.elements.push(
-                    {
-                        title: movie.content.title,
-                        subtitle: movie.content.synopsis,
-                        image_url: movie.content.posterUrl,
-                        buttons: [
-                            {
-                                type: "postback",
-                                title: "Elegir",
-                                payload: movie.content.title
-                            }
-                        ]
+            response.attachment.payload.elements.push(
+                {
+                    title: movie.content.title,
+                    subtitle: movie.content.synopsis,
+                    image_url: movie.content.posterUrl,
+                    buttons: [
+                        {
+                            type: "postback",
+                            title: "Elegir",
+                            payload: movie.content.title
+                        }
+                    ]
 
-                    }
-                )
-            }
-        });
-
+                }
+            )
+        })
         //If movies shown are less than total, add the View more button
-        if (end < (database.movies.length - 1)) {
+        if (end < (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -236,7 +247,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
         }
 
         if (!response.attachment.payload.elements.length) {
-            response = { text: `No encontré peliculas para el género: ${context.data.genre}. Recuerda que la cartelera cambia todos los jueves.` };
+            response = { text: `No encontré peliculas para ${context.data.date_synonym} del género ${context.data.genre}. Recuerda que la cartelera cambia todos los jueves.` };
             updateUserContext(sender_psid, {});
         }
 
@@ -256,20 +267,8 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
-        //Set pageview to 0 on context
-        if (!context.data.movies_pageview){
-            const data = {
-                movies_pageview: 0
-            }
-            mergeUserContext(sender_psid, data)
-        }
-        
-        //Show always 9 or less movies
-        var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 8;
-        var movies_shown = database.movies.slice(start, end);
-
-        movies_shown.forEach(movie => {
+        // array of ALL movies that fullfil whats needed        
+        const searched_movies = database.movies.forEach(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
 
@@ -279,28 +278,46 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
                 movie.content.cinemasIds.forEach(cinema => {
                     //Movie is on selected place
                     if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
-                        response.attachment.payload.elements.push(
-                            {
-                                title: movie.content.title,
-                                subtitle: movie.content.synopsis,
-                                image_url: movie.content.posterUrl,
-                                buttons: [
-                                    {
-                                        type: "postback",
-                                        title: "Elegir",
-                                        payload: movie.content.title
-                                    }
-                                ]
-
-                            }
-                        )
+                        return movie;
                     }
                 })
             }
         });
 
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+
+        //Show always 9 or less movies
+        var start = (context.data.movies_pageview || 0) * 9;
+        var end = start + 8;
+        // array of 0-9 movies that fullfil whats needed        
+        var movies_shown = searched_movies.slice(start, end);
+
+        //Generate content        
+        movies_shown.forEach(movie => {
+            response.attachment.payload.elements.push(
+                {
+                    title: movie.content.title,
+                    subtitle: movie.content.synopsis,
+                    image_url: movie.content.posterUrl,
+                    buttons: [
+                        {
+                            type: "postback",
+                            title: "Elegir",
+                            payload: movie.content.title
+                        }
+                    ]
+    
+                }
+            )
+        })
         //If movies shown are less than total, add the View more button
-        if (end < (database.movies.length - 1)) {
+        if (end < (searched_movies.length - 1)) {
             response.attachment.payload.elements.push({
                 title: "Ver más opciones",
                 subtitle: "Clickea el botón debajo para ver más opciones de películas",
@@ -314,7 +331,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
         }
 
         if (!response.attachment.payload.elements.length) {
-            response = { text: `No encontré peliculas para el género: ${context.data.genre} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
+            response = { text: `No encontré peliculas para ${context.data.date_synonym} del género ${context.data.genre} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
             updateUserContext(sender_psid, {});
         }
 
