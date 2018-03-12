@@ -121,10 +121,8 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 
         });
         // array of ALL movies that fullfil whats needed
-        const searched_movies = database.movies.map(movie => {
-            if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
-                return movie
-            }
+        const searched_movies = database.movies.filter(movie => {
+            return (id_movie_for_date.indexOf(movie.content.id) !== -1)
         });
 
         //Set pageview to 0 on context
@@ -191,13 +189,10 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
         // array of ALL movies that fullfil whats needed        
-        const searched_movies = database.movies.map(movie => {
+        const searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-            if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
-                // Movie contains selected genre
-                return movie;
-            }
+            return (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1)
         });
 
         //Set pageview to 0 on context
@@ -268,7 +263,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
         // array of ALL movies that fullfil whats needed        
-        const searched_movies = database.movies.forEach(movie => {
+        const searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
 
@@ -277,9 +272,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
 
                 movie.content.cinemasIds.forEach(cinema => {
                     //Movie is on selected place
-                    if (cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
-                        return movie;
-                    }
+                    return (cinema.name.toLowerCase() === context.data.place.toLowerCase())
                 })
             }
         });

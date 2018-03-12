@@ -1,4 +1,5 @@
 const database = require('./database');
+const moment = require('moment');
 const Conversation = require('watson-developer-cloud/conversation/v1');
 require('dotenv').config();
 
@@ -88,5 +89,3 @@ const addValuesMovie = () => {
     await createMovie().then(result => console.log(result)).catch(err => console.log(err));
     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
 })();
-
-
