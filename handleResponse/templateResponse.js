@@ -39,7 +39,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
             }
             mergeUserContext(sender_psid, data)
         }
-        
+
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 8;
@@ -121,7 +121,21 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
             });
 
         });
-        database.movies.forEach(movie => {
+
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview){
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+        
+        //Show always 9 or less movies
+        var start = (context.data.movies_pageview || 0) * 9;
+        var end = start + 8;
+        var movies_shown = database.movies.slice(start, end);
+
+        movies_shown.forEach(movie => {
             if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
                 response.attachment.payload.elements.push({
                     title: movie.content.title,
@@ -136,6 +150,21 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
                 })
             }
         });
+
+        //If movies shown are less than total, add the View more button
+        if (end < (database.movies.length - 1)) {
+            response.attachment.payload.elements.push({
+                title: "Ver más opciones",
+                subtitle: "Clickea el botón debajo para ver más opciones de películas",
+                image_url: "http://iponline.in/images/view-more.png",
+                buttons: [{
+                    type: "postback",
+                    title: "Ver más",
+                    payload: "ver mas"
+                }]
+            })
+        }
+
         if (!response.attachment.payload.elements.length) {
             response = { text: `No encontré peliculas para ${context.data.date_synonym} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
             updateUserContext(sender_psid, {});
@@ -156,7 +185,20 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
-        database.movies.forEach(movie => {
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview){
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+        
+        //Show always 9 or less movies
+        var start = (context.data.movies_pageview || 0) * 9;
+        var end = start + 8;
+        var movies_shown = database.movies.slice(start, end);
+
+        movies_shown.forEach(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
             if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
@@ -178,6 +220,26 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
                 )
             }
         });
+
+        //If movies shown are less than total, add the View more button
+        if (end < (database.movies.length - 1)) {
+            response.attachment.payload.elements.push({
+                title: "Ver más opciones",
+                subtitle: "Clickea el botón debajo para ver más opciones de películas",
+                image_url: "http://iponline.in/images/view-more.png",
+                buttons: [{
+                    type: "postback",
+                    title: "Ver más",
+                    payload: "ver mas"
+                }]
+            })
+        }
+
+        if (!response.attachment.payload.elements.length) {
+            response = { text: `No encontré peliculas para el género: ${context.data.genre}. Recuerda que la cartelera cambia todos los jueves.` };
+            updateUserContext(sender_psid, {});
+        }
+
     } catch (err) { console.log(err); }
 
     /**
@@ -194,7 +256,20 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
-        database.movies.forEach(movie => {
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview){
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+        
+        //Show always 9 or less movies
+        var start = (context.data.movies_pageview || 0) * 9;
+        var end = start + 8;
+        var movies_shown = database.movies.slice(start, end);
+
+        movies_shown.forEach(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
 
@@ -223,6 +298,26 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
                 })
             }
         });
+
+        //If movies shown are less than total, add the View more button
+        if (end < (database.movies.length - 1)) {
+            response.attachment.payload.elements.push({
+                title: "Ver más opciones",
+                subtitle: "Clickea el botón debajo para ver más opciones de películas",
+                image_url: "http://iponline.in/images/view-more.png",
+                buttons: [{
+                    type: "postback",
+                    title: "Ver más",
+                    payload: "ver mas"
+                }]
+            })
+        }
+
+        if (!response.attachment.payload.elements.length) {
+            response = { text: `No encontré peliculas para el género: ${context.data.genre} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
+            updateUserContext(sender_psid, {});
+        }
+
     } catch (err) { console.log(err); }
     /**
     * Response is now nurtured for user to receive it, send it to user
