@@ -42,7 +42,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
 
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 8;
+        var end = start + 9;
         var movies_shown = database.movies.slice(start, end);
 
         movies_shown.forEach(movie => {
@@ -135,7 +135,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 8;
+        var end = start + 9;
         // array of 0-9 movies that fullfil whats needed        
         var movies_shown = searched_movies.slice(start, end);
 
@@ -205,7 +205,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 8;
+        var end = start + 9;
         // array of 0-9 movies that fullfil whats needed        
         var movies_shown = searched_movies.slice(start, end);
 
@@ -287,7 +287,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
 
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 8;
+        var end = start + 9;
         // array of 0-9 movies that fullfil whats needed        
         var movies_shown = searched_movies.slice(start, end);
 

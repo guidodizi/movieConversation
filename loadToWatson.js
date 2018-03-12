@@ -84,8 +84,42 @@ const addValuesMovie = () => {
     })
 };
 
-(async function () {
-    await deleteMovie().then(result => console.log(result)).catch(err => console.log(err));
-    await createMovie().then(result => console.log(result)).catch(err => console.log(err));
-    await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
-})();
+// (async function () {
+//     await deleteMovie().then(result => console.log(result)).catch(err => console.log(err));
+//     await createMovie().then(result => console.log(result)).catch(err => console.log(err));
+//     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
+// })();
+
+
+//ids of movies available for selected date
+const id_movie_for_date = [];
+database.schedules.contentCinemaShows.forEach(contentCinema => {
+    //Find content for selected movie
+    contentCinema.cinemaShows.forEach(cinemaShow => {
+        //Check if cinemas is for selected place            
+        if (cinemaShow.cinema.name.toLowerCase() === 'movie portones') {
+            cinemaShow.shows.some(show => {
+                //Check if show is for selected date
+                var show_date = moment(show.date).dayOfYear();
+                var user_date = moment().dayOfYear();
+                if (show_date === user_date) {
+
+                    //Movie found is displayed on selected (date, place)
+                    id_movie_for_date.push(contentCinema.contentId)
+                    //Exit iteration
+                    return true;
+                }
+            });
+        }
+    });
+
+});
+// array of ALL movies that fullfil whats needed
+const searched_movies = database.movies.filter(movie => {
+    return (id_movie_for_date.indexOf(movie.content.id) !== -1)
+});
+
+searched_movies.map(movie => {
+    console.log(movie.content.title)
+    
+})
