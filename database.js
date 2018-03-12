@@ -98,8 +98,7 @@ exports.movies_id = JSON.parse(`[
   {
     "id": "afb23872-21b7-4e86-888a-5d6c2c2ab7c1",
     "title": "Olé! El Viaje de Ferdinand"
-  },
-  
+  }
 ]`);
 
 exports.movies = JSON.parse(`[
