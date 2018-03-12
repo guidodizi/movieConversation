@@ -5,15 +5,15 @@ exports.movies_id = JSON.parse(`[
   },
   {
     "id": "183633a7-b069-466e-bab5-3a3d2c6cab1c",
-    "title": "Más Fuerte que el Destino"
+      "title": "Más Fuerte que el Destino"
   },
   {
     "id": "34b5b56e-45b3-4e01-bf3f-143b0f3417bd",
-    "title": "Se Ocultan en la Oscuridad"
+      "title": "Se Ocultan en la Oscuridad"
   },
   {
     "id": "251c1d79-80dc-4a6c-ae2d-619ac3cb17d9",
-    "title": "El Último Traje"
+      "title": "El Último Traje"
   },
   {
     "id": "88acf254-22f2-4cbc-80cf-76bc2932c69a",
@@ -38,7 +38,68 @@ exports.movies_id = JSON.parse(`[
   {
     "id": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
     "title": "El Cavernícola"
-  }
+  },
+  {
+    "id": "b9fed310-034b-4dd8-ad62-cc91acdb5750",
+    "title": "Lady Bird"
+  },
+  {
+    "id": "9ce6d596-fe89-4255-946a-67d464f76233",
+    "title": "Llámame por tu Nombre"
+  },
+  {
+    "id": "79899429-931c-4071-91d4-9e733c654f1e",
+    "title": "Pantera Negra"
+  },
+  {
+    "id": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
+    "title": "Cincuenta Sombras Liberadas"
+  },
+  {
+    "id": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
+    "title": "Cincuenta Sombras Liberadas"
+  },
+  {
+    "id": "804a3d98-4182-4f27-b310-f1670c610f58",
+    "title": "El Pájaro Loco: La Película"
+  },
+  {
+    "id": "3d1668e4-c4df-4cd3-85c6-01e387a65ce6",
+    "title": "La Forma del Agua"
+  },
+  {
+    "id": "2b9ae25d-5aa9-45a5-8a36-1d2c5fdf37ec",
+    "title": "The Post: Los Oscuros Secretos del Pentágono"
+  },
+  {
+    "id": "f246b568-70a7-4d45-be42-f7dac104fac3",
+    "title": "Las Horas más Oscuras"
+  },
+  {
+    "id": "01ac7a76-0269-436b-bb9d-dfe35582c4a6",
+    "title": "Tadeo Jones 2: El Secreto del Rey Midas"
+  },
+  {
+    "id": "2cb5fc0e-366e-4303-8f5f-5aa809e4b429",
+    "title": "3 Anuncios por un Crimen"
+  },
+  {
+    "id": "6bfcc6b2-a857-4f38-9c9e-35cdd6402376",
+    "title": "El Pasajero"
+  },
+  {
+    "id": "8286e13b-682d-4220-b0c3-d1759bc69905",
+    "title": "Coco"
+  },
+  {
+    "id": "668dbeb6-ea85-4880-846b-038017f990f1",
+    "title": "Jumanji: En la Selva"
+  },
+  {
+    "id": "afb23872-21b7-4e86-888a-5d6c2c2ab7c1",
+    "title": "Olé! El Viaje de Ferdinand"
+  },
+  
 ]`);
 
 exports.movies = JSON.parse(`[
@@ -76,16 +137,6 @@ exports.movies = JSON.parse(`[
       "personContents": [
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Elisabeth ",
-          "lastName": null,
-          "fullName": null,
-          "profileUrl": null,
-          "profileImage": null,
-          "role": 2,
-          "isAlive": true
-        },
-        {
-          "id": "00000000-0000-0000-0000-000000000000",
           "firstName": "Bruce ",
           "lastName": null,
           "fullName": null,
@@ -97,6 +148,16 @@ exports.movies = JSON.parse(`[
         {
           "id": "00000000-0000-0000-0000-000000000000",
           "firstName": "Eli ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Elisabeth ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -220,7 +281,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Miranda",
+          "firstName": "David ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -230,7 +291,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "David ",
+          "firstName": "Miranda",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -320,6 +381,16 @@ exports.movies = JSON.parse(`[
       "personContents": [
         {
           "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Kevin",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
           "firstName": "Louis ",
           "lastName": null,
           "fullName": null,
@@ -331,16 +402,6 @@ exports.movies = JSON.parse(`[
         {
           "id": "00000000-0000-0000-0000-000000000000",
           "firstName": "Brian",
-          "lastName": null,
-          "fullName": null,
-          "profileUrl": null,
-          "profileImage": null,
-          "role": 2,
-          "isAlive": true
-        },
-        {
-          "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Kevin",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -394,11 +455,6 @@ exports.movies = JSON.parse(`[
           "translation": 3
         },
         {
-          "externalCinemaId": "001",
-          "format": 2,
-          "translation": 2
-        },
-        {
           "externalCinemaId": "005",
           "format": 2,
           "translation": 2
@@ -445,7 +501,17 @@ exports.movies = JSON.parse(`[
       "personContents": [
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Pablo ",
+          "firstName": "Martín ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Ángela ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -465,17 +531,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Martín ",
-          "lastName": null,
-          "fullName": null,
-          "profileUrl": null,
-          "profileImage": null,
-          "role": 2,
-          "isAlive": true
-        },
-        {
-          "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Ángela ",
+          "firstName": "Pablo ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -564,7 +620,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Rachel ",
+          "firstName": "Jason ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -574,7 +630,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Jason ",
+          "firstName": "Rachel ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -675,7 +731,7 @@ exports.movies = JSON.parse(`[
       "title": "Operación Red Sparrow",
       "releaseDate": "2018-03-01T00:00:00",
       "duration": 140,
-      "synopsis": "Basada en la novela “The Red Sparrow” por Jason Matthews. Dominika Egorova (Jennifer Lawrence) es reclutada contra su voluntad para convertirse en “gorrión”, una mujer seductora entrenada por el servicio de seguridad ruso. Dominika aprende a utilizar su cuerpo como arma, pero lucha por mantener su sentido de identidad durante el deshumanizador proceso de entrenamiento. Al encontrar su poder en un sistema injusto, Dominika emerge como una de las herramientas más eficaces del programa. Su primer objetivo es Nate Nash (Joel Edgerton), un agente de la CIA que, por su lado, está encargado de infiltrarse en los altos mandos de la inteligencia rusa. Los dos agentes jóvenes caen en un espiral de atracción y decepción, que amenaza sus carreras, lealtades y la seguridad de ambos países.",
+      "synopsis": "Basada en la novela “The Red Sparrow” por Jason Matthews. Dominika Egorova (Jennifer Lawrence) es reclutada contra su voluntad para convertirse en “gorrión”, una mujer seductora entrenada por el servicio de seguridad ruso. Dominika aprende a utilizar su cuerpo como arma, pero lucha por mantener su sentido de identidad durante el deshumanizador proceso de entrenamiento. Al encontrar su poder en un sistema injusto, Dominika emerge como una de las herramientas más eficaces del programa. Su primer objetivo es Nate Nash (Joel Edgerton), un agente de la CIA que, por su lado, está encargado de infiltrarse en los altos mandos de la inteligencia rusa. Los dos agentes jóvenes caen en un espiral de atracción y decepción, que amenaza sus carreras, lealtades y la seguridad de ambos países. ",
       "shortSynopsis": "",
       "trailerUrl": "https://www.youtube.com/embed/Dr6WqoFWoFI",
       "isComingSoon": true,
@@ -712,7 +768,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Jennifer ",
+          "firstName": "Joel ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -722,7 +778,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Joel ",
+          "firstName": "Jennifer ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -812,7 +868,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Tom ",
+          "firstName": "Christopher ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -822,7 +878,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Christopher ",
+          "firstName": "Tom ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -912,7 +968,17 @@ exports.movies = JSON.parse(`[
       "personContents": [
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Helen ",
+          "firstName": "Sarah ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jason ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -942,17 +1008,7 @@ exports.movies = JSON.parse(`[
         },
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Sarah ",
-          "lastName": null,
-          "fullName": null,
-          "profileUrl": null,
-          "profileImage": null,
-          "role": 2,
-          "isAlive": true
-        },
-        {
-          "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": "Jason ",
+          "firstName": "Helen ",
           "lastName": null,
           "fullName": null,
           "profileUrl": null,
@@ -1056,16 +1112,6 @@ exports.movies = JSON.parse(`[
       "personContents": [
         {
           "id": "00000000-0000-0000-0000-000000000000",
-          "firstName": " Jazmín",
-          "lastName": null,
-          "fullName": null,
-          "profileUrl": null,
-          "profileImage": null,
-          "role": 2,
-          "isAlive": true
-        },
-        {
-          "id": "00000000-0000-0000-0000-000000000000",
           "firstName": "Fernán ",
           "lastName": null,
           "fullName": null,
@@ -1093,6 +1139,16 @@ exports.movies = JSON.parse(`[
           "profileImage": null,
           "role": 2,
           "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Jazmín",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
         }
       ],
       "director": [
@@ -1103,10 +1159,6 @@ exports.movies = JSON.parse(`[
         {
           "id": "001",
           "name": "Movie Montevideo"
-        },
-        {
-          "id": "002",
-          "name": "Movie Portones"
         }
       ],
       "formatsIds": [
@@ -1126,11 +1178,6 @@ exports.movies = JSON.parse(`[
       "cinemaAvailableFilters": [
         {
           "externalCinemaId": "001",
-          "format": 2,
-          "translation": 2
-        },
-        {
-          "externalCinemaId": "002",
           "format": 2,
           "translation": 2
         }
@@ -1190,6 +1237,618 @@ exports.movies = JSON.parse(`[
           "name": "Movie Montevideo"
         },
         {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "APTA",
+      "ratingAlt": "APTA",
+      "ratingDescription": "Apta para todo público.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "Cavernicola.jpg",
+      "openingDate": "2018-02-15T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "b9fed310-034b-4dd8-ad62-cc91acdb5750",
+      "title": "Lady Bird",
+      "releaseDate": "2018-02-15T00:00:00",
+      "duration": 95,
+      "synopsis": "Una joven estudiante que se hace llamar \"Lady Bird\" (Saoirse Ronan) se muda al norte de California para pasar allí su último año de instituto. La joven, con inclinaciones artísticas y que sueña con vivir en la costa Este, tratará de ese modo encontrar su propio camino y definirse fuera de la sombra protectora de su madre (Laurie Metcalf).",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/dDreCk5SMOA",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Comedia Dramática",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Clady-bird-design-lede.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/ladybird.jpg",
+      "urlSlug": "lady-bird",
+      "isPreSale": false,
+      "people": [
+        "Laurie Metcalf",
+        "Saoirse Ronan",
+        "Tracy Letts"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "b9fed310-034b-4dd8-ad62-cc91acdb5750",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Tracy ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Saoirse",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Laurie ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Greta ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Greta Gerwig"
+      ],
+      "cinemasIds": [
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "ladybird.jpg",
+      "openingDate": "2018-02-15T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "9ce6d596-fe89-4255-946a-67d464f76233",
+      "title": "Llámame por tu Nombre",
+      "releaseDate": "2018-02-15T00:00:00",
+      "duration": 130,
+      "synopsis": "Ganadora al Oscar como mejor guion adaptado. Es el verano de 1983 en el norte de Italia y Elio Perlman (Timothée Chalamet), un precoz chico italoamericano de diecisiete años, pasa los días en una casa de campo construida en el siglo XVII y propiedad de su familia, transcribiendo y tocando música clásica, leyendo y flirteando con su amiga Marzia (Esther Garrel). Pero la monotonía acaba cuando llega a la casa el nuevo ayudante de su padre, Oliver. Un chico inteligente y estudioso de 24 años que le cambia su vida para siempre.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/NscOalKkNl0",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Drama, Romance",
+      "bannerUrl": "https://movieprodportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cllamame.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/name.jpg",
+      "urlSlug": "llamame-por-tu-nombre",
+      "isPreSale": false,
+      "people": [
+        "Armie Hammer",
+        "Timothée Chalamet"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "9ce6d596-fe89-4255-946a-67d464f76233",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Luca ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Timothée ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Armie ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Luca Guadagnino"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "name.jpg",
+      "openingDate": "2018-02-15T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "79899429-931c-4071-91d4-9e733c654f1e",
+      "title": "Pantera Negra",
+      "releaseDate": "2018-02-15T00:00:00",
+      "duration": 135,
+      "synopsis": "\"Black Panther\" cuenta la historia de T'Challa quien, después de los acontecimientos de \"Capitán América: Civil War\", vuelve a casa, a la nación de Wakanda, aislada y muy avanzada tecnológicamente, para ser proclamado Rey. Pero la reaparición de un viejo enemigo pone a prueba el temple de T'Challa como Rey y Black Panther ya que se ve arrastrado a un conflicto que pone en peligro todo el destino de Wakanda y del mundo.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/JcIye2DaZwI",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Acción, Aventura, Ciencia Ficc",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cblack-panther-trailer.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/panteranegra.jpg",
+      "urlSlug": "pantera-negra",
+      "isPreSale": false,
+      "people": [
+        "Chadwick Boseman",
+        "Lupita Nyong'o",
+        "Michael B. Jordan"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "79899429-931c-4071-91d4-9e733c654f1e",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Michael B. ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Lupita ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Chadwick ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Ryan ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Ryan Coogler"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2",
+        "3",
+        "4"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM12",
+      "ratingAlt": "Apta + 12",
+      "ratingDescription": "Apta para mayores de 12 años. Presentar cedula de identidad. Menores de 12 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 4,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 4,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "panteranegra.jpg",
+      "openingDate": "2018-02-15T00:00:00",
+      "distributor": "",
+      "availableOn4D": true,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
+      "title": "Cincuenta Sombras Liberadas",
+      "releaseDate": "2018-02-08T00:00:00",
+      "duration": 110,
+      "synopsis": "La apasionante historia de Anastasia Steele y Christian Grey continúa en 'Cincuenta sombras liberadas'. Anna y Christian por fin se han casado y ambos se disponen a vivir una apacible y romántica luna de miel en Europa. Pero no todo será tan idílico como ambos tenían planeado. Mientras se encuentran en Europa, les empiezan a llegar noticias de extraños incidentes ocurridos en las propiedades de Grey, ante lo que Christian comenzará a temer por la seguridad de su familia. Además, Christian se sentirá enojado por ciertos comportamientos de Ana durante su viaje, castigándola y dejándola varias marcas en su cuerpo que le harán revolverse la conciencia. Por su parte, Ana se reserva un gran secreto que no será de ningún agrado para Grey. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/B1Qdbbo0Tlw",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Drama, Romance",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cfiftyshadesfreed.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/50liberadas.jpg",
+      "urlSlug": "cincuenta-sombras-liberadas",
+      "isPreSale": false,
+      "people": [
+        "Dakota Johnson",
+        "Jamie Dornan"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Dakota ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jamie ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "James ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "James Foley"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM18",
+      "ratingAlt": "Apta + 18",
+      "ratingDescription": "Apta para mayores de 18 años. Presentar cedula de identidad. Menores de 18 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "50liberadas.jpg",
+      "openingDate": "2018-02-08T00:00:00",
+      "distributor": "RBS",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "804a3d98-4182-4f27-b310-f1670c610f58",
+      "title": "El Pájaro Loco: La Película",
+      "releaseDate": "2018-02-08T00:00:00",
+      "duration": 85,
+      "synopsis": "Lance Walters decide irse a vivir con su hijo y su nueva novia a una casa soñada en el medio del bosque. Pero, allí descubrirá que para construir su hogar deberá cortar un árbol en el que vive un curioso pájaro carpintero, contra el que empezará una guerra para decidir quién se queda con el lugar. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/TYW_cdcLAoM",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cpajaroloco.png",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/elpajaroloco.jpg",
+      "urlSlug": "el-pajaro-loco-la-pelicula",
+      "isPreSale": false,
+      "people": [
+        "Eric Bauza",
+        "Thaila Ayala",
+        "Timothy Omundson"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "804a3d98-4182-4f27-b310-f1670c610f58",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Timothy ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Thaila ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Eric ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Alex ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Alex Zamm"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
           "id": "002",
           "name": "Movie Portones"
         },
@@ -1229,8 +1888,1028 @@ exports.movies = JSON.parse(`[
           "translation": 2
         }
       ],
-      "twitterTag": "Cavernicola.jpg",
-      "openingDate": "2018-02-15T00:00:00",
+      "twitterTag": "elpajaroloco.jpg",
+      "openingDate": "2018-02-08T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "3d1668e4-c4df-4cd3-85c6-01e387a65ce6",
+      "title": "La Forma del Agua",
+      "releaseDate": "2018-02-08T00:00:00",
+      "duration": 125,
+      "synopsis": "Ganadora de 4 premios Oscar, incluyendo mejor película y mejor director (Guillermo del Toro), llega la película LA FORMA DEL AGUA, un sobrenatural cuento fantástico que transcurre en Norteamérica alrededor del año 1963, con el trasfondo de la Guerra Fría. En el laboratorio donde trabaja, oculto en unas instalaciones de alta seguridad del gobierno, la solitaria Elisa (Sally Hawkins) se encuentra atrapada en una vida llena de silencio y aislamiento. La vida de Elisa cambia por completo cuando, junto con su compañera Zelda (Octavia Spencer), descubre un experimento clasificado como secreto.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/K8xMDEXzX-0",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Fantasía,Drama,Aventura",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CShapeWater1.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/forma.jpg",
+      "urlSlug": "la-forma-del-agua",
+      "isPreSale": false,
+      "people": [
+        "Michael Shannon",
+        "Octavia Spencer",
+        "Sally Hawkins"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "3d1668e4-c4df-4cd3-85c6-01e387a65ce6",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Sally ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Octavia ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Michael",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Guillermo ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Guillermo Del Toro"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "forma.jpg",
+      "openingDate": "2018-02-08T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "2b9ae25d-5aa9-45a5-8a36-1d2c5fdf37ec",
+      "title": "The Post: Los Oscuros Secretos del Pentágono",
+      "releaseDate": "2018-02-01T00:00:00",
+      "duration": 115,
+      "synopsis": "En junio de 1971, los principales periódicos de EE.UU., entre los que se encontraban The New York Times y The Washington Post, tomaron una valiente posición en favor de la libertad de expresión, informando sobre los documentos del Pentágono y el encubrimiento masivo de secretos por parte del gobierno, que había durado cuatro décadas y cuatro presidencias estadounidenses. En ese momento, Katherine Graham (Meryl Streep), primera mujer editora del Post, y el director Ben Bradlee (Tom Hanks) intentaba relanzar un periódico en decadencia. Juntos decidieron tomar la audaz decisión de apoyar al The New York Times y luchar contra el intento de la Administración Nixon de restringir la primera enmienda... Historia basada en los documentos del Post que recogían información clasificada sobre la Guerra de Vietnam. Su publicación generó un enorme debate sobre la libertad de expresión y acabó en una dura batalla legal ante el Tribunal Supremo. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/O2hdjbFkelE",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Histórica, Drama, Biográfica",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cp05rh3nl.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/thepost.jpg",
+      "urlSlug": "the-post-los-oscuros-secretos-del-pentagono",
+      "isPreSale": false,
+      "people": [
+        "Meryl Streep",
+        "Tom Hanks"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "2b9ae25d-5aa9-45a5-8a36-1d2c5fdf37ec",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Tom ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Steven ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Meryl ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Steven Spielberg"
+      ],
+      "cinemasIds": [
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM12",
+      "ratingAlt": "Apta + 12",
+      "ratingDescription": "Apta para mayores de 12 años. Presentar cedula de identidad. Menores de 12 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "thepost.jpg",
+      "openingDate": "2018-02-01T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "f246b568-70a7-4d45-be42-f7dac104fac3",
+      "title": "Las Horas más Oscuras",
+      "releaseDate": "2018-01-25T00:00:00",
+      "duration": 125,
+      "synopsis": "Ganadora de 2 premios Oscar, incluyendo mejor actor en el rol protagónico (Gary Oldman). Una emocionante e inspiradora historia real surge en la víspera de la Segunda Guerra Mundial. A días de convertirse en el Primer Ministro de La Gran Bretaña, Winston Churchill, debe enfrentar uno de los momentos decisivos en la historia: considerar un acuerdo de paz con la Alemania Nazi o permanecer fiel a los ideales de libertad de toda una nación. Mientras el poderío Nazi aumenta su expansión al occidente de Europa, y la amenaza de una invasión es inminente, Churchill deberá enfrentarse a una nación incrédula, un rey escéptico y a la conspiración de su propio partido para superar las horas más oscuras de su vida, y dirigir a una nación para cambiar el curso de la historia.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/d4A43qoJqeY",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Histórica, Drama, Biográfica",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cdarkest-hour-image-4.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/horasoscuras1.jpg",
+      "urlSlug": "las-horas-mas-oscuras",
+      "isPreSale": false,
+      "people": [
+        "Gary Oldman",
+        "Kristin Scott Thomas",
+        "Lily James"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "f246b568-70a7-4d45-be42-f7dac104fac3",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Joe ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Kristin ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Lily ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Gary ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Joe Wright"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM6",
+      "ratingAlt": "Apta + 6",
+      "ratingDescription": "Apta para mayores de 6 años. Presentar cedula de identidad. Menores de 6 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "horasoscuras1.jpg",
+      "openingDate": "2018-01-25T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "01ac7a76-0269-436b-bb9d-dfe35582c4a6",
+      "title": "Tadeo Jones 2: El Secreto del Rey Midas",
+      "releaseDate": "2018-01-25T00:00:00",
+      "duration": 85,
+      "synopsis": "Tras el descubrimiento de Sara Lavroff de una de las tres piezas de oro del collar del Rey Midas, confirma con ésta, la existencia del monarca que convertía todo lo que tocaba en oro, Tadeo Stones viaja hasta Las Vegas para acompañar a su amiga en la gran exposición en la que mostrará por primera vez este importante hallazgo al mundo de la arqueología. El feliz encuentro entre Tadeo y Sara se ve interrumpido cuando el malvado Jack Rackham y sus secuaces roban la pieza y secuestran a la joven arqueóloga, sabiendo que quien consiga reunir nuevamente las tres piezas del collar, adquirirá el poder de Midas y, por tanto, riqueza infinita.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/aex-kusSnvc",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CTadeoJones 2 01.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/tadeo2.jpg",
+      "urlSlug": "tadeo-jones-2-el-secreto-del-rey-midas",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "01ac7a76-0269-436b-bb9d-dfe35582c4a6",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Enrique ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " David ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "David Alonso",
+        "Enrique Gato"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "APTA",
+      "ratingAlt": "APTA",
+      "ratingDescription": "Apta para todo público.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "tadeo2.jpg",
+      "openingDate": "2018-01-25T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "2cb5fc0e-366e-4303-8f5f-5aa809e4b429",
+      "title": "3 Anuncios por un Crimen",
+      "releaseDate": "2018-01-18T00:00:00",
+      "duration": 115,
+      "synopsis": "Ganadora de 2 premios Oscar como mejor actriz en el rol protagónico y mejor actor de reparto. 3 ANUNCIOS POR UN CRIMEN es un drama de humor negro del ganador del Premio de la Academia® Martin McDonagh. Después de que han pasado meses sin que haya un culpable en el caso del asesinato de su hija, Mildred Hayes (la ganadora del Premio de la Academia® Frances McDormand) comete un acto osado, al mandar poner 3 anuncios, que conducen a su pueblo, con un mensaje controversial dirigido a William Willoughby (Woody Harrelson), venerado jefe de policía del lugar. Cuando el oficial Dixon (Sam Rockwell), su segundo de a bordo, un hijo de mami inmaduro con una propensión hacia la violencia, se involucra, la batalla entre Mildred y el cuerpo policial del pueblo de Ebbing, solo se agrava.  ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/jb51HxL1LmA",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Policial,Drama,Comedia",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5C3 anuncios.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/3anuncios.jpg",
+      "urlSlug": "3-anuncios-por-un-crimen",
+      "isPreSale": false,
+      "people": [
+        "Frances McDormand",
+        "Sam Rockwell",
+        "Woody Harrelson"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "2cb5fc0e-366e-4303-8f5f-5aa809e4b429",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Woody ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Sam ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Martin ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Frances ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Martin McDonagh"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM15",
+      "ratingAlt": "Apta + 15",
+      "ratingDescription": "Apta para mayores de 15 años. Presentar cedula de identidad. Menores de 15 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "twitterTag": "3anuncios.jpg",
+      "openingDate": "2018-01-18T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "6bfcc6b2-a857-4f38-9c9e-35cdd6402376",
+      "title": "El Pasajero",
+      "releaseDate": "2018-01-18T00:00:00",
+      "duration": 105,
+      "synopsis": "Durante su trayecto habitual de vuelta a casa, un hombre de negocios se ve envuelto en una conspiración criminal que amenaza con poner en peligro tanto su vida como la de sus seres más cercanos.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/lLjGXThy8uw",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Crímen,Drama,Misterio",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cvera-farmiga-liam-neeson-in-THE-COMMUTER.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/elpasajero.jpg",
+      "urlSlug": "el-pasajero",
+      "isPreSale": false,
+      "people": [
+        "Liam Neeson",
+        "Sam Neill",
+        "Vera Farmiga"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "6bfcc6b2-a857-4f38-9c9e-35cdd6402376",
+          "format": 2,
+          "translation": 3
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jaume ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Vera ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Liam ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Sam ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Jaume Collet-Serra"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "3",
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM12",
+      "ratingAlt": "Apta + 12",
+      "ratingDescription": "Apta para mayores de 12 años. Presentar cedula de identidad. Menores de 12 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 3
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "elpasajero.jpg",
+      "openingDate": "2018-01-18T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "8286e13b-682d-4220-b0c3-d1759bc69905",
+      "title": "Coco",
+      "releaseDate": "2018-01-11T00:00:00",
+      "duration": 110,
+      "synopsis": "Ganadora de 2 premios Oscar como mejor película animada y mejor canción original. A pesar de la incomprensible prohibición de la música desde hace varias generaciones en su familia, Miguel sueña con convertirse en un músico consagrado, como su ídolo Ernesto de la Cruz. Desesperado por probar su talento, Miguel se encuentra en la impresionante y colorida Tierra de los Muertos como resultado de una misteriosa cadena de eventos. En el camino, encuentra al simpático timador Héctor, y juntos se embarcan en una extraordinaria travesía para develar la verdadera razón detrás de la historia familiar de Miguel.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/awzWdtCezDo",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Ccoco.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/coco2.jpg",
+      "urlSlug": "coco",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "8286e13b-682d-4220-b0c3-d1759bc69905",
+          "format": 3,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Lee ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Lee Unkrich"
+      ],
+      "cinemasIds": [
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        },
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        }
+      ],
+      "formatsIds": [
+        "3",
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM6",
+      "ratingAlt": "Apta + 6",
+      "ratingDescription": "Apta para mayores de 6 años. Presentar cedula de identidad. Menores de 6 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "005",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "coco2.jpg",
+      "openingDate": "2018-01-11T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "668dbeb6-ea85-4880-846b-038017f990f1",
+      "title": "Jumanji: En la Selva",
+      "releaseDate": "2018-01-04T00:00:00",
+      "duration": 120,
+      "synopsis": "En la nueva aventura Jumanji: En la Selva, cuatro adolescentes que fueron castigados en la escuela son succionados al mundo de Jumanji. Cuando descubren una vieja consola con un videojuego del que nunca habían oído hablar, son transportados a la selva del juego en los cuerpos de sus avatares interpretados por Dwayne Johnson, Jack Black, Kevin Hart y Karen Gillan. Lo que descubren es que uno no juega al Jumanji, sino que Jumanji juega con uno. Tendrán que embarcarse en la aventura más peligrosa de sus vidas o quedarse atrapados para siempre en el juego.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/6maujJFcuxA",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Fantasía, Aventura",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cjumanji-trailer-gamers.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/jumanji1.jpg",
+      "urlSlug": "jumanji-en-la-selva",
+      "isPreSale": false,
+      "people": [
+        "Dwayne Johnson",
+        "Karen Gillan",
+        "Kevin Hart"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "668dbeb6-ea85-4880-846b-038017f990f1",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Kevin",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Dwayne",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Karen ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Jake ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Jake Kasdan"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        },
+        {
+          "id": "003",
+          "name": "Movie Punta Carretas"
+        },
+        {
+          "id": "005",
+          "name": "Movie Nuevocentro"
+        }
+      ],
+      "formatsIds": [
+        "2",
+        "3",
+        "4"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "AM9",
+      "ratingAlt": "Apta + 9",
+      "ratingDescription": "Apta para mayores de 9 años. Presentar cedula de identidad. Menores de 9 años deben de ser acompañados por su padre, madre o tutor.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "003",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "001",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "005",
+          "format": 3,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 4,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "jumanji1.jpg",
+      "openingDate": "2018-01-04T00:00:00",
+      "distributor": "",
+      "availableOn4D": true,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "afb23872-21b7-4e86-888a-5d6c2c2ab7c1",
+      "title": "Olé! El Viaje de Ferdinand",
+      "releaseDate": "2017-12-28T00:00:00",
+      "duration": 110,
+      "synopsis": "“Olé, el viaje de Ferdinand” es la historia de un toro con un corazón aún más grande que él. Después de que le confundan con una peligrosa bestia, es capturado y apartado de su hogar. Decidido a volver con su familia, se une a un equipo de inadaptados con los que vivirá una gran aventura. Ferdinand nos enseña que no puedes juzgar a un toro por sus cuernos. De Blue Sky Studios y Carlos Saldanha, director de “Rio”, llega “Ferdinand”, una conmovedora y divertida comedia.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/8KYoWDKYkzI",
+      "isComingSoon": true,
+      "isScheduleAtCinema": true,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cferdinand.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/ferdinand.jpg",
+      "urlSlug": "ole-el-viaje-de-ferdinand",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [
+        {
+          "contentGuid": "afb23872-21b7-4e86-888a-5d6c2c2ab7c1",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Carlos ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Carlos Saldanha"
+      ],
+      "cinemasIds": [
+        {
+          "id": "001",
+          "name": "Movie Montevideo"
+        },
+        {
+          "id": "002",
+          "name": "Movie Portones"
+        }
+      ],
+      "formatsIds": [
+        "2"
+      ],
+      "translationsIds": [
+        "2"
+      ],
+      "categoriesIds": [],
+      "contentType": 1,
+      "promotion": null,
+      "rating": "APTA",
+      "ratingAlt": "APTA",
+      "ratingDescription": "Apta para todo público.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": [
+        {
+          "externalCinemaId": "001",
+          "format": 2,
+          "translation": 2
+        },
+        {
+          "externalCinemaId": "002",
+          "format": 2,
+          "translation": 2
+        }
+      ],
+      "twitterTag": "ferdinand.jpg",
+      "openingDate": "2017-12-28T00:00:00",
       "distributor": "",
       "availableOn4D": false,
       "content2D4D": false
@@ -1240,188 +2919,8 @@ exports.movies = JSON.parse(`[
 exports.schedules = JSON.parse(`{
   "contentCinemaShows": [
     {
-      "contentId": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
+      "contentId": "8286e13b-682d-4220-b0c3-d1759bc69905",
       "cinemaShows": [
-        {
-          "cinema": {
-            "externalId": "001",
-            "name": "Movie Montevideo",
-            "address": null,
-            "address2": null,
-            "city": null,
-            "parkingInfo": null,
-            "phoneNumber": null,
-            "contact": null,
-            "latitude": null,
-            "longitude": null,
-            "shows": null
-          },
-          "shows": [
-            {
-              "id": "cb5e10bf-99de-4b85-b09b-d6f867f51415",
-              "sessionId": "127451",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T14:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4d9608ac-e6b3-4f1f-9063-73c316a3e4a4",
-              "sessionId": "127536",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T14:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6db2555b-923f-4047-b8b6-a262e6698bdc",
-              "sessionId": "127599",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T13:15:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "13:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a5297b1b-18c9-431f-a97c-7f48c98e2253",
-              "sessionId": "127541",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T14:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7c9f6862-953e-40ff-abad-2eb3b893a629",
-              "sessionId": "127605",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T13:15:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "13:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "42762bd9-7dc8-431a-8590-8577cf17f956",
-              "sessionId": "127546",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T14:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "649f372a-802b-4c37-91ef-527b6393f544",
-              "sessionId": "127550",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T14:30:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8c4fad0a-4280-4463-819c-d4037a1b0ae0",
-              "sessionId": "127716",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T14:30:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "06e0af74-fd92-4b10-b4e4-1bd3b3b3e430",
-              "sessionId": "127720",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T14:30:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "14:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            }
-          ],
-          "salesEnabled": false
-        },
         {
           "cinema": {
             "externalId": "005",
@@ -1438,128 +2937,236 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "a52c10fb-c85e-4b40-8413-e2ca342285f9",
-              "sessionId": "39518",
+              "id": "19302f27-af6c-42ef-b9e2-4f7fcc69d34a",
+              "sessionId": "39637",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
               "cinema": null,
               "content": null,
-              "date": "2018-03-08T15:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "39dd636d-3ad7-4d9a-b37c-c5c79f7a63ef",
-              "sessionId": "39546",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T15:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1188824b-6ed0-4a00-9335-13ffb92ed4d6",
-              "sessionId": "39574",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T15:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ab709974-4cdb-4b88-a00d-88c68f6182bb",
-              "sessionId": "39602",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T15:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "92378df3-1238-4b60-9f84-75d97159ccff",
-              "sessionId": "39630",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T15:30:00",
+              "date": "2018-03-12T17:35:00",
               "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
+              "timeToDisplay": "17:35",
+              "format": "3",
               "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "d1028415-13f2-42d9-9308-dd0151b4479e",
-              "sessionId": "39656",
+              "id": "cbd8efec-fb3b-4b5f-bb8f-8e48b60f45ce",
+              "sessionId": "39638",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
               "cinema": null,
               "content": null,
-              "date": "2018-03-13T15:30:00",
+              "date": "2018-03-12T20:05:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "20:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f17f22da-3a14-4055-8d04-ad8bef023918",
+              "sessionId": "39664",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:30:00",
               "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "15:30",
-              "format": "2",
+              "timeToDisplay": "14:30",
+              "format": "3",
               "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "e8b05b87-9911-48ad-8f34-2446c46e1c10",
-              "sessionId": "39675",
+              "id": "ddf2b352-b7cd-4f0f-99ff-73dadb13109f",
+              "sessionId": "39661",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
               "cinema": null,
               "content": null,
-              "date": "2018-03-14T15:30:00",
+              "date": "2018-03-13T17:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:35",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "fc652da2-c82b-421f-9fa9-64afabc601d5",
+              "sessionId": "39662",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T20:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "20:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "bd8592bf-0dc8-47ca-9946-89b395bc96fd",
+              "sessionId": "39683",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:30:00",
               "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "15:30",
+              "timeToDisplay": "14:30",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ca84d94a-ec61-4dec-99f7-0ba1bb9d00f5",
+              "sessionId": "39680",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:35",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "15b711f1-f06a-42a7-9fb7-b243ac69e7cd",
+              "sessionId": "39681",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T20:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "20:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "8f21a79c-0707-4ba2-9ca0-1e19cc7f8c3c",
+              "sessionId": "53715",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T17:50:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "17:50",
               "format": "2",
               "translation": "2",
               "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1543c1db-053a-408a-8f7f-b282e3c4f4d4",
+              "sessionId": "53764",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c9ff3356-8682-4b00-93d9-98303c4377a3",
+              "sessionId": "53772",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:50",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f247c4e2-4c6c-44a2-b944-aeb149739e73",
+              "sessionId": "53754",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA B",
+              "screenNumber": 2,
               "categories": [],
               "contentFormat": null
             }
@@ -1582,15 +3189,159 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "9603f6ca-c6b1-4c8a-b804-2c8352123604",
-              "sessionId": "80117",
+              "id": "55b19904-56ec-495e-b8c1-d1e0421c0d5b",
+              "sessionId": "80210",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
               "cinema": null,
               "content": null,
-              "date": "2018-03-10T14:10:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "14:10",
+              "date": "2018-03-12T19:35:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "80f2aa57-1ce2-4424-adea-bff46f83db78",
+              "sessionId": "80219",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "750cb6f6-3766-438e-853c-cfcb57d7f0fc",
+              "sessionId": "80238",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:10:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:10",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1ae3193e-d709-4378-8a46-472cb488ca5a",
+              "sessionId": "80239",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "78891448-45f1-43ee-a168-550745f09b26",
+              "sessionId": "80248",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "bd2b98db-bc77-4c9c-b079-2637c5ac3de2",
+              "sessionId": "80267",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:10:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:10",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "fe83782e-0b22-46b2-88eb-e17b90245aa0",
+              "sessionId": "80268",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "a82ba1eb-0924-4e0a-a033-60d314cdb5d3",
+              "sessionId": "127708",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:50",
               "format": "2",
               "translation": "2",
               "formatLang": "2D Esp",
@@ -1600,20 +3351,56 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "ee6eaff4-d661-4ade-ba3b-3f0f29602013",
-              "sessionId": "80159",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
+              "id": "2d97984c-ffcc-42fb-84d7-9d31dde5203a",
+              "sessionId": "127709",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
               "cinema": null,
               "content": null,
-              "date": "2018-03-11T14:10:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "14:10",
+              "date": "2018-03-13T17:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:15",
               "format": "2",
               "translation": "2",
               "formatLang": "2D Esp",
               "screenName": "SALA 2",
               "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "67613091-339e-477e-b2b6-f8c7cc27219e",
+              "sessionId": "127712",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:50",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "fe05dbef-2ed8-43c0-aac3-c5ab7e619d53",
+              "sessionId": "127713",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
               "categories": [],
               "contentFormat": null
             }
@@ -1646,7 +3433,7 @@ exports.schedules = JSON.parse(`{
       }
     },
     {
-      "contentId": "0a36613f-2d6f-4aa1-a1f5-f403521d9ade",
+      "contentId": "2cb5fc0e-366e-4303-8f5f-5aa809e4b429",
       "cinemaShows": [
         {
           "cinema": {
@@ -1664,162 +3451,108 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "87273df8-3a34-466d-8913-ae94e2605029",
-              "sessionId": "127469",
+              "id": "674566df-bb07-410e-a91a-2618306a5eb9",
+              "sessionId": "127611",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
               "cinema": null,
               "content": null,
-              "date": "2018-03-08T15:25:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "15:25",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8ffef9b7-995a-4116-afb4-4115d32b8c8f",
-              "sessionId": "127594",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T15:25:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "15:25",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "43498da3-6e0a-47d1-8229-ff286695d388",
-              "sessionId": "127618",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:45:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:45",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4ed604b2-47d3-4913-b7f2-41263e9b2799",
-              "sessionId": "127600",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T15:25:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "15:25",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6f2cfc52-386b-4bca-906c-571be49bb5f6",
-              "sessionId": "127624",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:45:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:45",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ba156cb0-6cff-4b74-833a-e9fe3136fe56",
-              "sessionId": "127606",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T15:25:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "15:25",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "566fb860-07d7-4e66-805a-a175316d62b1",
-              "sessionId": "127610",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T15:25:00",
+              "date": "2018-03-12T17:35:00",
               "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "15:25",
+              "timeToDisplay": "17:35",
               "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
+              "translation": "3",
+              "formatLang": "2D Sub",
               "screenName": "SALA 6",
               "screenNumber": 6,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "b89886c6-5808-4778-86a7-2ca7d63ffb96",
-              "sessionId": "127740",
+              "id": "eb8edd86-8a27-4781-a92c-ec3d72a254cd",
+              "sessionId": "127612",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
               "cinema": null,
               "content": null,
-              "date": "2018-03-13T15:25:00",
+              "date": "2018-03-12T20:05:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "20:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "dca96a4a-40aa-4e40-b462-cabe648a0049",
+              "sessionId": "127741",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:35:00",
               "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "15:25",
+              "timeToDisplay": "17:35",
               "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
+              "translation": "3",
+              "formatLang": "2D Sub",
               "screenName": "SALA 6",
               "screenNumber": 6,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "298358d0-832a-409c-9bfe-b18bbf12d0c5",
-              "sessionId": "127744",
+              "id": "a946d984-f3a2-4d3c-91f0-f10636e8b821",
+              "sessionId": "127742",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
               "cinema": null,
               "content": null,
-              "date": "2018-03-14T15:25:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "15:25",
+              "date": "2018-03-13T20:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "20:05",
               "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "5d87ef16-0aa4-469b-bd7a-7f1d3b7bc076",
+              "sessionId": "127745",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "7d671e17-adda-48e3-9458-39a0b9042e6c",
+              "sessionId": "127746",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T20:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "20:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
               "screenName": "SALA 6",
               "screenNumber": 6,
               "categories": [],
@@ -1844,246 +3577,92 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "069128df-700c-494c-9f6b-81789e0dfbf3",
-              "sessionId": "80084",
+              "id": "744074e7-16a0-4970-bee0-23edd4e20356",
+              "sessionId": "80199",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
               "cinema": null,
               "content": null,
-              "date": "2018-03-10T00:10:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "d4e9f432-23c9-4b47-9211-60e58be51c3a",
-              "sessionId": "80121",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:10:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            }
-          ],
-          "salesEnabled": false
-        }
-      ],
-      "filters": {
-        "formats": null,
-        "categories": null,
-        "languages": null,
-        "cinemas": [
-          {
-            "id": "001",
-            "name": "Movie Montevideo"
-          },
-          {
-            "id": "002",
-            "name": "Movie Portones"
-          },
-          {
-            "id": "003",
-            "name": "Movie Punta Carretas"
-          },
-          {
-            "id": "005",
-            "name": "Movie Nuevocentro"
-          }
-        ]
-      }
-    },
-    {
-      "contentId": "b682dbb6-5cb0-418b-be6d-78e1d2be4221",
-      "cinemaShows": [
-        {
-          "cinema": {
-            "externalId": "001",
-            "name": "Movie Montevideo",
-            "address": null,
-            "address2": null,
-            "city": null,
-            "parkingInfo": null,
-            "phoneNumber": null,
-            "contact": null,
-            "latitude": null,
-            "longitude": null,
-            "shows": null
-          },
-          "shows": [
-            {
-              "id": "41757eec-4f7c-4387-8963-7f40c91fbd6b",
-              "sessionId": "127481",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T16:05:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "16:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "d3fba1bf-ad4b-4d5a-942d-0cf936247b14",
-              "sessionId": "127634",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T16:05:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "16:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "88e36f02-bf3d-4419-85b9-5d247fb1f2ef",
-              "sessionId": "127540",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:15:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:15",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "cc90cfda-4797-4c9a-aa86-268511e21d19",
-              "sessionId": "127639",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T16:05:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "16:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c9e85fe4-0403-41e0-a8bd-2f19f731e4d5",
-              "sessionId": "127545",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:15:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:15",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a0e3393c-c38c-462f-b852-f597b9855865",
-              "sessionId": "127644",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T16:05:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "16:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1b983d7d-0084-4529-a543-68dca9509da1",
-              "sessionId": "127647",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T16:05:00",
+              "date": "2018-03-12T20:00:00",
               "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "16:05",
+              "timeToDisplay": "20:00",
               "format": "2",
               "translation": "3",
               "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
+              "screenName": "SALA 3",
+              "screenNumber": 3,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "4d6b2abe-d486-4507-80f1-6f433f73d2a3",
-              "sessionId": "127756",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
+              "id": "5253a735-729c-4635-83bb-faf3f8279c0b",
+              "sessionId": "80220",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
               "cinema": null,
               "content": null,
-              "date": "2018-03-13T16:05:00",
+              "date": "2018-03-13T16:50:00",
               "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "16:05",
+              "timeToDisplay": "16:50",
               "format": "2",
               "translation": "3",
               "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
+              "screenName": "SALA 1",
+              "screenNumber": 1,
               "categories": [],
               "contentFormat": null
             },
             {
-              "id": "64cc7725-9f30-47e7-b0c3-db132cf463c8",
-              "sessionId": "127759",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
+              "id": "d2c62c7d-e7a8-4f49-9562-29d7533a03cb",
+              "sessionId": "80228",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
               "cinema": null,
               "content": null,
-              "date": "2018-03-14T16:05:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "16:05",
+              "date": "2018-03-13T20:00:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "20:00",
               "format": "2",
               "translation": "3",
               "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "90ed6bab-d363-467e-99f8-a62ada0a9110",
+              "sessionId": "80249",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "69d7596d-e28e-4ba7-8c22-29027e7f074f",
+              "sessionId": "80257",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T20:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "20:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
               "categories": [],
               "contentFormat": null
             }
@@ -2134,259 +3713,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "8fdb7185-732d-40f9-832d-84fe2cff1dfd",
-              "sessionId": "127442",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T17:35:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "17:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4efa44db-8633-405d-876d-faafee2aa20d",
-              "sessionId": "127443",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T20:00:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "20:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5af7fd4b-c4e8-4c8a-a544-a23e2e2b9ca4",
-              "sessionId": "127444",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:20:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "77948b81-9353-4ed0-a220-b5b9c30220b1",
-              "sessionId": "127501",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T17:35:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "17:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b3e3a03d-3768-4060-8da4-7ebc22952129",
-              "sessionId": "127502",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T20:00:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "20:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a2322631-53bc-46e4-a451-564a95220886",
-              "sessionId": "127503",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:20:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "f5ad8c82-7316-420c-8d82-b83be7d5e1fa",
-              "sessionId": "127578",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T01:00:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "01:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "beb630a2-793f-49cc-a41a-a9db50495ae9",
-              "sessionId": "127506",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T17:35:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "17:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6e15fa66-0600-447d-924d-e5811cc7d6e1",
-              "sessionId": "127507",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T20:00:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "20:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "16f0103f-ee8a-4653-81b2-4b8ad0e1cbe0",
-              "sessionId": "127508",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:20:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "eb17c6d3-bf96-4ece-a992-ff73b89770eb",
-              "sessionId": "127584",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T01:00:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "01:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "29fd06ec-52f8-41e4-a5bf-fa0c44c11c07",
-              "sessionId": "127511",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T17:35:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "17:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "9211f2e7-3553-4305-a87a-fc2a9c13e8b5",
-              "sessionId": "127512",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T20:00:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "20:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ffed63d6-b263-4bb1-9b8a-e52a38beb606",
-              "sessionId": "127513",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:20:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "12e80aa1-d8da-4995-a4b6-b2bf62c64235",
+              "id": "7639f562-a81d-4daf-9e8a-c916aad1622e",
               "sessionId": "127515",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2404,7 +3731,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "af63eeda-ace3-4e4b-a010-94b34eb935f4",
+              "id": "0cae47f1-911e-401e-95c3-2ce73e0af9fb",
               "sessionId": "127516",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2422,7 +3749,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "558d9d11-119e-41b1-8cbc-95a9e2947a28",
+              "id": "1022a80f-6518-4673-b273-a3e9fec06d2e",
               "sessionId": "127517",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2440,7 +3767,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "4df16c54-e764-4589-bb9c-6781abcb1036",
+              "id": "f86a1bc2-32c2-4ee1-9ddf-0e060f8f7607",
               "sessionId": "127701",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2458,7 +3785,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "fa12d6f5-b8e5-4362-a324-77f51f245e55",
+              "id": "f291bc55-a869-4bab-b462-18307eed1f9b",
               "sessionId": "127702",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2476,7 +3803,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "228b14df-9ad3-451e-8a0b-8237dd8230fe",
+              "id": "416e4d29-893e-4486-ba7a-63effa42ff89",
               "sessionId": "127703",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2494,7 +3821,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "8711b45a-5ccc-47e8-9322-ef9ac126e2ed",
+              "id": "da6038a0-65d3-48d1-9a94-75bf196ce688",
               "sessionId": "127705",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2512,7 +3839,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "2f56705a-587c-4026-aa7a-2a4997024aeb",
+              "id": "ea93b515-48c6-4c18-a1c2-f5a8c6181b31",
               "sessionId": "127706",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2530,7 +3857,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "5f277813-10cc-4d0d-ae96-d855c4c468f7",
+              "id": "29e51924-249b-4877-9a1d-d9aa5444bd7c",
               "sessionId": "127707",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -2566,187 +3893,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "f5007b4d-fa51-4350-be38-935f072d6a4c",
-              "sessionId": "80058",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T19:55:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a91bb633-8e71-40d5-a3fb-b8301b948bc7",
-              "sessionId": "80048",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "16d75c27-f707-484f-a4b0-7c0cba46f6a4",
-              "sessionId": "80096",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T19:55:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1a0125d2-c038-4ac9-8512-2169b4d3fd9b",
-              "sessionId": "80088",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "60207aba-549f-44e2-896b-035c91fefc1e",
-              "sessionId": "80103",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:50:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:50",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a434d96c-c1c2-4f1b-b761-f65949c57f38",
-              "sessionId": "80136",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T19:55:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3ef5791f-8900-4a16-8bed-ba6569ff9c70",
-              "sessionId": "80126",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "bf946539-caf8-4de2-a2b5-9e16f9a0296a",
-              "sessionId": "80143",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:50:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:50",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "41b8e02f-d873-4ae3-9c3c-ca8bc39d5408",
-              "sessionId": "80175",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T19:55:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "f5189810-cc62-4e87-a681-a01610bfd522",
-              "sessionId": "80167",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5e0ffa4a-edb4-4c28-9b3e-b96d2323a2ea",
+              "id": "71155026-4443-4ee8-ba47-ac881e644d97",
               "sessionId": "80206",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2764,7 +3911,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "e8546089-ddb7-4fa7-871c-0357b0306467",
+              "id": "cda5a0cd-b474-43b2-8994-73ad79ef9e8c",
               "sessionId": "80200",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2782,7 +3929,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "33dc4acf-7077-48cc-9e9a-209d40b9cd48",
+              "id": "847555e2-9864-4f7b-bd3c-94107394c920",
               "sessionId": "80235",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2800,7 +3947,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "17c5a5d4-a363-4886-8854-9016cf562d96",
+              "id": "974a0696-2707-44a8-9888-36334498ad7b",
               "sessionId": "80229",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2818,7 +3965,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "bf41bf4f-79d2-409f-ab84-b48227bd7ca6",
+              "id": "77c019d3-6d5e-47e1-bd6a-f9c02099cbce",
               "sessionId": "80264",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2836,7 +3983,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "4f09ea07-30a6-4169-a085-7844f85e618e",
+              "id": "4746046f-2d7b-4402-a1c4-1cb8e26dabaa",
               "sessionId": "80258",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -2872,115 +4019,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "7ea11828-f973-4c60-8fa0-743fe6b8e7af",
-              "sessionId": "39532",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:10:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5c295a99-f1fe-4883-87a2-ed5ccad6a33d",
-              "sessionId": "39560",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:10:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a71d3ee9-b377-4057-9133-3381f1e579f2",
-              "sessionId": "39572",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:40:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "02fb44c8-3f60-466e-a50e-40daf0a71bf0",
-              "sessionId": "39588",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:10:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "29182b5a-c964-4f95-a20c-b6b56ea28c4f",
-              "sessionId": "39600",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:40:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "fc0b193b-9863-4205-b61f-ed2c4e444916",
-              "sessionId": "39616",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:10:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:10",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "82f74a57-13be-4231-ab0c-612120fe7cb0",
+              "id": "ec15ccc5-0d92-467c-becc-3dd7761383ca",
               "sessionId": "39644",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -2998,7 +4037,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "ff74c66d-02ef-4c75-9153-64eb1ea6c336",
+              "id": "1add1368-64c3-444b-966f-8f79dc10ac27",
               "sessionId": "39667",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3016,7 +4055,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "e8664d79-81d2-4c30-bb48-5a6321bde301",
+              "id": "745f0c99-9e42-440a-9714-a3a17e872d91",
               "sessionId": "39686",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3030,6 +4069,782 @@ exports.schedules = JSON.parse(`{
               "formatLang": "2D Esp",
               "screenName": "Sala 3",
               "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "668dbeb6-ea85-4880-846b-038017f990f1",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "fba7d853-20a7-4468-8ed1-f25f11f17379",
+              "sessionId": "127571",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T17:40:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "17:40",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "dd67773a-df5c-49d4-a76c-618052103f85",
+              "sessionId": "127725",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:55:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:55",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1a600159-296f-41f8-9951-8cdfa22bacab",
+              "sessionId": "127728",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:00",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "b3a77c02-54b1-45a0-b0ac-16758b4e4eba",
+              "sessionId": "127729",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:40:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:40",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "03100451-32ae-4ebe-a12b-e3cb9f0cd66d",
+              "sessionId": "39643",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:35:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "2d24a0a4-5642-460e-ad44-39ce38e3b70d",
+              "sessionId": "39660",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:55:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:55",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3484ba3c-0373-4240-8d2b-7b87425f3eef",
+              "sessionId": "39665",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:55:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:55",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "9af0014b-c0c8-43df-80cc-b9e6e79d8a5c",
+              "sessionId": "39666",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "50e8b463-e397-494c-b350-02818436e0fe",
+              "sessionId": "39679",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:55:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:55",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3f00848c-55d0-4499-9981-0e7b86471aeb",
+              "sessionId": "39684",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:55:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:55",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ef1badd6-f391-4ea6-b915-03580b71a329",
+              "sessionId": "39685",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "55be2ceb-3212-403c-9dd0-794be0b3e272",
+              "sessionId": "80226",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:50",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "26920d62-0160-427e-b2f9-6842e4473892",
+              "sessionId": "80245",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:10:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:10",
+              "format": "4",
+              "translation": "2",
+              "formatLang": "4D Esp",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "e97df92b-3fba-4507-ba52-87fc7c77558f",
+              "sessionId": "80227",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:25",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "29225c54-9d27-4950-9bed-a5b435ca34cd",
+              "sessionId": "80255",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:50",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "713276ed-73f0-4ef3-8e70-b03d79c466ca",
+              "sessionId": "80274",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:10:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:10",
+              "format": "4",
+              "translation": "2",
+              "formatLang": "4D Esp",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d79449ae-f7c4-4b38-b7ed-4a647406a4e6",
+              "sessionId": "80256",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:25",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "7efd2fc6-7e20-4679-835e-78cee7edecce",
+              "sessionId": "53771",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "8485262f-38c3-4fb7-83e2-777e963c25e4",
+              "sessionId": "53758",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:20:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "804a3d98-4182-4f27-b310-f1670c610f58",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "dfe0b18a-3054-48a2-88a6-0dcf803cd04b",
+              "sessionId": "127591",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T17:40:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "17:40",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "be37532d-8083-40ca-a203-beaa494446d7",
+              "sessionId": "127732",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "db6dbf8f-c0ba-4a16-ac62-f65464dee4db",
+              "sessionId": "127733",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "b3a8d920-1d4c-4435-972a-f471ac0fac6b",
+              "sessionId": "127736",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "80a0afdb-c8b2-46ec-b606-da9e7b179dd0",
+              "sessionId": "80205",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T17:55:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "17:55",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "5b90e370-2b80-43e8-8c31-48465d4f4d21",
+              "sessionId": "80233",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:55:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:55",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ce7b7470-607b-4f86-b8b8-f313e76ed74a",
+              "sessionId": "80234",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:55:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:55",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "afc41e47-af6d-4134-8675-67185e6a4736",
+              "sessionId": "80262",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:55:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:55",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ce7f1828-f889-4df1-97f9-2534d817f19a",
+              "sessionId": "80263",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:55:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:55",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "f6ddb49a-34ab-4ff8-a43e-f3c07f5e9f51",
+              "sessionId": "39653",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T18:15:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "18:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "8feca9bd-b417-44fe-ae50-e12b13af66a8",
+              "sessionId": "39671",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "92b585ea-303d-4009-a7b4-92ceba36df75",
+              "sessionId": "39672",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T18:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "18:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "e0ae9a27-ce16-4cdf-b4f2-d6dc1aac0fac",
+              "sessionId": "39690",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "26fffab7-89e4-4f13-af2c-b29082cb71f3",
+              "sessionId": "39691",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T18:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "18:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
               "categories": [],
               "contentFormat": null
             }
@@ -3080,259 +4895,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "ae6d3e6c-1b19-4bc9-beba-9b0bc5d7d967",
-              "sessionId": "39519",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T17:40:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ce4a56c2-f4fd-4f83-998b-85cf7f193f28",
-              "sessionId": "39520",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T19:55:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "678dd279-5ada-4b60-b469-b8112300a7ad",
-              "sessionId": "39527",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:35:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a5d43320-85e4-4f14-af61-5f0b636aeb2e",
-              "sessionId": "39547",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T17:40:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "2675b1b8-1b85-43ca-b32b-0752656ded67",
-              "sessionId": "39548",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T19:55:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c837437b-e0ce-4189-8671-e11d03f7b6ff",
-              "sessionId": "39555",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:35:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "fc111cb2-9211-48dc-8c1f-939a128ca257",
-              "sessionId": "39556",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:55:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4adf92da-2230-4d18-adf9-4db6ac1ceb13",
-              "sessionId": "39575",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T17:40:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "62e87ac7-224a-4e62-b7c4-ee8745cf45ce",
-              "sessionId": "39576",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T19:55:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7b149f35-58e8-49cf-9058-f7e0df5ec5c8",
-              "sessionId": "39583",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:35:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5d0584fd-3d61-4f88-93b2-adbd1f0f22db",
-              "sessionId": "39584",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:55:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ad668258-cba2-4fef-9f52-05d3fa0cac7f",
-              "sessionId": "39603",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T17:40:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8b786df7-5e09-4749-8a36-8d19c19d4d3f",
-              "sessionId": "39604",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T19:55:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "82d29f3f-fb7f-4eb0-8cad-15436accf28d",
-              "sessionId": "39611",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:35:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 2",
-              "screenNumber": 2,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3a683552-0188-483b-a572-3108ab4cdf3d",
+              "id": "ed213ff5-95ac-446c-a6e6-e4bf0c27464f",
               "sessionId": "39631",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3350,7 +4913,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "827a6184-d0cf-4717-b7be-8850f85bbb8b",
+              "id": "0585aec2-49cc-4988-a4f6-7e349d4aaa46",
               "sessionId": "39632",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3368,7 +4931,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "8af2f061-4e30-4281-99c1-8dce42c483b3",
+              "id": "1f71863c-5e0c-4f74-a0bb-b04bda079726",
               "sessionId": "39639",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3386,7 +4949,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "949f16f3-79c3-4889-838a-067dfc381620",
+              "id": "d3c7d951-966f-4d15-a165-0bdb49b3521b",
               "sessionId": "39657",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3404,7 +4967,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "02d9887e-ea00-4e6c-8ba5-b7a88c3dc897",
+              "id": "d37255c7-2338-453f-9df3-6b2085216cb7",
               "sessionId": "39658",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3422,7 +4985,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "0afb4d1d-4434-4310-ace9-bd2d57f0d598",
+              "id": "52f9194c-86d4-486e-89cf-a1e2f6931ca7",
               "sessionId": "39663",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3440,7 +5003,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "afa546b6-0748-4255-b505-2c48a62670d9",
+              "id": "9c64f942-dc87-4754-bab2-30f2358dcb4b",
               "sessionId": "39676",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3458,7 +5021,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "2da28d1a-df0d-4e6e-9363-5133ddb73955",
+              "id": "20280648-d49b-4be9-96a9-b154b0bb3862",
               "sessionId": "39677",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3476,7 +5039,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "32e8f36f-bb56-4119-98ee-cc548bd2e4ac",
+              "id": "d3909b55-1804-4faa-8898-9320529643d7",
               "sessionId": "39682",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -3512,187 +5075,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "77031125-2c81-40da-bb48-d686205a501d",
-              "sessionId": "127459",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T20:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "20:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "e2472506-217d-4255-8106-af6c64d8325f",
-              "sessionId": "127472",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:35:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c0a6996e-24ac-4335-8b11-49beb09ab168",
-              "sessionId": "127556",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T20:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "20:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4590f101-d62a-43f7-84d2-88b6b330e815",
-              "sessionId": "127597",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:35:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3136f4e4-bd69-4ef1-a855-7d47c27c9f7a",
-              "sessionId": "127671",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 10",
-              "screenNumber": 10,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4fcbd434-ec2e-4d89-9d00-34bd278a8395",
-              "sessionId": "127562",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T20:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "20:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "2284dff7-4dd9-4a5c-a2ac-606dd8562f7b",
-              "sessionId": "127603",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:35:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1efd82e8-2c36-4b8f-973c-bc8c7fa45f8a",
-              "sessionId": "127676",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 10",
-              "screenNumber": 10,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b45454d9-cb2a-4056-8b0e-e15561398104",
-              "sessionId": "127568",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T20:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "20:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8f41fc55-ca25-4a7a-bb56-a7aef8f4cb00",
-              "sessionId": "127609",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:35:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "21075c61-4db6-440a-94fe-785efde235b1",
+              "id": "b94eda45-9da6-43d5-a30e-9c9cc2904cfe",
               "sessionId": "127572",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -3710,7 +5093,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "67e9ea1c-9fe5-4154-b2bd-35e5d8132df6",
+              "id": "cd10cc22-b933-469c-b152-010bc11e7376",
               "sessionId": "127613",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -3728,7 +5111,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "62632e19-3e1b-4f46-ae71-f2d302d09ef1",
+              "id": "a8c29469-ca73-4538-a451-ef5482208f55",
               "sessionId": "127726",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -3746,7 +5129,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "9c8ef53b-4a40-46a4-8bfb-6c3a76218ed3",
+              "id": "704a22db-8428-4c00-8800-9626ef09db80",
               "sessionId": "127743",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -3764,7 +5147,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "b988b178-afe8-4ef2-8049-8398bbb868f8",
+              "id": "87f74987-4092-4f2c-9f53-99678923f4bd",
               "sessionId": "127730",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -3800,115 +5183,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "99fde81c-ccbf-4473-8214-7b36c3b11eea",
-              "sessionId": "80070",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:35:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "f711928b-e9d9-41ef-9da7-a65c492abb94",
-              "sessionId": "80107",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:35:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "19da21e6-af7d-48af-b144-c6fd360bd447",
-              "sessionId": "80108",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:55:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "9b480dd3-a173-4f21-9b0a-e563a2bbb6e8",
-              "sessionId": "80148",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:35:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "92bdc16c-da6a-4f62-a36a-822d0d038972",
-              "sessionId": "80149",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:55:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8fd0d660-2e4d-40d5-8ad7-6defd08e1e06",
-              "sessionId": "80185",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:35:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:35",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "717041fd-6a99-4cb8-a108-53a8a77818e9",
+              "id": "b5a1ae11-dcc6-4dfb-bf60-391c56a3fed2",
               "sessionId": "80215",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -3926,7 +5201,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "b25c54fe-379c-4ec7-a565-a65b0bb2b4fb",
+              "id": "4ee0edf0-93ec-429a-82a4-9bb120b4831e",
               "sessionId": "80244",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -3944,7 +5219,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "768d3d8d-a27c-472c-84f1-17ca45ddd656",
+              "id": "35823a97-e44e-40e5-b67f-287b6df34651",
               "sessionId": "80273",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -3994,384 +5269,6 @@ exports.schedules = JSON.parse(`{
       "cinemaShows": [
         {
           "cinema": {
-            "externalId": "001",
-            "name": "Movie Montevideo",
-            "address": null,
-            "address2": null,
-            "city": null,
-            "parkingInfo": null,
-            "phoneNumber": null,
-            "contact": null,
-            "latitude": null,
-            "longitude": null,
-            "shows": null
-          },
-          "shows": [
-            {
-              "id": "43b432d3-2f4e-4533-8393-0cd0f6375d78",
-              "sessionId": "127476",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T17:40:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "17f4e3f7-8661-4e75-b1f3-4e331741ae82",
-              "sessionId": "127477",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T19:55:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6a487ec9-ca8e-45ff-af96-f8774e6259e0",
-              "sessionId": "127488",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:25:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b888d3f0-9359-42e0-93f5-6e0624435ee6",
-              "sessionId": "127615",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T17:40:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ca68537f-a612-4bfb-90ce-9a242c81b226",
-              "sessionId": "127653",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:25:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7a77b721-381b-4124-9629-27b7e82436c9",
-              "sessionId": "127654",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T01:00:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "01:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ac265163-e0a2-41f4-b522-5b6c210b8b0b",
-              "sessionId": "127621",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T17:40:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "338bd7ae-dc05-4684-b0f9-8585ff29ed3b",
-              "sessionId": "127622",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T19:55:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "06fd3509-6f97-4512-8e7e-cb39db4d698e",
-              "sessionId": "127658",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:25:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "9cad08e3-dd56-4385-9f9a-6b6dd58139de",
-              "sessionId": "127659",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T01:00:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "01:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1763d3aa-ab83-47e2-9891-e34dcc2622b6",
-              "sessionId": "127627",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T17:40:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "d6ee3da5-9f70-4371-b8f0-aa7b79b71521",
-              "sessionId": "127628",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T19:55:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1a6f12f3-4577-4004-bc72-9a210bc5dc9a",
-              "sessionId": "127663",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:25:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "dddeaf2f-eee0-4c04-adbb-905069d26a74",
-              "sessionId": "127632",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T19:55:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4afa5d7e-4536-4f30-aae2-fd0e69c01364",
-              "sessionId": "127667",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T22:25:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8e1785e2-e2cd-410f-881c-b7b9df75a440",
-              "sessionId": "127749",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T17:40:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "fad4cf6b-175f-492f-ba55-24ac71fc5a52",
-              "sessionId": "127765",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T22:25:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "92e9582f-b4fa-464a-b6a0-be89ab2809d3",
-              "sessionId": "127753",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T17:40:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "17:40",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6f7f4a64-b08c-4706-a6dc-baf360b5b6db",
-              "sessionId": "127754",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T19:55:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "19:55",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "cf9c71a5-f5cf-4f01-92bf-46f2ef66a621",
-              "sessionId": "127769",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T22:25:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "22:25",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 9",
-              "screenNumber": 9,
-              "categories": [],
-              "contentFormat": null
-            }
-          ],
-          "salesEnabled": false
-        },
-        {
-          "cinema": {
             "externalId": "002",
             "name": "Movie Portones",
             "address": null,
@@ -4386,241 +5283,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "f1af5532-944e-49dd-96e3-d2232ce35226",
-              "sessionId": "80068",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T18:05:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "18:05",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ac341c95-217f-4c28-85ea-1c541ae68747",
-              "sessionId": "80069",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T20:20:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "20:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6c3da9ac-634b-4978-8c38-f15283e62f9d",
-              "sessionId": "80059",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:20:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7a0bcee6-06d8-4190-ab09-8f2780b17764",
-              "sessionId": "80106",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T20:20:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "20:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "8cc9e549-cb03-4bb3-9f5a-6c1b95659694",
-              "sessionId": "80097",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:20:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1f00b2db-057a-4aea-a347-67bce08d3b5b",
-              "sessionId": "80093",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "acdce12f-3592-49bc-8f91-463950bb317a",
-              "sessionId": "80146",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T18:05:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "18:05",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "2742bc1d-e58f-4e44-92a9-306b20f6878e",
-              "sessionId": "80147",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T20:20:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "20:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4dfa139a-af74-4f34-800b-d7840b4d03a1",
-              "sessionId": "80137",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:20:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "f5dc435c-f66e-4894-8022-cdb72fe5fa9c",
-              "sessionId": "80132",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3abe320c-3e8b-472c-a8d6-fd2a4c284c59",
-              "sessionId": "80183",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T18:05:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "18:05",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1ace909b-8416-4ff6-a3cf-bd36ed40db91",
-              "sessionId": "80184",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T20:20:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "20:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 7",
-              "screenNumber": 7,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3952c025-bbb5-4ce0-9b4c-874c98172da6",
-              "sessionId": "80176",
-              "cinemaId": "002",
-              "cinemaName": "Movie Portones",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:20:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:20",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "bb4761cc-ce68-490c-a99f-d4bb6daa76ec",
+              "id": "4003c6d3-910d-43ff-bfcb-0594437ae07d",
               "sessionId": "80213",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4638,7 +5301,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "4f4a9553-7529-42d1-805b-ee2e257db59c",
+              "id": "0e893b92-b490-4f69-afbe-633a0ff00f84",
               "sessionId": "80214",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4656,7 +5319,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "9792baac-b610-47c3-8dc8-abd0aeb30b85",
+              "id": "61b84d20-a404-4bfd-a9e4-5cb57c80bd91",
               "sessionId": "80207",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4674,7 +5337,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "44cfcfe9-e818-4143-a219-9a906650972f",
+              "id": "d69a46fa-230d-446f-ba2e-f9feb1bed8e6",
               "sessionId": "80242",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4692,7 +5355,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "83a56827-dd32-4598-977b-cbb1973297d7",
+              "id": "81a81b66-63a7-43fd-aa4d-e9eb4ff623ca",
               "sessionId": "80243",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4710,7 +5373,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "3c64b90a-383a-4aea-8d59-113849e609c3",
+              "id": "a5f30817-abb9-4a30-a7c3-8a8ba1dab2e4",
               "sessionId": "80236",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4728,7 +5391,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "08395f74-0371-44a4-9a87-8bfff3491e55",
+              "id": "2b279167-5ad3-4ea3-b64e-cec0cce86197",
               "sessionId": "80271",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4746,7 +5409,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "1a593730-9251-4578-aca4-5579583fbb50",
+              "id": "9cc692ba-f687-483e-8812-7f7fccbb36f2",
               "sessionId": "80272",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4764,7 +5427,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "28cb6bcd-260b-49e4-b161-502ce37a2da9",
+              "id": "f8f3e243-0b52-4e4f-a800-8ca900428d5e",
               "sessionId": "80265",
               "cinemaId": "002",
               "cinemaName": "Movie Portones",
@@ -4778,6 +5441,150 @@ exports.schedules = JSON.parse(`{
               "formatLang": "2D Sub",
               "screenName": "SALA 5",
               "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "f23f9901-0d8a-4ad9-a0c1-92be54f3de7e",
+              "sessionId": "127632",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:55:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:55",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f27d2128-6e75-4692-bcbc-74655fdf4fa7",
+              "sessionId": "127667",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:25:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "8e350c8d-3822-4761-b4ea-62a4ae68cfd8",
+              "sessionId": "127749",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:40:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:40",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "959481a2-21f0-44fb-ae25-a785a1f5ce9d",
+              "sessionId": "127765",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c2a6e3d1-ab45-496c-8557-8e5fb77668fb",
+              "sessionId": "127753",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:40:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:40",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "8808d858-a483-4cd3-91f3-542c57d30ff2",
+              "sessionId": "127754",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:55:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:55",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "b8dfec50-7cd5-4b98-9f2e-b0f059177790",
+              "sessionId": "127769",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
               "categories": [],
               "contentFormat": null
             }
@@ -4800,151 +5607,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "53b8c1d4-f75b-4f07-baec-0c5c6d611c77",
-              "sessionId": "53648",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T20:05:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "20:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA E",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ff285574-7773-4f7e-a934-e9a06a8ed035",
-              "sessionId": "53643",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA D",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "baaf1208-4692-4efc-89f3-ebbfcfed4ba2",
-              "sessionId": "53669",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T20:05:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "20:05",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA E",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c8816d7b-7697-4019-b0ab-1ac99f835d99",
-              "sessionId": "53664",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA D",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "a004199a-a1d3-4a8c-a2e4-9b22cfe02ce2",
-              "sessionId": "53671",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T01:10:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "01:10",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA E",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ed17f86e-ec32-4003-b9dc-e7ba19bd14b7",
-              "sessionId": "53685",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA D",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "83ee2e0d-5763-4bcc-8a97-4ab23bfa8622",
-              "sessionId": "53692",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T01:10:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "01:10",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA E",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "70a9f74c-2874-4e39-b449-346648e8b406",
-              "sessionId": "53706",
-              "cinemaId": "003",
-              "cinemaName": "Movie Punta Carretas",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA D",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "3521af81-3e74-4368-94ec-8389b8404aa4",
+              "id": "3db228d7-7b35-47ce-85d9-590079b0311f",
               "sessionId": "53732",
               "cinemaId": "003",
               "cinemaName": "Movie Punta Carretas",
@@ -4962,7 +5625,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "c0f81642-fb0e-4da7-97db-9c1597aab66d",
+              "id": "1ad59d37-9e04-405a-9a39-c01408ab89ec",
               "sessionId": "53727",
               "cinemaId": "003",
               "cinemaName": "Movie Punta Carretas",
@@ -4980,8 +5643,8 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "2b29a914-849d-4c92-b772-728706888499",
-              "sessionId": "53747",
+              "id": "e445ec59-9bb2-4151-a1a6-e154c649b0ea",
+              "sessionId": "53773",
               "cinemaId": "003",
               "cinemaName": "Movie Punta Carretas",
               "cinema": null,
@@ -4998,8 +5661,8 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "33a282de-8c60-4755-9d07-6013fce1238c",
-              "sessionId": "53744",
+              "id": "3b895f00-2965-4758-8e4d-5083f966fd2f",
+              "sessionId": "53770",
               "cinemaId": "003",
               "cinemaName": "Movie Punta Carretas",
               "cinema": null,
@@ -5016,7 +5679,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "4ac254c7-d134-4447-914f-abec10372d84",
+              "id": "72c36114-f551-47be-a328-d8727f955224",
               "sessionId": "53757",
               "cinemaId": "003",
               "cinemaName": "Movie Punta Carretas",
@@ -5052,79 +5715,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "22b6d748-6d71-4252-9919-1a889e5ccdb4",
-              "sessionId": "39542",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T20:15:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "20:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c5da2186-9392-4be8-a674-87d45f1af5c6",
-              "sessionId": "39570",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T20:15:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "20:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5b107432-fc2d-4b73-8f74-cd5b91796768",
-              "sessionId": "39598",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T20:15:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "20:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "f63c81b2-3dbb-4797-a982-2d7b79444b26",
-              "sessionId": "39626",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T20:15:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "20:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "47fcca71-03ac-4d65-bc02-5c1c8273dbfb",
+              "id": "9ba85bd1-6a7a-4e26-9f4f-97710eb59043",
               "sessionId": "39654",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -5142,7 +5733,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "8ed7d65a-6568-4dfc-875c-05cbdaf73432",
+              "id": "c3f0e7a8-ca4a-42a9-a778-a96473cb4851",
               "sessionId": "39673",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -5160,7 +5751,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "c1ebe0f0-0e8e-493a-9ff5-fffdd848a9b8",
+              "id": "0bc9fa37-bcb2-4976-8d91-ca1df6c0a0b9",
               "sessionId": "39692",
               "cinemaId": "005",
               "cinemaName": "Movie Nuevocentro",
@@ -5174,6 +5765,700 @@ exports.schedules = JSON.parse(`{
               "formatLang": "2D Esp",
               "screenName": "Sala 5",
               "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "79899429-931c-4071-91d4-9e733c654f1e",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "d04dde3f-3800-48f1-bcfa-5ad409e62008",
+              "sessionId": "127698",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T18:25:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "18:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "b116567a-25e6-48e8-85b2-54080ad7ede8",
+              "sessionId": "127699",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:35:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f483b623-935e-4485-8464-c394dfd6ba72",
+              "sessionId": "127776",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:15",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "00202e26-a43e-49d6-b581-9554315208ad",
+              "sessionId": "127777",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "bd1fe92b-966a-4a54-9ff3-bb602773b0b4",
+              "sessionId": "127778",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:15",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f0c90a19-3f57-466f-aef3-ef41b5256e55",
+              "sessionId": "127779",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:15",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala Teatro/3D",
+              "screenNumber": 11,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f6fed858-28e6-41eb-a17e-f84ad575b306",
+              "sessionId": "127781",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "43e68d02-60ea-4dc1-a622-3df5d3f3ddec",
+              "sessionId": "80217",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T18:50:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "18:50",
+              "format": "4",
+              "translation": "2",
+              "formatLang": "4D Esp",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a07fd126-3cb3-481b-bbbf-aa5ea52856fd",
+              "sessionId": "80192",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:20:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d64b4437-2177-46b6-ae43-bc4e51d2938e",
+              "sessionId": "80218",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:45:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:45",
+              "format": "4",
+              "translation": "3",
+              "formatLang": "4D Sub",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "61f2b3ed-6280-4d95-95dd-2dedda7cfca5",
+              "sessionId": "80193",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:10:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "36fd62ec-4bc1-4d59-b8b0-de8204127991",
+              "sessionId": "80230",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:20",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f046910f-333f-4f3c-a342-9f4f5f49ad0f",
+              "sessionId": "80246",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T18:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "18:50",
+              "format": "4",
+              "translation": "2",
+              "formatLang": "4D Esp",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d5513891-692a-4d7c-a9da-5e28600213db",
+              "sessionId": "80221",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "35a7875f-cc0b-4cc0-8586-b6537d03a04d",
+              "sessionId": "80247",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T21:45:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "21:45",
+              "format": "4",
+              "translation": "3",
+              "formatLang": "4D Sub",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c5f210f4-e683-49cb-9c63-143f66d6157b",
+              "sessionId": "80222",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:10:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d92ded58-258d-49f0-9b36-efd1c8ab892c",
+              "sessionId": "80259",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:20:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:20",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "835f23f2-c6d0-4af1-a9f3-5dc58bcfe297",
+              "sessionId": "80275",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T18:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "18:50",
+              "format": "4",
+              "translation": "2",
+              "formatLang": "4D Esp",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "0875d9cd-abdc-4df0-9ce8-a78e38706a5f",
+              "sessionId": "80250",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:20:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a19c6827-776c-4156-8e40-b981192fef2a",
+              "sessionId": "80276",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:45:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:45",
+              "format": "4",
+              "translation": "3",
+              "formatLang": "4D Sub",
+              "screenName": "SALA 4D",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "6086da3d-5834-4213-8dc6-f0379fd009d6",
+              "sessionId": "80251",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:10:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "b0bee31e-c1d5-4776-bb03-0639784a3e55",
+              "sessionId": "39648",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:05:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "96e44ab6-8704-4832-8862-5c0e04ea629a",
+              "sessionId": "39649",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:00:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a2f2c597-1b52-4b34-b98b-812fecc2b2b0",
+              "sessionId": "39668",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "eb8c7d3e-aad3-4597-943a-99fa7fa2ef57",
+              "sessionId": "39669",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "e4d2c97c-39e9-4410-b789-8823a080593d",
+              "sessionId": "39670",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:00:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "488f6881-ada0-4229-bea0-d851438e214b",
+              "sessionId": "39687",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c816bf00-3158-4574-b18f-7fb84cb7f5a8",
+              "sessionId": "39688",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3625609b-7c89-4a52-b841-b458c8314cac",
+              "sessionId": "39689",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "3",
+              "translation": "2",
+              "formatLang": "3D Esp",
+              "screenName": "Sala 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "f588cca8-e1b9-4ed9-bc90-71701e3eea35",
+              "sessionId": "53733",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:20:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d002092b-82ac-483d-a3a7-21b9223282c0",
+              "sessionId": "53769",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:00:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:00",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "dc10dce2-49c2-4d63-8d85-55dcb34a2f54",
+              "sessionId": "53774",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "cf43f018-2a00-4046-9e60-d356f52f23f0",
+              "sessionId": "53755",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:00",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA D",
+              "screenNumber": 4,
               "categories": [],
               "contentFormat": null
             }
@@ -5224,151 +6509,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "6b9d53e0-c58b-4dd7-b226-a217b80f51c0",
-              "sessionId": "127482",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T18:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "18:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b2d06daa-c030-4aed-9059-a9f8bc21d93d",
-              "sessionId": "127454",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T21:50:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "21:50",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "675ec8b5-469c-463e-9df4-aa7ded0d00e7",
-              "sessionId": "127635",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T18:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "18:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "61838fad-84da-4084-b2ab-6ca00e85555a",
-              "sessionId": "127539",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T21:40:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "21:40",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7a65b8d7-2d8f-49b4-9bec-dbff0d9d9594",
-              "sessionId": "127640",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T18:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "18:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "1272e379-6241-4ada-bdd6-f748e1b792cf",
-              "sessionId": "127544",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T21:40:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "21:40",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b902cc28-b898-434e-9f37-08009813c91a",
-              "sessionId": "127645",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T18:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "18:30",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ef858433-b3d6-45e3-b3ef-4b8470a9704b",
-              "sessionId": "127549",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T21:40:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "21:40",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 3",
-              "screenNumber": 3,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "084a5a38-5d01-47f7-9459-61ef79af9eb8",
+              "id": "d216c251-092a-4f44-9e20-d851f0cf79ef",
               "sessionId": "127648",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5386,7 +6527,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "a304d581-e97f-4d4a-8550-f3dfe1e3685c",
+              "id": "cc5b2849-ac69-4dfe-8772-3a74678896e8",
               "sessionId": "127553",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5404,7 +6545,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "70817e3c-b3c4-4f11-962a-70ad0233312b",
+              "id": "d4cbb960-1bf9-49cc-8f2f-d712af46b692",
               "sessionId": "127757",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5422,7 +6563,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "fccc3e49-8d05-4435-8329-07b2939ce2cb",
+              "id": "aca7e8ba-1ff8-4333-9ba0-a387426940c4",
               "sessionId": "127719",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5440,7 +6581,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "7ce92ce0-1e71-496e-85d2-0a14c739fee8",
+              "id": "8633c3be-54a7-4cbb-bebf-524548c5f2eb",
               "sessionId": "127760",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5458,7 +6599,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "3937e074-511a-4095-9376-25088115f980",
+              "id": "0f9830e2-dc51-4298-a504-1b679723c2d0",
               "sessionId": "127723",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5467,6 +6608,2296 @@ exports.schedules = JSON.parse(`{
               "date": "2018-03-14T22:00:00",
               "dateToDisplay": "Miércoles 14, Mar.",
               "timeToDisplay": "22:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "f246b568-70a7-4d45-be42-f7dac104fac3",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "396b7a18-9be4-45e2-8228-f60541d9360e",
+              "sessionId": "80195",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:00:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "75106b65-cd6f-4876-9b55-93bb3e6101f0",
+              "sessionId": "80203",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:50:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "75f0dea3-99f9-4929-8ec8-d43c947351eb",
+              "sessionId": "80224",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:00:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1807fa16-e7b9-4360-831d-68d63371bb9b",
+              "sessionId": "80232",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T21:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "eecb295f-d231-4fc2-8e3e-a024d0083de6",
+              "sessionId": "80253",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3b0777d8-ad87-4428-8ba4-c3c3d05da741",
+              "sessionId": "80261",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "c0644de1-1a68-4d3a-903a-4ee298c2eec6",
+              "sessionId": "127666",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:45:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d6a27232-d5f3-4502-a8c7-6ac3d42115d2",
+              "sessionId": "127763",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T17:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "17:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3361cd9d-ba87-4e5c-a587-3f313e432127",
+              "sessionId": "127764",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:45:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "0044b5d7-a0b7-4bca-af31-d730b1045250",
+              "sessionId": "127767",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T17:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "17:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "32808ccf-309c-475a-9924-6af3e531227c",
+              "sessionId": "127768",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:45:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "9938568f-81a5-4d4a-b837-416b1c3dd468",
+              "sessionId": "53726",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:50:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a2f2f7a1-9b07-49f2-8378-f8abb8a14fc0",
+              "sessionId": "53743",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f184bb1e-eeb3-4125-ac2b-2c5969f4917d",
+              "sessionId": "53756",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA E",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "b087c40c-3079-4a11-bf7e-2cd8950c3393",
+              "sessionId": "53751",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:15",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "3d1668e4-c4df-4cd3-85c6-01e387a65ce6",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "1a037498-2361-4ca8-b7b1-1d9128b91aab",
+              "sessionId": "127682",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:05:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "689cd519-9b16-4c86-976e-c49ee1a7078b",
+              "sessionId": "127683",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:50:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "2e25f2c6-17dd-4627-b151-f3c06c7a16c7",
+              "sessionId": "127762",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c5e815bc-4f28-4a69-9aa5-ae58697e90b3",
+              "sessionId": "127770",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c0eb51d3-b6fb-4b18-a825-9514babe3682",
+              "sessionId": "127771",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "745cafee-c7a4-4c61-a4d3-4b9e83dc6be9",
+              "sessionId": "127772",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T21:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1893e5a1-59d8-48a2-a9e7-75b7767d3b72",
+              "sessionId": "127766",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 9",
+              "screenNumber": 9,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "778c9586-71c5-41d8-812d-2a408f7c5790",
+              "sessionId": "127773",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "48ec9c7c-06de-44f9-9d1b-eb5f6df054f2",
+              "sessionId": "127774",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "64b3991f-f545-45ef-b310-23b8b53f7d51",
+              "sessionId": "127775",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 10",
+              "screenNumber": 10,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "315a56b6-129a-4315-a629-9e4d8e0df99d",
+              "sessionId": "80202",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:10:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "db8feca9-dcd9-4834-b5b3-d28c075c7353",
+              "sessionId": "80211",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:00:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "9ab63b27-34c4-4502-ba46-e297b098dfcd",
+              "sessionId": "80237",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ddfa7e44-560b-4986-9d8a-b9611a075d20",
+              "sessionId": "80223",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "bf86c6d9-d8ac-44eb-80e4-9deeb2e5de23",
+              "sessionId": "80231",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:10:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "052536d7-fdda-428d-9f3d-488f9acbaac4",
+              "sessionId": "80240",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:00:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "59eabc7c-e273-40ff-982b-4b87f833b4ea",
+              "sessionId": "80266",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "69894cc8-6a0f-4bcb-8a4b-b38d061db121",
+              "sessionId": "80252",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:20:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "2eed3b7c-9940-4eef-9911-869493b94ecd",
+              "sessionId": "80260",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:10:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "3e26dc31-4882-4e01-9ff9-0dc7e00ddaf6",
+              "sessionId": "80269",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:00:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:00",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "7d23f5d2-a4da-4208-a610-de3adc4db214",
+              "sessionId": "53721",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:20:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "e3b0e01e-b7b4-43fb-bdab-4e1a43fdcf99",
+              "sessionId": "53722",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:10:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "601df7be-0d35-43bf-8024-a1d9e51fede9",
+              "sessionId": "53768",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "31aefa36-1b19-4b0a-a0f9-de3f3fe5efbb",
+              "sessionId": "53765",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:50:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "606a40ad-2ef9-4f04-b9ee-bcf78bc0bead",
+              "sessionId": "53766",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "413ae5e3-8a08-49d9-b0a3-282a9c7e7db3",
+              "sessionId": "53767",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:10:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "da2766ba-d5a6-403d-bce5-ef2cdd22f45f",
+              "sessionId": "53749",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "fe6af286-94e3-43e5-85e8-6a3c16ac1b15",
+              "sessionId": "53752",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:50:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:50",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "0cd7eac8-5212-4e45-80da-cc845dcb3594",
+              "sessionId": "53762",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:40:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:40",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA D",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1c901f01-5bd9-42b1-8614-a959371c9991",
+              "sessionId": "53753",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:10:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:10",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA B",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "6bfcc6b2-a857-4f38-9c9e-35cdd6402376",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "31898ff2-62c2-43d0-9c44-f3c47fc860fa",
+              "sessionId": "127552",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:20:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "c711b387-6c5e-44f2-a217-af8ec42c2b5b",
+              "sessionId": "127535",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:25:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:25",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "f9cace5c-5e36-4d9a-b22b-6d1217ce7bd4",
+              "sessionId": "127718",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "87204679-25bd-4f3e-aefc-d5456b8ca983",
+              "sessionId": "127715",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "35fad4b4-b1fc-4b5f-aa26-698af6e05b04",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "521d3a5f-8ab5-41b2-af4a-3fd5194187ef",
+              "sessionId": "127592",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T19:35:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "e19d6984-367f-4e27-b074-5adddb08659e",
+              "sessionId": "127633",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:15:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:15",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "0814a6a2-25c9-49a6-829a-42550e76bfa1",
+              "sessionId": "127734",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T19:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "2403d92a-dcc2-452c-9b67-a6413f179ac3",
+              "sessionId": "127751",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:15",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "7e52e946-0687-46cc-82e3-e8db53c09795",
+              "sessionId": "127738",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T19:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "19:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "aa1c061c-e9ad-4b65-af32-e8f800441169",
+              "sessionId": "127755",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:15",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "af97b972-a1f9-41ce-92d0-57c09e1754a3",
+              "sessionId": "39633",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:20:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "fc3d22f6-1fd0-42d3-9d41-5bc1e3f2b41a",
+              "sessionId": "39659",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:20:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "9a1359b4-9d4a-40e5-9f12-9c60a7572ea8",
+              "sessionId": "39678",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:20:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:20",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "251c1d79-80dc-4a6c-ae2d-619ac3cb17d9",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "f4c30104-4687-4f7f-ba43-407775245950",
+              "sessionId": "127649",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:15:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 8",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "96695819-b57c-40b7-8c9f-e4c44f09980e",
+              "sessionId": "127758",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T21:15:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "21:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 8",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "2d8b0a73-2b4e-492e-b353-d7739a2fe816",
+              "sessionId": "127761",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:15:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:15",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 8",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "2b9ae25d-5aa9-45a5-8a36-1d2c5fdf37ec",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "c9d6e03e-d70c-4551-ab84-e7ce5402aadf",
+              "sessionId": "80196",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T21:40:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "21:40",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "6b7ea791-d341-49b9-ad41-311b1aa03093",
+              "sessionId": "80225",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T21:40:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "21:40",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "86819155-ae36-4ffa-b1c6-ed7f8fe283bf",
+              "sessionId": "80254",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T21:40:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "21:40",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "34b5b56e-45b3-4e01-bf3f-143b0f3417bd",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "506e5ea0-c888-47b0-9e8e-d79ef1a44194",
+              "sessionId": "39655",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:30:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "1c66ec9c-dcf3-431f-af5f-ed6ca6604672",
+              "sessionId": "39674",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "ee070f51-9da5-48d9-b110-97c67df61eac",
+              "sessionId": "39693",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 5",
+              "screenNumber": 5,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "d286d40e-7be9-46b7-a649-69367ccc0d4e",
+              "sessionId": "127573",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-12T22:45:00",
+              "dateToDisplay": "Lunes 12, Mar.",
+              "timeToDisplay": "22:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "19958994-9d4a-49fe-b031-79f2fe79fa2c",
+              "sessionId": "127727",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T22:45:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "22:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d042ffd4-2c6a-46a5-85b3-b661690deb02",
+              "sessionId": "127731",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T22:45:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "22:45",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 4",
+              "screenNumber": 4,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "2f03096a-8fa0-4e6e-b422-19d44fdd2d08",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "5c209f55-dfe6-41da-b677-c09eae6b40f6",
+              "sessionId": "127716",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T14:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "d062aa65-03eb-400b-8bf2-f5578a1c1aa0",
+              "sessionId": "127720",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T14:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "14:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "005",
+            "name": "Movie Nuevocentro",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "05f9cdf1-dadc-4170-8d26-3cc8e8a12ef7",
+              "sessionId": "39656",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:30:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "6cc91061-f7c5-4a38-b359-eb4b52b170ba",
+              "sessionId": "39675",
+              "cinemaId": "005",
+              "cinemaName": "Movie Nuevocentro",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:30:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:30",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "Sala 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "afb23872-21b7-4e86-888a-5d6c2c2ab7c1",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "be43f186-f6a2-42fc-9c62-b7d29a38e80a",
+              "sessionId": "127700",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:05",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 1",
+              "screenNumber": 1,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "218a4d9f-441e-4f1a-a560-f463b41ffd0b",
+              "sessionId": "127704",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:05",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 2",
+              "screenNumber": 2,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        },
+        {
+          "cinema": {
+            "externalId": "002",
+            "name": "Movie Portones",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "01cd62ae-53ef-4be8-a693-1d688c754ddf",
+              "sessionId": "80241",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a4573295-0b96-4845-8e9f-72d7971b6634",
+              "sessionId": "80270",
+              "cinemaId": "002",
+              "cinemaName": "Movie Portones",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:35",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "0a36613f-2d6f-4aa1-a1f5-f403521d9ade",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "984dafeb-5b1d-4242-9d18-82d7e1884d94",
+              "sessionId": "127740",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:25:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "430387d7-6d91-44c2-aafd-c1f646bbfd2c",
+              "sessionId": "127744",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:25:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:25",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 6",
+              "screenNumber": 6,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "01ac7a76-0269-436b-bb9d-dfe35582c4a6",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "ea0c37fb-4d7f-4dd9-8ab4-68c6eb5546bc",
+              "sessionId": "127748",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T15:40:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "15:40",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "6baf8d66-eafb-461c-94b2-350fac1d2fd6",
+              "sessionId": "127752",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T15:40:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "15:40",
+              "format": "2",
+              "translation": "2",
+              "formatLang": "2D Esp",
+              "screenName": "SALA 7",
+              "screenNumber": 7,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "b682dbb6-5cb0-418b-be6d-78e1d2be4221",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "abbe15dd-6be7-44a9-87d4-a50e79f2cffb",
+              "sessionId": "127756",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:05:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 8",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "a47ddfc7-2b4a-4bee-b23a-5bdeedcf870e",
+              "sessionId": "127759",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:05:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:05",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 8",
+              "screenNumber": 8,
+              "categories": [],
+              "contentFormat": null
+            }
+          ],
+          "salesEnabled": false
+        }
+      ],
+      "filters": {
+        "formats": null,
+        "categories": null,
+        "languages": null,
+        "cinemas": [
+          {
+            "id": "001",
+            "name": "Movie Montevideo"
+          },
+          {
+            "id": "002",
+            "name": "Movie Portones"
+          },
+          {
+            "id": "003",
+            "name": "Movie Punta Carretas"
+          },
+          {
+            "id": "005",
+            "name": "Movie Nuevocentro"
+          }
+        ]
+      }
+    },
+    {
+      "contentId": "9ce6d596-fe89-4255-946a-67d464f76233",
+      "cinemaShows": [
+        {
+          "cinema": {
+            "externalId": "001",
+            "name": "Movie Montevideo",
+            "address": null,
+            "address2": null,
+            "city": null,
+            "parkingInfo": null,
+            "phoneNumber": null,
+            "contact": null,
+            "latitude": null,
+            "longitude": null,
+            "shows": null
+          },
+          "shows": [
+            {
+              "id": "b63b9dc1-2178-4fc1-8a66-950f81864913",
+              "sessionId": "127717",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-13T16:35:00",
+              "dateToDisplay": "Martes 13, Mar.",
+              "timeToDisplay": "16:35",
+              "format": "2",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA 3",
+              "screenNumber": 3,
+              "categories": [],
+              "contentFormat": null
+            },
+            {
+              "id": "73472f23-7b39-4050-8644-fca257a81a86",
+              "sessionId": "127721",
+              "cinemaId": "001",
+              "cinemaName": "Movie Montevideo",
+              "cinema": null,
+              "content": null,
+              "date": "2018-03-14T16:35:00",
+              "dateToDisplay": "Miércoles 14, Mar.",
+              "timeToDisplay": "16:35",
               "format": "2",
               "translation": "3",
               "formatLang": "2D Sub",
@@ -5522,115 +8953,7 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "fd8610b8-d34f-4ac1-b7c0-215a5bb6c5e0",
-              "sessionId": "127466",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:10:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:10",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "afd8f83c-c7a5-4981-99f4-aeb0ac31f5ec",
-              "sessionId": "127577",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:00:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4f74b15a-b075-42c8-bc67-01b4a68d5165",
-              "sessionId": "127504",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:40:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:40",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "df1f82b6-9a58-4448-a5c1-30d8ae5e66c6",
-              "sessionId": "127583",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:00:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "edc4d33c-1eb7-4934-8e1e-d3416b90a717",
-              "sessionId": "127509",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:40:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:40",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 1",
-              "screenNumber": 1,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ef2072d5-f7d6-45a8-9ea7-541b10a249e4",
-              "sessionId": "127589",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:00:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:00",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c5ad4e29-b8b1-41a0-86b4-1b5e791ffc5f",
+              "id": "b6f5e260-eb9a-49bb-84b6-1152eb549eb5",
               "sessionId": "127735",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5648,7 +8971,7 @@ exports.schedules = JSON.parse(`{
               "contentFormat": null
             },
             {
-              "id": "5ab8f1e0-8956-45e2-8cdc-28dde6c159e9",
+              "id": "45dec8a3-f1f3-40db-be5a-3f55e28cd8d2",
               "sessionId": "127739",
               "cinemaId": "001",
               "cinemaName": "Movie Montevideo",
@@ -5694,12 +9017,12 @@ exports.schedules = JSON.parse(`{
       }
     },
     {
-      "contentId": "34b5b56e-45b3-4e01-bf3f-143b0f3417bd",
+      "contentId": "b9fed310-034b-4dd8-ad62-cc91acdb5750",
       "cinemaShows": [
         {
           "cinema": {
-            "externalId": "005",
-            "name": "Movie Nuevocentro",
+            "externalId": "003",
+            "name": "Movie Punta Carretas",
             "address": null,
             "address2": null,
             "city": null,
@@ -5712,498 +9035,20 @@ exports.schedules = JSON.parse(`{
           },
           "shows": [
             {
-              "id": "46a36d77-19ed-4d35-8876-dc786bd1fc7a",
-              "sessionId": "39543",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
+              "id": "c8a79390-84a5-4fce-afbe-906e47bafe53",
+              "sessionId": "53759",
+              "cinemaId": "003",
+              "cinemaName": "Movie Punta Carretas",
               "cinema": null,
               "content": null,
-              "date": "2018-03-08T22:30:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "710dd5ea-38f6-498e-ab9e-c606f48e4078",
-              "sessionId": "39571",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:30:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "49459441-4c8c-4604-b97a-17749512618e",
-              "sessionId": "39566",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T01:05:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "01:05",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "c1f9a91c-2872-4eda-8921-19453d88bd9d",
-              "sessionId": "39599",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:30:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "ca33096d-06ed-49aa-8754-0a3904df94ba",
-              "sessionId": "39594",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T01:05:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "01:05",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "5480e4ae-049f-465a-8ff6-607230c8d457",
-              "sessionId": "39627",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:30:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "7711aafa-1c74-406f-bd13-6c8d8f52b405",
-              "sessionId": "39655",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T22:30:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "4698c9ca-bfcd-4e7c-b360-1185afa0f2a7",
-              "sessionId": "39674",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T22:30:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "22:30",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
-              "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b7d93366-12b6-4996-a561-2cf4586b6f84",
-              "sessionId": "39693",
-              "cinemaId": "005",
-              "cinemaName": "Movie Nuevocentro",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T22:30:00",
+              "date": "2018-03-14T17:55:00",
               "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "22:30",
+              "timeToDisplay": "17:55",
               "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "Sala 5",
+              "translation": "3",
+              "formatLang": "2D Sub",
+              "screenName": "SALA E",
               "screenNumber": 5,
-              "categories": [],
-              "contentFormat": null
-            }
-          ],
-          "salesEnabled": false
-        },
-        {
-          "cinema": {
-            "externalId": "001",
-            "name": "Movie Montevideo",
-            "address": null,
-            "address2": null,
-            "city": null,
-            "parkingInfo": null,
-            "phoneNumber": null,
-            "contact": null,
-            "latitude": null,
-            "longitude": null,
-            "shows": null
-          },
-          "shows": [
-            {
-              "id": "c6d8c1d5-0042-4ef5-a1a8-f81ff45721ce",
-              "sessionId": "127460",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-08T22:45:00",
-              "dateToDisplay": "Jueves 8, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "90ab283a-926e-43d3-aa46-e415332be60a",
-              "sessionId": "127557",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T22:45:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "cd74f90c-12d3-4658-bbee-50f4b34b4d8f",
-              "sessionId": "127598",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T00:50:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "00:50",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "73792e1a-1284-434d-9daf-f2f4dc8429fc",
-              "sessionId": "127563",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T22:45:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "97029dbe-8bc5-4db0-897d-392d35d2e137",
-              "sessionId": "127604",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T00:50:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "00:50",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 6",
-              "screenNumber": 6,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "b567415c-812d-45a1-9309-3961f4b64d93",
-              "sessionId": "127569",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T22:45:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "097d6549-2237-4a85-b5fc-584c4397f712",
-              "sessionId": "127573",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T22:45:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "e8bc8133-bcb7-447f-b24b-e336ffccce4c",
-              "sessionId": "127727",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T22:45:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "761bd021-b3be-4160-804f-1a7bbf631de5",
-              "sessionId": "127731",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T22:45:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "22:45",
-              "format": "2",
-              "translation": "3",
-              "formatLang": "2D Sub",
-              "screenName": "SALA 4",
-              "screenNumber": 4,
-              "categories": [],
-              "contentFormat": null
-            }
-          ],
-          "salesEnabled": false
-        }
-      ],
-      "filters": {
-        "formats": null,
-        "categories": null,
-        "languages": null,
-        "cinemas": [
-          {
-            "id": "001",
-            "name": "Movie Montevideo"
-          },
-          {
-            "id": "002",
-            "name": "Movie Portones"
-          },
-          {
-            "id": "003",
-            "name": "Movie Punta Carretas"
-          },
-          {
-            "id": "005",
-            "name": "Movie Nuevocentro"
-          }
-        ]
-      }
-    },
-    {
-      "contentId": "251c1d79-80dc-4a6c-ae2d-619ac3cb17d9",
-      "cinemaShows": [
-        {
-          "cinema": {
-            "externalId": "001",
-            "name": "Movie Montevideo",
-            "address": null,
-            "address2": null,
-            "city": null,
-            "parkingInfo": null,
-            "phoneNumber": null,
-            "contact": null,
-            "latitude": null,
-            "longitude": null,
-            "shows": null
-          },
-          "shows": [
-            {
-              "id": "6371b0b7-8a99-4e9c-92d6-76cf6bbc7bfd",
-              "sessionId": "127636",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-09T21:15:00",
-              "dateToDisplay": "Viernes 9, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "0eee9e53-62b7-47c0-a979-749aa9055268",
-              "sessionId": "127641",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-10T21:15:00",
-              "dateToDisplay": "Sábado 10, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "6eb84e50-3f35-47ea-8f83-e19f5761f826",
-              "sessionId": "127646",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-11T21:15:00",
-              "dateToDisplay": "Domingo 11, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "d4bfdf73-9f86-431c-bcd1-78d19a4bf640",
-              "sessionId": "127649",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-12T21:15:00",
-              "dateToDisplay": "Lunes 12, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "9c02a59b-46ab-4d60-91c4-d3506b278e35",
-              "sessionId": "127758",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-13T21:15:00",
-              "dateToDisplay": "Martes 13, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
-              "categories": [],
-              "contentFormat": null
-            },
-            {
-              "id": "e59e3be0-a4c2-4ddb-be77-b4746d15d340",
-              "sessionId": "127761",
-              "cinemaId": "001",
-              "cinemaName": "Movie Montevideo",
-              "cinema": null,
-              "content": null,
-              "date": "2018-03-14T21:15:00",
-              "dateToDisplay": "Miércoles 14, Mar.",
-              "timeToDisplay": "21:15",
-              "format": "2",
-              "translation": "2",
-              "formatLang": "2D Esp",
-              "screenName": "SALA 8",
-              "screenNumber": 8,
               "categories": [],
               "contentFormat": null
             }
@@ -6237,22 +9082,6 @@ exports.schedules = JSON.parse(`{
     }
   ],
   "availableDays": [
-    {
-      "id": "08/03/2018",
-      "dateTime": "2018-03-08T00:00:00"
-    },
-    {
-      "id": "09/03/2018",
-      "dateTime": "2018-03-09T00:00:00"
-    },
-    {
-      "id": "10/03/2018",
-      "dateTime": "2018-03-10T00:00:00"
-    },
-    {
-      "id": "11/03/2018",
-      "dateTime": "2018-03-11T00:00:00"
-    },
     {
       "id": "12/03/2018",
       "dateTime": "2018-03-12T00:00:00"
