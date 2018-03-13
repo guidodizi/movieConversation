@@ -1,4 +1,4 @@
-const database = require('../database');
+const database = require('../database_file');
 const { getUserContext, mergeUserContext, updateUserContext } = require('../userContext');
 const constants = require('../constants');
 const moment = require('moment-timezone');
