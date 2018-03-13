@@ -26,6 +26,10 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
             handelQuickRepliesResponse(sender_psid, text_response, context);
             break;
         }
+        case "dont_show": {
+            //used when a response is just jumping to another and doesnt need to display anything
+            break;
+        }
         default: {
             // Directly respond to user
             sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); } );

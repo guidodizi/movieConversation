@@ -3,6 +3,7 @@ const { getUserContext, mergeUserContext, updateUserContext } = require('../user
 const constants = require('../constants');
 const moment = require('moment-timezone');
 const { sendAPI, callSendAPI } = require('./sendAPI');
+const { schedule_getIdMovies } = require('./handleResponse/dataFunctions')
 
 
 /**
@@ -14,24 +15,8 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
     await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
     try {
         //ids of movies available for selected date
-        const id_movie_for_date = [];
-        database.schedules.contentCinemaShows.forEach(contentCinema => {
-            //Find content for selected movie
-            contentCinema.cinemaShows.forEach(cinemaShow => {
-                cinemaShow.shows.some(show => {
-                    //Check if show is for selected date
-                    var show_date = moment(show.date).dayOfYear();
-                    var user_date = moment(context.data.date).dayOfYear();
-                    if (show_date === user_date) {
-                        id_movie_for_date.push(contentCinema.contentId)
-                        //Exit iteration
-                        return true;
-                    }
-                });
-            });
-
-        });
-
+        const id_movies = schedule_getIdMovies(context.data.date);
+        
         //Set pageview to 0 on context
         if (!context.data.movies_pageview) {
             const data = {
@@ -46,7 +31,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
         var movies_shown = database.movies.slice(start, end);
 
         movies_shown.forEach(movie => {
-            if (id_movie_for_date.indexOf(movie.content.id) !== -1) {
+            if (id_movies.indexOf(movie.content.id) !== -1) {
                 response.attachment.payload.elements.push({
                     title: movie.content.title,
                     subtitle: movie.content.synopsis,
@@ -97,32 +82,12 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
     //Answer user that search has began
     await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
     try {
-        //ids of movies available for selected date
-        const id_movie_for_date = [];
-        database.schedules.contentCinemaShows.forEach(contentCinema => {
-            //Find content for selected movie
-            contentCinema.cinemaShows.forEach(cinemaShow => {
-                //Check if cinemas is for selected place            
-                if (cinemaShow.cinema.name.toLowerCase() === context.data.place.toLowerCase()) {
-                    cinemaShow.shows.some(show => {
-                        //Check if show is for selected date
-                        var show_date = moment(show.date).dayOfYear();
-                        var user_date = moment(context.data.date).dayOfYear();
-                        if (show_date === user_date) {
-
-                            //Movie found is displayed on selected (date, place)
-                            id_movie_for_date.push(contentCinema.contentId)
-                            //Exit iteration
-                            return true;
-                        }
-                    });
-                }
-            });
-
-        });
+        //ids of movies available for selected date and place
+        const id_movies = schedule_getIdMovies(cpmtext.data.date, context.data.place);
+        
         // array of ALL movies that fullfil whats needed
         const searched_movies = database.movies.filter(movie => {
-            return (id_movie_for_date.indexOf(movie.content.id) !== -1)
+            return (id_movies.indexOf(movie.content.id) !== -1)
         });
 
         //Set pageview to 0 on context
@@ -188,11 +153,15 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
+        //ids of movies available for selected date        
+        const id_movies = schedule_getIdMovies(context.data.date);
+
         // array of ALL movies that fullfil whats needed        
-        const searched_movies = database.movies.filter(movie => {
+        var searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-            return (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1)
+            return ((id_movies.indexOf(movie.content.id) !== -1) && 
+            (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
 
         //Set pageview to 0 on context
@@ -262,19 +231,15 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
+        //ids of movies available for selected date and place        
+        const id_movies = schedule_getIdMovies(context.data.date, context.data.place);
+
         // array of ALL movies that fullfil whats needed        
-        const searched_movies = database.movies.filter(movie => {
+        var searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
             const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
-
-            // Movie contains selected genre
-            if (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1) {
-
-                movie.content.cinemasIds.forEach(cinema => {
-                    //Movie is on selected place
-                    return (cinema.name.toLowerCase() === context.data.place.toLowerCase())
-                })
-            }
+            return ((id_movies.indexOf(movie.content.id) !== -1) && 
+            (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
 
         //Set pageview to 0 on context
@@ -305,7 +270,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
                             payload: movie.content.title
                         }
                     ]
-    
+
                 }
             )
         })

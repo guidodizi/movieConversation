@@ -32,5 +32,8 @@
     "nodemon": "^1.17.1",
     "request": "^2.83.0",
     "watson-developer-cloud": "^3.0.6"
+  },
+  "devDependencies": {
+    "prompt": "^1.0.0"
   }
 }

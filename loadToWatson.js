@@ -1,5 +1,7 @@
 const database = require('./database');
 const moment = require('moment');
+var prompt = require('prompt');
+
 const Conversation = require('watson-developer-cloud/conversation/v1');
 require('dotenv').config();
 
@@ -14,17 +16,18 @@ var conversation = new Conversation({
  * first delete all movies -> delete movies entity
  */
 
-const deleteMovie = () => {
+const deleteEntity = (entity) => {
+    if (typeof entity !== 'string') { throw Error('Parameter must be a string'); }
     return new Promise((resolve, reject) => {
         var params = {
             workspace_id: process.env.WORKSPACE_ID,
-            entity: 'movie'
+            entity: entity
         };
         conversation.deleteEntity(params, function (err, response) {
             if (err) {
                 reject(err);
             } else {
-                resolve("ALL MOVIES DELETED");
+                resolve(`ALL ${entity.toUpperCase()} DELETED`);
             }
 
         });
@@ -35,19 +38,23 @@ const deleteMovie = () => {
 /**
  * then recreate the movie entity but empty
  */
-const createMovie = () => {
+const createEntity = (entity, options) => {
+    if (typeof entity !== 'string') { throw Error('Parameter must be a string'); }
     return new Promise((resolve, reject) => {
 
         var params = {
             workspace_id: process.env.WORKSPACE_ID,
-            entity: 'movie'
+            entity: entity
         };
+
+        //Add options to params
+        Object.assign(params, options);
 
         conversation.createEntity(params, function (err, response) {
             if (err) {
                 reject(err);
             } else {
-                resolve("MOVIE ENTITY CREATED");
+                resolve(`${entity.toUpperCase()} ENTITY CREATED`);
             }
         });
     })
@@ -55,11 +62,11 @@ const createMovie = () => {
 
 
 /**
- * and then add new values
+ * Add new movie values
  */
 const addValuesMovie = () => {
     return new Promise((resolve, reject) => {
-        let pushed_movies = 0;
+        let pushed = 0;
         database.movies_id.forEach((item, index) => {
             var params = {
                 workspace_id: process.env.WORKSPACE_ID,
@@ -71,9 +78,9 @@ const addValuesMovie = () => {
                 if (err) {
                     reject(err);
                 } else {
-                    pushed_movies++;
+                    pushed++;
                     console.log(`Success adding ${item.title}: item n° ${index + 1}`);
-                    if (pushed_movies === database.movies_id.length)
+                    if (pushed === database.movies_id.length)
                         resolve("All done here.");
                 }
             });
@@ -84,42 +91,83 @@ const addValuesMovie = () => {
     })
 };
 
-// (async function () {
-//     await deleteMovie().then(result => console.log(result)).catch(err => console.log(err));
-//     await createMovie().then(result => console.log(result)).catch(err => console.log(err));
-//     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
-// })();
+/**
+ * Add new genre values
+ */
+const addValuesGenre = () => {
+    return new Promise((resolve, reject) => {
+        //all genres array
+        const genres = [];
+        database.movies.forEach(movie => {
+            //Array of this movie genres
+            const movie_genres = movie.content.genre.split(', ').join(',').split(',').map(elem => elem.trim());
+            movie_genres.forEach(genre => {
+                //If genre not already on all genres array, add it
+                if (genres.indexOf(genre) === -1) {
+                    genres.push(genre);
+                }
+            })
+        })
 
+        let pushed = 0;        
+        genres.forEach( (genre, index) => {
+            var params = {
+                workspace_id: process.env.WORKSPACE_ID,
+                entity: 'genre',
+                value: genre
+            };
 
-//ids of movies available for selected date
-const id_movie_for_date = [];
-database.schedules.contentCinemaShows.forEach(contentCinema => {
-    //Find content for selected movie
-    contentCinema.cinemaShows.forEach(cinemaShow => {
-        //Check if cinemas is for selected place            
-        if (cinemaShow.cinema.name.toLowerCase() === 'movie portones') {
-            cinemaShow.shows.some(show => {
-                //Check if show is for selected date
-                var show_date = moment(show.date).dayOfYear();
-                var user_date = moment().dayOfYear();
-                if (show_date === user_date) {
-
-                    //Movie found is displayed on selected (date, place)
-                    id_movie_for_date.push(contentCinema.contentId)
-                    //Exit iteration
-                    return true;
+            conversation.createValue(params, function (err, response) {
+                if (err) {
+                    reject(err);
+                } else {
+                    pushed++;
+                    console.log(`Success adding ${genre}: item n° ${index + 1}`);
+                    if (pushed === genres.length)
+                        resolve("All done here.");
                 }
             });
+        })
+
+    })
+};
+
+async function loadMovies() {
+    await deleteEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
+    await createEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
+    await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
+};
+async function loadGenres() {
+    await deleteEntity('genre').then(result => console.log(result)).catch(err => console.log(err));
+    await createEntity('genre', { fuzzy_match: true }).then(result => console.log(result)).catch(err => console.log(err));
+    await addValuesGenre().then(result => console.log(result)).catch(err => console.log(err));
+};
+
+(function () {
+    console.log(` Welcome to Movie Conversation Loader:
+    Select an action to load to Watson's workspace
+        1) loadMovies => Load database movies as entities on Watson
+        2) loadGenres => Load genres from database movies as entities on Watson
+        3) exit
+    `)
+    prompt.start();
+    prompt.get(['action'], function (err, result) {
+        console.log('Selected action:');
+        console.log(result.action);
+        switch (result.action) {
+            case ("1" || 'loadMovies'): {
+                loadMovies();
+                break;
+            }
+            case ("2" || 'loadGenres'): {
+                loadGenres();
+                break;
+            }
+            case ("3" || 'exit'): {
+                break;
+            }
         }
     });
 
-});
-// array of ALL movies that fullfil whats needed
-const searched_movies = database.movies.filter(movie => {
-    return (id_movie_for_date.indexOf(movie.content.id) !== -1)
-});
+})();
 
-searched_movies.map(movie => {
-    console.log(movie.content.title)
-    
-})
