@@ -21,7 +21,10 @@ module.exports = db => {
     Object.values(container).map(func => {
         return new Proxy(func, {
             apply: function (target, thisArg, ...args) {
-                return target.apply(thisArg, ...args)
+                try {
+                    return target.apply(thisArg, ...args)   
+                }
+                catch (err) { console.log(err) }
             }
         })
     })

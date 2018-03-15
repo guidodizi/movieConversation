@@ -45,7 +45,7 @@ exports.get_quickReplies_date = function (response, context) {
     //get database from container
     const database = this.database;
 
-
+    
     const weekdays = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
     //Array so as not to repeat days of show => 2 Saturday options
     const days_of_show = [];
@@ -88,7 +88,7 @@ exports.get_quickReplies_date_place = function (response, context) {
     //get database from container
     const database = this.database;
 
-    
+
     const weekdays = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
     //Array so as not to repeat days of show => 2 Saturday options
     const days_of_show = [];
