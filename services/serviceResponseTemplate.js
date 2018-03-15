@@ -12,27 +12,30 @@ const repositoryContainer = new RepositoryContainer(database);
 *
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, context) => {
-    //Answer user that search has began
-    await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
+    try {
+        //Answer user that search has began
+        await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
 
-    //Set pageview to 0 on context
-    if (!context.data.movies_pageview) {
-        const data = {
-            movies_pageview: 0
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
         }
-        mergeUserContext(sender_psid, data)
-    }
 
-    response = repositoryContainer.get_template_movies(response, context);
+        response = repositoryContainer.get_template_movies(response, context);
 
-    //No movies found, reset context
-    if (!response.attachment.payload.elements.length) {
-        updateUserContext(sender_psid, {});
-    }
+        //No movies found, reset context
+        if (response.text && !response.attachment) {
+            updateUserContext(sender_psid, {});
+        }
 
-    // Response is now nurtured for user to receive it, send it to user
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+        // Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+
+    } catch (err) { console.log(err); }
 };
 
 
@@ -42,27 +45,29 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
 *
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response, context) => {
-    //Answer user that search has began
-    await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
+    try {
+        //Answer user that search has began
+        await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
 
-    //Set pageview to 0 on context
-    if (!context.data.movies_pageview) {
-        const data = {
-            movies_pageview: 0
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
         }
-        mergeUserContext(sender_psid, data)
-    }
 
-    response = repositoryContainer.get_template_movies_place(response, context);
+        response = repositoryContainer.get_template_movies_place(response, context);
 
-    //No movies found, reset context    
-    if (!response.attachment.payload.elements.length) {
-        updateUserContext(sender_psid, {});
-    }
+        //No movies found, reset context    
+        if (response.text && !response.attachment) {
+            updateUserContext(sender_psid, {});
+        }
 
-    // Response is now nurtured for user to receive it, send it to user
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+        // Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+    } catch (err) { console.log(err); }
 };
 
 
@@ -72,25 +77,27 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 *
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
-    //Set pageview to 0 on context
-    if (!context.data.movies_pageview) {
-        const data = {
-            movies_pageview: 0
+    try {
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
         }
-        mergeUserContext(sender_psid, data)
-    }
 
-    response = repositoryContainer.get_template_movies_genre(response, context)   
+        response = repositoryContainer.get_template_movies_genre(response, context)
 
-    console.log(response)
-    //No movies found, reset context
-    if (!response.attachment.payload.elements.length) {
-        updateUserContext(sender_psid, {});
-    }
+        console.log(response)
+        //No movies found, reset context
+        if (response.text && !response.attachment) {
+            updateUserContext(sender_psid, {});
+        }
 
-    //Response is now nurtured for user to receive it, send it to user
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+        //Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+    } catch (err) { console.log(err); }
 };
 
 
@@ -99,24 +106,26 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 *
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
-    //Set pageview to 0 on context
-    if (!context.data.movies_pageview) {
-        const data = {
-            movies_pageview: 0
+    try {
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
         }
-        mergeUserContext(sender_psid, data)
-    }
 
-    response = repositoryContainer.get_template_movies_genre_place(response, context)
+        response = repositoryContainer.get_template_movies_genre_place(response, context)
 
-    //No movies found, reset context
-    if (!response.attachment.payload.elements.length) {
-        updateUserContext(sender_psid, {});
-    }
+        //No movies found, reset context
+        if (response.text && !response.attachment) {
+            updateUserContext(sender_psid, {});
+        }
 
-    //Response is now nurtured for user to receive it, send it to user
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+        //Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+    } catch (err) { console.log(err); }
 };
 
 
@@ -126,15 +135,16 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
  * 
  */
 exports[constants.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, context) => {
+    try {
+        await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
 
-    await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
+        response = repositoryContainer.get_template_schedule(response, context);
 
-    response = repositoryContainer.get_template_schedule(response, context);
+        //End of dialog, clear context
+        updateUserContext(sender_psid, {});
 
-    //End of dialog, clear context
-    updateUserContext(sender_psid, {});
-
-    //Response is now nurtured for user to receive it, send it to user
-    console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
-    await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+        //Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+    } catch (err) { console.log(err); }
 };
