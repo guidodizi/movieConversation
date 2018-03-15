@@ -61,7 +61,7 @@ exports.get_template_movies_place = function (response, context) {
 
 
         //ids of movies available for selected date and place
-        const id_movies = repositoryContainer.get_schedule_idMovies(database, context.data.date, context.data.place);
+        const id_movies = repositoryContainer.get_schedule_idMovies(context.data.date, context.data.place);
 
         // array of ALL movies that fullfil whats needed
         const searched_movies = database.movies.filter(movie => {
@@ -128,7 +128,7 @@ exports.get_template_movies_genre = function (response, context) {
                 (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
 
-        
+
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 9;
@@ -183,7 +183,7 @@ exports.get_template_movies_genre_place = function (response, context) {
 
 
     //ids of movies available for selected date and place        
-    const id_movies = repositoryContainer.get_schedule_idMovies(database, context.data.date, context.data.place);
+    const id_movies = repositoryContainer.get_schedule_idMovies(context.data.date, context.data.place);
 
     // array of ALL movies that fullfil whats needed        
     var searched_movies = database.movies.filter(movie => {
