@@ -80,10 +80,9 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
         mergeUserContext(sender_psid, data)
     }
 
-    console.log(1)
     response = repositoryContainer.get_template_movies_genre(response, context)   
-    console.log(2)
 
+    console.log(response)
     //No movies found, reset context
     if (!response.attachment.payload.elements.length) {
         updateUserContext(sender_psid, {});

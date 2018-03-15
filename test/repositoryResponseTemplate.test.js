@@ -234,3 +234,53 @@ describe('Template movies place', () => {
         })
     })
 })
+
+describe('Template movies genre', () => {
+    var response;
+    var context;
+    beforeEach(() => {
+        response = { attachment: { type: "template", payload: { elements: [] } } };
+        context = {
+            data: {
+                movies_pageview: 0,
+                genre: 'Acción',
+                date: '2018-03-13'
+            }
+        }
+    })
+    it('should return movies for 2018-03-13 that are of the genre \"Acción\" ', () => {
+        repositoryContainer.get_template_movies_genre(response, context);
+        
+        const place_movies_date = [];
+        database_file_test.schedules.contentCinemaShows.forEach(contentCinema => {
+            contentCinema.cinemaShows.forEach(cinemaShow => {
+                cinemaShow.shows.some(show => {
+                    var show_date = moment(show.date).dayOfYear();
+                    var user_date = moment("2018-03-13").dayOfYear();
+                    if (show_date === user_date) {
+                        place_movies_date.push(contentCinema.contentId)
+                        return true;
+                    }
+                })
+            })
+        })
+
+        const movies_accion_date = database_file_test.movies.filter( movie => {
+            return (movie.content.genre
+            .split(', ')
+            .join(',')
+            .split(',')
+            .map( genre => genre.toLowerCase())
+            .indexOf('acción') !== -1)
+
+        })
+
+        const movies_accion_date_title = database_file_test.movies_id.filter(e => movies_accion_date.indexOf(e.id) !== -1).map(e => e.title)
+        response.attachment.payload.elements.forEach((elem, index) => {
+            if (index < response.attachment.payload.elements.length - 1) {
+                assert.notEqual(place_movies_date_title.indexOf(elem.title), -1);
+            }
+        })
+    })
+    
+})
