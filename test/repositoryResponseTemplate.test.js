@@ -248,6 +248,10 @@ describe('Template movies genre', () => {
             }
         }
     })
+    it('searching for movies of genre \"Acción\" on date 2018-03-13, should return some movies', () => {
+        repositoryContainer.get_template_movies_genre(response, context);
+        assert.notEqual(response.attachment.payload.elements.length, 0)        
+    })
     it('should return movies for 2018-03-13 that are of the genre \"Acción\" ', () => {
         repositoryContainer.get_template_movies_genre(response, context);
         
@@ -266,19 +270,21 @@ describe('Template movies genre', () => {
         })
 
         const movies_accion_date = database_file_test.movies.filter( movie => {
-            return (movie.content.genre
+            return ((movie.content.genre
             .split(', ')
             .join(',')
             .split(',')
             .map( genre => genre.toLowerCase())
-            .indexOf('acción') !== -1)
+            .indexOf('acción') !== -1) && 
+            (place_movies_date.indexOf(movie.content.id) !== -1) )
 
-        })
+        }).map(movie => movie.content.id)
 
         const movies_accion_date_title = database_file_test.movies_id.filter(e => movies_accion_date.indexOf(e.id) !== -1).map(e => e.title)
+
         response.attachment.payload.elements.forEach((elem, index) => {
             if (index < response.attachment.payload.elements.length - 1) {
-                assert.notEqual(place_movies_date_title.indexOf(elem.title), -1);
+                assert.notEqual(movies_accion_date_title.indexOf(elem.title), -1);
             }
         })
     })

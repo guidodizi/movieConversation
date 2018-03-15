@@ -117,10 +117,9 @@ exports.get_template_movies_genre = function (response, context) {
         const repositoryContainer = this;
         const database = this.database;
 
-
         //ids of movies available for selected date        
-        const id_movies = repositoryContainer.get_schedule_idMovies(database, context.data.date);
-
+        const id_movies = repositoryContainer.get_schedule_idMovies(context.data.date);
+       
         // array of ALL movies that fullfil whats needed        
         var searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
@@ -129,6 +128,7 @@ exports.get_template_movies_genre = function (response, context) {
                 (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
 
+        
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
         var end = start + 9;
@@ -177,69 +177,65 @@ exports.get_template_movies_genre = function (response, context) {
 
 
 exports.get_template_movies_genre_place = function (response, context) {
-    try {
-        //get database from container
-        const repositoryContainer = this;
-        const database = this.database;
-        
+    //get database from container
+    const repositoryContainer = this;
+    const database = this.database;
 
-        //ids of movies available for selected date and place        
-        const id_movies = repositoryContainer.get_schedule_idMovies(database, context.data.date, context.data.place);
 
-        // array of ALL movies that fullfil whats needed        
-        var searched_movies = database.movies.filter(movie => {
-            //Example : ['comedia', 'accion']
-            const movie_genres = movie.content.genre.split(', ').join(',').split(',').map(genre => genre.toLowerCase());
-            return ((id_movies.indexOf(movie.content.id) !== -1) &&
-                (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
-        });
-        console.log("ACAAAAAAA")
-        console.log(searched_movies)
+    //ids of movies available for selected date and place        
+    const id_movies = repositoryContainer.get_schedule_idMovies(database, context.data.date, context.data.place);
 
-        //Show always 9 or less movies
-        var start = (context.data.movies_pageview || 0) * 9;
-        var end = start + 9;
-        // array of 0-9 movies that fullfil whats needed        
-        var movies_shown = searched_movies.slice(start, end);
+    // array of ALL movies that fullfil whats needed        
+    var searched_movies = database.movies.filter(movie => {
+        //Example : ['comedia', 'accion']
+        const movie_genres = movie.content.genre.split(', ').join(',').split(',').map(genre => genre.toLowerCase());
+        return ((id_movies.indexOf(movie.content.id) !== -1) &&
+            (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
+    });
 
-        //Generate content        
-        movies_shown.forEach(movie => {
-            response.attachment.payload.elements.push(
-                {
-                    title: movie.content.title,
-                    subtitle: movie.content.synopsis,
-                    image_url: movie.content.posterUrl,
-                    buttons: [
-                        {
-                            type: "postback",
-                            title: "Elegir",
-                            payload: movie.content.title
-                        }
-                    ]
+    //Show always 9 or less movies
+    var start = (context.data.movies_pageview || 0) * 9;
+    var end = start + 9;
+    // array of 0-9 movies that fullfil whats needed        
+    var movies_shown = searched_movies.slice(start, end);
 
-                }
-            )
+    //Generate content        
+    movies_shown.forEach(movie => {
+        response.attachment.payload.elements.push(
+            {
+                title: movie.content.title,
+                subtitle: movie.content.synopsis,
+                image_url: movie.content.posterUrl,
+                buttons: [
+                    {
+                        type: "postback",
+                        title: "Elegir",
+                        payload: movie.content.title
+                    }
+                ]
+
+            }
+        )
+    })
+    //If movies shown are less than total, add the View more button
+    if (end <= (searched_movies.length - 1)) {
+        response.attachment.payload.elements.push({
+            title: "Ver más opciones",
+            subtitle: "Clickea el botón debajo para ver más opciones de películas",
+            image_url: "http://iponline.in/images/view-more.png",
+            buttons: [{
+                type: "postback",
+                title: "Ver más",
+                payload: "ver mas"
+            }]
         })
-        //If movies shown are less than total, add the View more button
-        if (end <= (searched_movies.length - 1)) {
-            response.attachment.payload.elements.push({
-                title: "Ver más opciones",
-                subtitle: "Clickea el botón debajo para ver más opciones de películas",
-                image_url: "http://iponline.in/images/view-more.png",
-                buttons: [{
-                    type: "postback",
-                    title: "Ver más",
-                    payload: "ver mas"
-                }]
-            })
-        }
+    }
 
-        if (!response.attachment.payload.elements.length) {
-            response = { text: `No encontré peliculas para ${context.data.date_synonym} del género ${context.data.genre} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
-        }
+    if (!response.attachment.payload.elements.length) {
+        response = { text: `No encontré peliculas para ${context.data.date_synonym} del género ${context.data.genre} en ${context.data.place}. Recuerda que la cartelera cambia todos los jueves.` };
+    }
 
-        return response;
-    } catch (err) { console.log(err) };
+    return response;
 }
 
 
