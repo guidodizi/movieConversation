@@ -193,7 +193,8 @@ exports.get_template_movies_genre_place = function (response, context) {
             return ((id_movies.indexOf(movie.content.id) !== -1) &&
                 (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
-
+        console.log("ACAAAAAAA")
+        console.log(searched_movies)
 
         //Show always 9 or less movies
         var start = (context.data.movies_pageview || 0) * 9;
