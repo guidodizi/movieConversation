@@ -1,18 +1,13 @@
 const database_file_test = require('./database_file_test');
 const moment = require('moment-timezone');
-const { 
-    get_movies_genre_place_response, 
-    get_movies_genre_response, 
-    get_movies_place_response, 
-    get_movies_response 
-} = require('../repositories/repositoryResponseTemplate');
+const repositoryContainer = require('../repositories/repositoryContainer')(database_file_test)
 const assert = require('assert')
 
 
 /**
  * Test all functions on templateResponse
  */
-describe('Response movies', () => {
+describe('Template movies', () => {
     describe('#Movies from 0 - 8', () => {
         var response;
         before(() => {
@@ -22,7 +17,7 @@ describe('Response movies', () => {
                     movies_pageview: 0
                 }
             }
-            test.response_movies(response, context, database_file_test);
+            repositoryContainer.get_template_movies(response, context);
 
         });
         it('should return 10 items', () => {
@@ -87,7 +82,7 @@ describe('Response movies', () => {
                     movies_pageview: 1
                 }
             }
-            test.response_movies(response, context, database_file_test);
+            repositoryContainer.get_template_movies(response, context);
         })
         it('should return 10 items', () => {
             assert.equal(response.attachment.payload.elements.length, 10);
@@ -112,7 +107,7 @@ describe('Response movies', () => {
                     movies_pageview: 2
                 }
             }
-            test.response_movies(response, context, database_file_test);
+            repositoryContainer.get_template_movies(response, context);
         })
         it('should return 6 items', () => {
             assert.equal(response.attachment.payload.elements.length, 6);
@@ -129,7 +124,7 @@ describe('Response movies', () => {
     })
 })
 
-describe('Response movies place', () => {
+describe('Template movies place', () => {
     var response;
     var context;
     beforeEach(() => {
@@ -143,7 +138,7 @@ describe('Response movies place', () => {
         }
     })
     it('should return movies for Montevideo Shopping for 2018-03-13', () => {
-        test.response_movies_place(response, context, database_file_test);
+        repositoryContainer.get_template_movies_place(response, context);
         
         const place_movies_date = [];
         database_file_test.schedules.contentCinemaShows.forEach(contentCinema => {
@@ -167,7 +162,7 @@ describe('Response movies place', () => {
     })
     it('should return movies for Portones Shopping for 2018-03-13', () => {
         context.data.place = 'Movie Portones';
-        test.response_movies_place(response, context, database_file_test);
+        repositoryContainer.get_template_movies_place(response, context);
         
         const place_movies_date = [];
         database_file_test.schedules.contentCinemaShows.forEach(contentCinema => {
@@ -191,7 +186,7 @@ describe('Response movies place', () => {
     })
     it('should return movies for Nuevocentro Shopping for 2018-03-13', () => {
         context.data.place = 'Movie Nuevocentro';
-        test.response_movies_place(response, context, database_file_test);
+        repositoryContainer.get_template_movies_place(response, context);
 
         const place_movies_date = [];
         database_file_test.schedules.contentCinemaShows.forEach(contentCinema => {
@@ -216,7 +211,7 @@ describe('Response movies place', () => {
 
     it('should return movies for Punta Carretas Shopping for 2018-03-13', () => {
         context.data.place = 'Movie Punta Carretas';
-        test.response_movies_place(response, context, database_file_test);
+        repositoryContainer.get_template_movies_place(response, context);
 
         const place_movies_date = [];
         database_file_test.schedules.contentCinemaShows.forEach(contentCinema => {

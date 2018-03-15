@@ -1,30 +1,30 @@
 const database_file_test = require('./database_file_test');
 const moment = require('moment-timezone');
-const { schedule_getIdMovies } = require('../repositories/repositorySchedule')
+const repositoryContainer = require('../repositories/repositoryContainer')(database_file_test)
 const assert = require('assert')
 
 
-describe('schedule_getIdMovies', () => {
+describe('get_schedule_idMovies', () => {
     describe('#test on movie parameter', () => {
         it('should return array with 3 times id of movie asked since Deseo de Matar is in 2 places', () => {
             //id for Deseo de Matar
             const id = "eac6bc25-f495-451c-85fe-5e651697ea13";
-            assert.deepStrictEqual([id, id, id], schedule_getIdMovies(database_file_test, null, null, id))
+            assert.deepStrictEqual([id, id, id], repositoryContainer.get_schedule_idMovies(null, null, id))
         })
         it('should return array with id for Deseo de Matar since place is Montevideo Shopping', () => {
             //id for Deseo de Matar
             const id = "eac6bc25-f495-451c-85fe-5e651697ea13";
-            assert.deepStrictEqual([id], schedule_getIdMovies(database_file_test, null, 'Movie Montevideo', id))
+            assert.deepStrictEqual([id], repositoryContainer.get_schedule_idMovies(null, 'Movie Montevideo', id))
         })
         it('should return array with id for Deseo de Matar since place is Montevideo Shopping and date is 2018-03-13', () => {
             //id for Deseo de Matar
             const id = "eac6bc25-f495-451c-85fe-5e651697ea13";
-            assert.deepStrictEqual([id], schedule_getIdMovies(database_file_test, '2018-03-13', 'Movie Montevideo', id))
+            assert.deepStrictEqual([id], repositoryContainer.get_schedule_idMovies('2018-03-13', 'Movie Montevideo', id))
         })
         it('should return empty array since date is 2018-04-13 and there are no shows yet for next month', () => {
             //id for Deseo de Matar
             const id = "eac6bc25-f495-451c-85fe-5e651697ea13";
-            assert.deepStrictEqual([], schedule_getIdMovies(database_file_test, '2018-04-13', null, id))
+            assert.deepStrictEqual([], repositoryContainer.get_schedule_idMovies('2018-04-13', null, id))
         })
     })
     describe('#test on place parameter', () => {
@@ -35,7 +35,7 @@ describe('schedule_getIdMovies', () => {
                 }))
             }).map(movie => movie.content.id)
 
-            const what_is = schedule_getIdMovies(database_file_test, null, 'Movie Portones');
+            const what_is = repositoryContainer.get_schedule_idMovies(null, 'Movie Portones');
             what_is.forEach( elem => assert.notEqual(what_should_be.indexOf(elem), -1))
         })
         it('should return array with movies on Movie Portones, on date 2018-03-13', () => {
@@ -50,7 +50,7 @@ describe('schedule_getIdMovies', () => {
                     }
                 }))
             }).map(e => e.contentId)
-            const what_is = schedule_getIdMovies(database_file_test, '2018-03-13', 'Movie Portones');
+            const what_is = repositoryContainer.get_schedule_idMovies('2018-03-13', 'Movie Portones');
             what_is.forEach( elem => assert.notEqual(what_should_be.indexOf(elem), -1))
         })
     })
@@ -65,7 +65,7 @@ describe('schedule_getIdMovies', () => {
                     }))
                 }))
             }).map(e => e.contentId)
-            const what_is = schedule_getIdMovies(database_file_test, '2018-03-13');
+            const what_is = repositoryContainer.get_schedule_idMovies('2018-03-13');
             what_is.forEach( elem => assert.notEqual(what_should_be.indexOf(elem), -1))
         })
     })
