@@ -172,7 +172,7 @@ exports.get_template_movies_genre = function (response, context) {
         }
 
         return response;
-    } catch (err) { console.log(err) };
+    } catch (err) { throw new Error(err); }
 }
 
 

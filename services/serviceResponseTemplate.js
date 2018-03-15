@@ -82,7 +82,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 
     try {
         response = repositoryContainer.get_template_movies_genre(response, context)   
-    } catch (err) { console.log(err); }
+    } catch (err) { throw new Error(err); }
 
     //No movies found, reset context
     if (!response.attachment.payload.elements.length) {
