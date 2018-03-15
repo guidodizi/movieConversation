@@ -5,8 +5,8 @@ const express = require('express');
 const request = require('request');
 const bodyParser = require('body-parser');
 const Conversation = require('watson-developer-cloud/conversation/v1');
-const handleResponse = require('./handleResponse/handleResponse');
-const { getUserContext, mergeUserContext, updateUserContext } = require('./userContext');
+const serviceResponse = require('./services/serviceResponse');
+const { getUserContext, updateUserContext } = require('./database/userContext');
 
 
 const app = express();
@@ -122,7 +122,7 @@ function handleMessage(event) {
         //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          handleResponse(sender_psid, watsonResponse.context, text_response);
+          serviceResponse(sender_psid, watsonResponse.context, text_response);
         })
       }
     }
@@ -151,7 +151,7 @@ function handlePostback(event) {
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          handleResponse(sender_psid, watsonResponse.context, text_response);
+          serviceResponse(sender_psid, watsonResponse.context, text_response);
         })
       }
     }

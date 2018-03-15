@@ -63,5 +63,4 @@ function sendAPI(sender_psid, response, options = {}) {
     }
 }
 
-exports.callSendAPI = callSendAPI;
 exports.sendAPI = sendAPI;

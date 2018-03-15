@@ -1,7 +1,7 @@
 const constants = require('../constants');
-const templateResponse = require('./templateResponse');
-const quickRepliesResponse = require('./quickRepliesResponse');
-const { sendAPI } = require('./sendAPI');
+const serviceResponseTemplate = require('./serviceResponseTemplate');
+const serviceResponseQuickReplies = require('./serviceResponseQuickReplies');
+const { sendAPI } = require('./serviceSendAPI');
 
 /*
 * Handle the response to what the user said, based on Waton's response. 
@@ -39,6 +39,7 @@ module.exports = function handleResponse(sender_psid, context, text_response) {
 }
 
 // MOVIE MAIN PROCESS: date -> movie -> place
+// MOVIE MAIN PROCESS*: date -> place -> movie 
 /*
 * Handle responses which are template-based, in which we dont simply reply a text, but a generic/list/.. template
 * This templates are based on Facebook Messenger's possibilities
@@ -59,23 +60,23 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     //Generate elements depending on what string Watson gave on context.payload.data
     switch (watson_payload.data) {
         case constants.GENERIC_TEMPLATE_MOVIES: {
-            templateResponse[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context);
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context);
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_GENRE: {
-            templateResponse[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context);            
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context);            
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE: {
-            templateResponse[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context);                        
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context);                        
             break;
         }
         case constants.GENERIC_TEMPLATE_SCHEDULE: {
-            templateResponse[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context);                                    
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context);                                    
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_PLACE: {
-            templateResponse[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context);                                    
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context);                                    
             break;
         }
     }
@@ -92,15 +93,15 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 
     switch (watson_payload.data) {
         case constants.QUICK_REPLIES_LOCATIONS: {
-            quickRepliesResponse[constants.QUICK_REPLIES_LOCATIONS](sender_psid, response, context)
+            serviceResponseQuickReplies[constants.QUICK_REPLIES_LOCATIONS](sender_psid, response, context)
             break;
         };
         case constants.QUICK_REPLIES_DATE: {
-            quickRepliesResponse[constants.QUICK_REPLIES_DATE](sender_psid, response, context)            
+            serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE](sender_psid, response, context)            
             break;
         }
         case constants.QUICK_REPLIES_DATE_PLACE: {
-            quickRepliesResponse[constants.QUICK_REPLIES_DATE_PLACE](sender_psid, response, context)            
+            serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE_PLACE](sender_psid, response, context)            
             break;
         }
     };
