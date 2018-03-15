@@ -3,8 +3,8 @@ const constants = require('../constants');
 const moment = require('moment-timezone');
 const { sendAPI } = require('./serviceSendAPI');
 const database = require('../database/database_file');
-const repositoryContainer = require('../repositories/repositoryContainer')(database)
-
+const RepositoryContainer = require('../repositories/repositoryContainer');
+const repositoryContainer = new RepositoryContainer(database);
 
 /**
 * Get quick replies of locations available for (date, movie)
@@ -14,7 +14,7 @@ exports[constants.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, conte
 
     //Save on context the cinema options for selected movie
     if (context.data) {
-        context.data.cinema = [];
+        context.data.cinemas = [];
     } else { throw new Error('No property data in context') }
 
     response = repositoryContainer.get_quickReplies_location(response, context)

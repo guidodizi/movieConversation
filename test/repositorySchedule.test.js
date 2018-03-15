@@ -1,8 +1,8 @@
 const database_file_test = require('./database_file_test');
 const moment = require('moment-timezone');
-const repositoryContainer = require('../repositories/repositoryContainer')(database_file_test)
 const assert = require('assert')
-
+const RepositoryContainer = require('../repositories/repositoryContainer');
+const repositoryContainer = new RepositoryContainer(database_file_test);
 
 describe('get_schedule_idMovies', () => {
     describe('#test on movie parameter', () => {

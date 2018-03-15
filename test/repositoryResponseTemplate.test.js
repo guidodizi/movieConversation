@@ -1,8 +1,8 @@
 const database_file_test = require('./database_file_test');
 const moment = require('moment-timezone');
-const repositoryContainer = require('../repositories/repositoryContainer')(database_file_test)
 const assert = require('assert')
-
+const RepositoryContainer = require('../repositories/repositoryContainer')
+const repositoryContainer = new RepositoryContainer(database_file_test);
 
 /**
  * Test all functions on templateResponse

@@ -3,7 +3,8 @@ const constants = require('../constants');
 const moment = require('moment-timezone');
 const { sendAPI } = require('./serviceSendAPI');
 const database = require('../database/database_file')
-const repositoryContainer = require('../repositories/repositoryContainer')(database)
+const RepositoryContainer = require('../repositories/repositoryContainer');
+const repositoryContainer = new RepositoryContainer(database);
 
 
 /**
