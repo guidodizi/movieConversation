@@ -124,7 +124,7 @@ exports.get_template_movies_genre = function (response, context) {
         // array of ALL movies that fullfil whats needed        
         var searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
-            const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
+            const movie_genres = movie.content.genre.split(', ').join(',').split(',').map(genre => genre.toLowerCase());
             return ((id_movies.indexOf(movie.content.id) !== -1) &&
                 (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
@@ -189,7 +189,7 @@ exports.get_template_movies_genre_place = function (response, context) {
         // array of ALL movies that fullfil whats needed        
         var searched_movies = database.movies.filter(movie => {
             //Example : ['comedia', 'accion']
-            const movie_genres = movie.content.genre.split(', ').map(genre => genre.toLowerCase());
+            const movie_genres = movie.content.genre.split(', ').join(',').split(',').map(genre => genre.toLowerCase());
             return ((id_movies.indexOf(movie.content.id) !== -1) &&
                 (movie_genres.indexOf(context.data.genre.toLowerCase()) !== -1))
         });
