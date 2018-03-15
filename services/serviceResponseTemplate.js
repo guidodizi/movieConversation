@@ -47,7 +47,9 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
 exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response, context) => {
     try {
         //Answer user that search has began
-        await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
+        await sendAPI(sender_psid, 
+            { text: `Déjame mostrarte que hay en ${context.data.place}...` }
+        ).catch(err => { console.log(err); });
 
         //Set pageview to 0 on context
         if (!context.data.movies_pageview) {
@@ -78,6 +80,10 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
+        await sendAPI(sender_psid, 
+            { text: `Déjame mostrarte que hay del género ${context.data.genre}...` }
+        ).catch(err => { console.log(err); });        
+
         //Set pageview to 0 on context
         if (!context.data.movies_pageview) {
             const data = {
@@ -107,6 +113,10 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 */
 exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
+        await sendAPI(sender_psid, 
+            { text: `Déjame mostrarte que hay del género ${context.data.genre} en ${context.data.place}...` }
+        ).catch(err => { console.log(err); });
+        
         //Set pageview to 0 on context
         if (!context.data.movies_pageview) {
             const data = {
