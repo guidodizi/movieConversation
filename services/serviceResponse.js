@@ -60,23 +60,23 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     //Generate elements depending on what string Watson gave on context.payload.data
     switch (watson_payload.data) {
         case constants.GENERIC_TEMPLATE_MOVIES: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context);
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context).catch((err) => console.log(err));
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_GENRE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context);            
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context).catch((err) => console.log(err));            
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context);                        
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context).catch((err) => console.log(err));          
             break;
         }
         case constants.GENERIC_TEMPLATE_SCHEDULE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context);                                    
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context).catch((err) => console.log(err));
             break;
         }
         case constants.GENERIC_TEMPLATE_MOVIES_PLACE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context);                                    
+            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context).catch((err) => console.log(err));                             
             break;
         }
     }

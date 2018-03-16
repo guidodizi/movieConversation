@@ -14,7 +14,7 @@ exports[constants.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, conte
     try {
         //Save on context the cinema options for selected movie
         if (context.data) {
-            context.data.cinemas = [];
+            context.data.cinema = [];
         } else { throw new Error('No property data in context') }
 
         response = repositoryContainer.get_quickReplies_location(response, context)
