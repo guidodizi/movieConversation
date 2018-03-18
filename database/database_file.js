@@ -3703,6 +3703,1267 @@ exports.movies = JSON.parse(`[
   }
 ]`)
 
+exports.movies_nextRelease = JSON.parse(`[
+  {
+    "content": {
+      "id": "34944057-299d-460b-904a-1897d7a2da07",
+      "title": "Las Travesuras de Peter Rabbit",
+      "releaseDate": "2018-03-22T00:00:00",
+      "duration": 95,
+      "synopsis": "Peter Rabbit y su familia se apropian de la vieja finca de Mr. Mc Gregor, donde realizan fiestas interminables de frutas y vegetales. Cuando un Mc. Gregor más joven y fastidioso llega para reclamar su herencia, Peter decide seguir con la fiesta. Pero el joven Mc. Gregor no es sólo un enemigo formidable, sino que también se está enamorando de Bea, la artista local y tutora de los conejos. Ahora, Peter se pondrá en campaña para echar a Mc. Gregor en una guerra en la que los dos se querrán quedar tanto con el jardín, como con el afecto de Bea. Su rivalidad los llevará desde el idílico Lago District hasta el tumultuoso subte de Londres, a los pasillos de una gran juguetería de Harrods y de vuelta a casa. Pero al final, Peter se dará cuenta que las zanahorias y la gloria no son tan gratificantes como el amor y la familia.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/7Pa_Weidt08",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Comedia, Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cpetter.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/peterrabbit1.jpg",
+      "urlSlug": "las-travesuras-de-peter-rabbit",
+      "isPreSale": false,
+      "people": [
+        "Domhnall Gleeson",
+        "Rose Byrne"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Domhnall ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Will ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Rose ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Will Gluck"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "peterrabbit1.jpg",
+      "openingDate": "2018-03-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "fb2a9d85-bd84-4c05-a655-f4e3fd066599",
+      "title": "María Magdalena",
+      "releaseDate": "2018-03-22T00:00:00",
+      "duration": 120,
+      "synopsis": "Retrato auténtico y humanista de uno de los personajes más enigmáticos e incomprendidos de la historia. La película biográfica bíblica cuenta la historia de María, una joven mujer en busca de una nueva forma de vida. Restringida por las jerarquías de la época; María desafía a su familia tradicional al unirse a un nuevo movimiento social dirigido por Jesús de Nazareth. Pronto encuentra su lugar dentro del movimiento y en el corazón de un viaje que conducirá a Jerusalén. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/H7isoCmei1M",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Drama",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cmaria magdalena.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/mariamagdalena.jpg",
+      "urlSlug": "maria-magdalena",
+      "isPreSale": false,
+      "people": [
+        "Joaquin Phoenix",
+        "Rooney Mara"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Joaquin ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Garth ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Rooney ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Garth Davis"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "mariamagdalena.jpg",
+      "openingDate": "2018-03-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "69f6ce08-4d5d-4d30-a28b-1dee0b23e85b",
+      "title": "Sherlock Gnomes",
+      "releaseDate": "2018-03-22T00:00:00",
+      "duration": 1,
+      "synopsis": "Los gnomos de jardin: Gnomeo y Julieta reclutan al conocido detective Sherlock Gnomes para investigar la misteriosa desaparición de otros adornos de jardín.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/ozWQZYUCf_4",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Csherlock.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/gnomes.jpg",
+      "urlSlug": "sherlock-gnomes",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "John ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "John Stevenson"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "gnomes.jpg",
+      "openingDate": "2018-03-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "8497617c-c3a6-4da3-8879-c054618d2c16",
+      "title": "Titanes del Pacífico: La Insurrección",
+      "releaseDate": "2018-03-22T00:00:00",
+      "duration": 1,
+      "synopsis": "El creciente conflicto mundial entre monstruos con habilidades de destrucción masiva y las máquinas piloteadas por humanos fue sólo el inicio de un nuevo mal que acecha a la humanidad en Titanes del Pacífico: La Insurrección. Jake Pentecost, es hijo del hombre que se sacrificó en la lucha contra los ¨Kaiju¨ para asegurar la victoria de la humanidad; y una promesa como piloto jaeger, ahora se ve envuelto en una vida criminal luego de abandonar sus entrenamientos. Cuando una nueva amenaza, aún más peligrosa, ataca varias ciudades Jake tendrá una última oportunidad para conmemorar el legado de su padre uniéndose a su hermana, Mako Mori quien dirige a una nueva generación de pilotos que han crecido a la sombra de la guerra. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/ZxDhzgaIWkQ",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Acción, Aventura, Ciencia Ficc",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CPacific-Rim-Uprising-1.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/titanes2.jpg",
+      "urlSlug": "titanes-del-pacifico-la-insurreccion",
+      "isPreSale": false,
+      "people": [
+        "Adria Arjona",
+        "Scott Eastwood",
+        "Tian Jing"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Adria",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Scott ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Tian ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Steven S. ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Steven S. DeKnight"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "titanes2.jpg",
+      "openingDate": "2018-03-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "39e2327a-fe7a-43e3-ace1-e16e092d091d",
+      "title": "Yo Soy Tonya",
+      "releaseDate": "2018-03-22T00:00:00",
+      "duration": 120,
+      "synopsis": "Ganadora al Oscar como mejor actriz de reparto (Allison Janney). Basada en eventos increíbles pero verdaderos, ‘YO SOY TONYA’, es una tragicomedia sobre la patinadora artística estadounidense, Tonya Harding y uno de los escándalos más sensacionales en la historia del deporte mundial. Aunque Harding fue la primera mujer estadounidense en completar un triple axel en competencia, su carrera se derrumbó para siempre por la asociación con un ataque infame, mal concebido e incluso peor ejecutado contra su competidora olímpica, Nancy Kerrigan (Caitlin Carver), antes de las eliminatorias para los Juegos Olímpicos de Invierno de Lillehammer 1994 . Con la interpretaciones icónicas de Margot Robbie como la ardiente Harding y Allison Janney como su ácida madre. ‘YO SOY TONYA’ (I, TONYA) es una representación absurda, irreverente y penetrante de la vida y la carrera de Harding en toda su gloria y decadencia.",
+      "shortSynopsis": "",
+      "trailerUrl": "",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Drama,Comedia,Biográfica",
+      "bannerUrl": null,
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/tonya.jpg",
+      "urlSlug": "yo-soy-tonya",
+      "isPreSale": false,
+      "people": [
+        "Allison Janney",
+        "Margot Robbie"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Allison ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Craig  ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Margot ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Craig Gillespie"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "tonya.jpg",
+      "openingDate": "2018-03-22T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "5ead0ee8-4ac2-49c4-a3ac-7ed848f1d48f",
+      "title": "Ready Player One",
+      "releaseDate": "2018-03-29T00:00:00",
+      "duration": 1,
+      "synopsis": "La historia sucede en 2045, con el mundo al borde del caos y el colapso. Pero la gente encuentra la salvación en OASIS, universo expansivo de realidad virtual creado por el brillante y excéntrico James Halliday. Halliday muere y su inmensa fortuna será heredada por la primera persona que encuentre un huevo de Pascua digital que él escondió en algún lugar de OASIS... y así se detona una competencia que engancha al mundo entero. Cuando Wade Watts (un joven e improbable héroe) decide unirse a la competencia, se ve arrastrado dentro de una vertiginosa cacería de tesoros que distrociona la realidad a través de un universo fantástico de misterio, exploración y peligro.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/Jqm0gKw68g8",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Acción, Aventura, Ciencia Ficc",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CReady-Player-One.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/ready.jpg",
+      "urlSlug": "ready-player-one",
+      "isPreSale": false,
+      "people": [
+        "Hannah John-Kamen",
+        "Letitia Wright",
+        "Mckenna Grace"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Mckenna ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Steven ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Hannah ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Letitia ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Steven Spielberg"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "ready.jpg",
+      "openingDate": "2018-03-29T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "b215731b-70bb-408f-8611-f59311c35a79",
+      "title": "Un Viaje en el Tiempo",
+      "releaseDate": "2018-03-29T00:00:00",
+      "duration": 1,
+      "synopsis": "Con la ayuda de tres guías celestiales, una niña realiza un viaje transformador en el que descubriremos que la fortaleza interna se logra al aceptar nuestras individualidades, y que la mejor manera de triunfar sobre el miedo es viajar usando nuestra propia luz.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/W7BmkE5QtS4",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Fantasía, Aventura",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5C071617-awrinkleintime_0.png",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/unviaje.jpg",
+      "urlSlug": "un-viaje-en-el-tiempo",
+      "isPreSale": false,
+      "people": [
+        "Chris Pine",
+        "Gugu Mbatha-Raw",
+        "Reese Witherspoon"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Chris",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Reese",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Ava ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Gugu ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Ava DuVernay"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "unviaje.jpg",
+      "openingDate": "2018-03-29T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "e97d1abe-f3c5-45f6-9dbe-5ba285d8f81d",
+      "title": "Basada en Hechos Reales",
+      "releaseDate": "2018-04-05T00:00:00",
+      "duration": 100,
+      "synopsis": "Delphine (Emmanuelle Seigner) es una sensible y atormentada novelista de éxito, paralizada ante la idea de tener que comenzar a escribir una nueva novela. Su camino se cruza entonces con el de Elle (Eva Green), una joven encantadora, inteligente e intuitiva. Elle comprende a Delphine mejor que nadie, y pronto se convierte en su confidente. Delphine confía en Elle y le abre las puertas de su vida. Pero ¿quién es Elle en realidad? ¿Qué pretende? ¿Ha venido para darle un nuevo impulso a la vida de Delphine o para arrebatársela?.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/ejutAkpcTyI",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Drama, Comedia, Thriller",
+      "bannerUrl": null,
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/hechosreales.jpg",
+      "urlSlug": "basada-en-hechos-reales",
+      "isPreSale": false,
+      "people": [
+        "Emmanuelle Seigner",
+        "Eva Green"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Emmanuelle ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Roman ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Eva ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Roman Polanski"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "hechosreales.jpg",
+      "openingDate": "2018-04-05T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "373eb3af-f24d-4f6b-ad5a-5211d64c0634",
+      "title": "La Reina del Miedo",
+      "releaseDate": "2018-04-05T00:00:00",
+      "duration": 105,
+      "synopsis": "Robertina, una exitosa actriz está en el apogeo de su carrera, pero vive en un estado de ansiedad constante. Sin embargo, la situación personal de un gran amigo la lleva a irse unos días de viaje, momento en el que Robertina consigue ver en perspectiva su vida absurda. Lejos de casa, se deja llevar por una poderosa deriva que la cambiara para siempre.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/qE6nFC2cSYY",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Drama",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cvaleria-bertuccelli-gano-como-mejor-actriz-en-el-festival-de-cine-independiente-sundance.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/reina.jpg",
+      "urlSlug": "la-reina-del-miedo",
+      "isPreSale": false,
+      "people": [
+        "Darío Grandinetti",
+        "Gabriel Goity",
+        "Valeria Bertuccelli"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Valeria ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Darío ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Gabriel ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Valeria ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Valeria Bertuccelli"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "reina.jpg",
+      "openingDate": "2018-04-05T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "17cf6301-0393-4fa7-8758-7381a32a3369",
+      "title": "Un Lugar en Silencio",
+      "releaseDate": "2018-04-05T00:00:00",
+      "duration": 1,
+      "synopsis": "En medio de un hermoso bosque, lleno de quietud y armonía, una familia lleva su día a día con la mayor normalidad posible, pero en absoluto silencio. Sin embargo, después de que un pequeño accidente en casa provoca un ruido, todos se aterran y escuchan cómo algo allá afuera se acerca a su hogar, de forma amenazante. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/MxSIK-jngVA",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Terror, Suspenso",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CUn-lugar-en-silencio.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/unlugar.jpg",
+      "urlSlug": "un-lugar-en-silencio",
+      "isPreSale": false,
+      "people": [
+        "Emily Blunt",
+        "John Krasinski"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "John ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Emily ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "John ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "John Krasinski"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "unlugar.jpg",
+      "openingDate": "2018-04-05T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "7f2e366d-4e7a-4b65-a969-0c602640ac84",
+      "title": "27 El Club de los Malditos",
+      "releaseDate": "2018-04-12T00:00:00",
+      "duration": 80,
+      "synopsis": "Una noche en el verano más caluroso en 20 años, Leandro De La Torre, famoso cantante punk, sale disparado por una ventana e impacta sobre el techo de un auto. Es el día de su cumpleaños número 27. Paula, una joven fan de veintipocos años, graba todo con su celular. Lejos está de saber que en aquel video está la clave detrás del asesinato del músico. ",
+      "shortSynopsis": "",
+      "trailerUrl": "",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Comedia, Acción",
+      "bannerUrl": null,
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/27club.jpg",
+      "urlSlug": "27-el-club-de-los-malditos",
+      "isPreSale": false,
+      "people": [
+        "Sofía Gala"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Sofía ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": " Diego",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Nicanor ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Diego Capusotto",
+        "Nicanor Loreti"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "27club.jpg",
+      "openingDate": "2018-04-12T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "82bb2b24-dc3f-4783-937e-17c2558b0839",
+      "title": "Ploey: Nunca Volarás Solo",
+      "releaseDate": "2018-04-12T00:00:00",
+      "duration": 1,
+      "synopsis": "Un pequeño chorlito no aprendió a volar cuando su familia emigra en el otoño. Debe sobrevivir al invierno ártico, a los enemigos viciosos y a él mismo para reunirse con su amada la próxima primavera. ",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/1hapuN_UcdU",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Animación",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Cploey.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/ploey.jpg",
+      "urlSlug": "ploey-nunca-volaras-solo",
+      "isPreSale": false,
+      "people": [],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Árni ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Árni Ásgeirsson"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "ploey.jpg",
+      "openingDate": "2018-04-12T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "82f87c94-2334-4fcc-af78-050c9680378a",
+      "title": "Rampage: Devastación",
+      "releaseDate": "2018-04-12T00:00:00",
+      "duration": 1,
+      "synopsis": "El primatólogo Davis Okoye (Johnson), un hombre distante con la gente, comparte un sólido vínculo con George, el extraordinariamente inteligente gorila de montaña de lomo plateado, quien ha estado al cuidado de Davis desde su nacimiento. Pero un errado e inescrupuloso experimento genético muta a este dócil simio en una furiosa criatura de enormes proporciones. Para colmo de males, pronto se descubre que también hay otros animales alterados de manera similar. Mientras que estos nuevos alterados depredadores dominantes se mueven a toda velocidad por Norteamérica, destruyendo todo lo que está en su camino, Okoye hace equipo con un desacreditado ingeniero en genética para obtener un antídoto abriéndose camino a la fuerza en un campo de batalla cambiante, no solo para detener una catástrofe mundial sino también para salvar a la temida criatura que alguna vez fue su amigo.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/061ICGVhGVk",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Ciencia Ficción,Acción",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Crampage-2018.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/rampage.jpg",
+      "urlSlug": "rampage-devastacion",
+      "isPreSale": false,
+      "people": [
+        "Dwayne Johnson"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Dwayne ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Brad ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Brad Peyton"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "rampage.jpg",
+      "openingDate": "2018-04-12T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "ee3bbb0f-6681-4b70-95d5-1380435e079a",
+      "title": "Yo Soy Simón",
+      "releaseDate": "2018-04-12T00:00:00",
+      "duration": 110,
+      "synopsis": "Simon Spier es un adolescente de 16 años que no se atreve a revelar su homosexualidad, ya que prefiere esperar al musical que se celebra en secundaria. Un día, uno de sus correos llega a manos equivocadas y Simon empieza a ser chantajeado con su secreto: debe ayudar al 'payaso' de clase a conseguir salir con la chica que le gusta o su homosexualidad será revelada junto con el nombre del chico con el que estaba hablando.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/7BD4PGa2Ck4",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Comedia, Romance, Drama",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Clove-simon.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/simon.jpg",
+      "urlSlug": "yo-soy-simon",
+      "isPreSale": false,
+      "people": [
+        "Nick Robinson"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Greg ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Nick ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Greg Berlanti"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "simon.jpg",
+      "openingDate": "2018-04-12T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "36646a37-ec16-4d19-8c3e-3fe3ee74a6c9",
+      "title": "Avengers: Infinity War",
+      "releaseDate": "2018-04-26T00:00:00",
+      "duration": 1,
+      "synopsis": "Los Vengadores y sus superhéroes aliados, incluyendo a los Guardianes de la Galaxia, Pantera Negra y el Doctor Strange deberán estar dispuestos a sacrificarlo todo para derrotar al poderoso Thanos antes de que él destruya el universo reuniendo las gemas del infinito.",
+      "shortSynopsis": "",
+      "trailerUrl": "",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Acción, Aventura, Fantasía",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5CAvengers.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/avengers.jpg",
+      "urlSlug": "avengers-infinity-war",
+      "isPreSale": false,
+      "people": [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Mark Ruffalo",
+        "Robert Downey Jr."
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Robert ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Anthony ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Chris",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Joe ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Chris ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Mark ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Anthony Russo",
+        "Joe Russo"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "avengers.jpg",
+      "openingDate": "2018-04-26T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  },
+  {
+    "content": {
+      "id": "e936ba76-a41f-4bb7-b1ee-7888322e7d0d",
+      "title": "Cada Día",
+      "releaseDate": "2018-06-14T00:00:00",
+      "duration": 95,
+      "synopsis": "A es un alma que cada día tiene un cuerpo distinto. El problema es que los cuerpos que habita no le pertenecen: A tiene que seguir el curso y fingir por un día ser la persona del cuerpo que está habitando. A no sabe cómo esto sucede, pero ha vivido así desde siempre, por lo que ya adquirió cierta costumbre. El problema empieza cuando A se enamora de la novia del cuerpo que habitó por un día, de ahí en adelante su vida dará un giro que nunca esperó.",
+      "shortSynopsis": "",
+      "trailerUrl": "https://www.youtube.com/embed/hKKFxjawitQ",
+      "isComingSoon": true,
+      "isScheduleAtCinema": false,
+      "websiteUrl": "",
+      "genre": "Romance, Fantasía",
+      "bannerUrl": "https://movietestportalstoweb.blob.core.windows.net/moviebanners/C:%5Cfakepath%5Ccada dia.jpg",
+      "posterUrl": "https://movieprodportalstoweb.blob.core.windows.net/movieposters/cadadia.jpg",
+      "urlSlug": "cada-dia",
+      "isPreSale": false,
+      "people": [
+        "Angourie Rice",
+        "Justice Smith"
+      ],
+      "categories": [],
+      "categoryContents": [],
+      "contentFormats": [],
+      "personContents": [
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Justice",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Angourie ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        },
+        {
+          "id": "00000000-0000-0000-0000-000000000000",
+          "firstName": "Michael ",
+          "lastName": null,
+          "fullName": null,
+          "profileUrl": null,
+          "profileImage": null,
+          "role": 2,
+          "isAlive": true
+        }
+      ],
+      "director": [
+        "Michael Sucsy"
+      ],
+      "cinemasIds": null,
+      "formatsIds": null,
+      "translationsIds": null,
+      "categoriesIds": null,
+      "contentType": 1,
+      "promotion": null,
+      "rating": "S/C ",
+      "ratingAlt": "Sin Calificar",
+      "ratingDescription": "Restringida para mayores de 18 años hasta su calificación.",
+      "ratingDescriptionAlt": "",
+      "prices": null,
+      "cinemaAvailableFilters": null,
+      "twitterTag": "cadadia.jpg",
+      "openingDate": "2018-06-14T00:00:00",
+      "distributor": "",
+      "availableOn4D": false,
+      "content2D4D": false
+    }
+  }
+]`);
+
+
 exports.schedules = JSON.parse(`{
   "contentCinemaShows": [
     {

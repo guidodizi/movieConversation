@@ -52,7 +52,7 @@ exports[constants.QUICK_REPLIES_DATE] = async (sender_psid, response, context) =
 */
 exports[constants.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, context) => {
     try {
-        response = repositoryContainer.get_quickReplies_data_place(response, context);
+        response = repositoryContainer.get_quickReplies_date_place(response, context);
 
         //No posible response
         if (!response.quick_replies.length) {
