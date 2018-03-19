@@ -1,5 +1,6 @@
 const moment = require('moment-timezone');
 const database = require('../database/database_file')
+moment.tz.setDefault("America/Montevideo");
 
 exports.get_quickReplies_location = function (res, context) {
     //get database from container
@@ -64,7 +65,7 @@ exports.get_quickReplies_date = function (res, context) {
                 cinemaShow.shows.forEach(show => {
                     //Check if show is for selected date
                     const show_date = moment(show.date);
-                    const now_date = moment().tz("America/Montevideo");
+                    const now_date = moment();
                     if (show_date.dayOfYear() >= now_date.dayOfYear()) {
                         if (days_of_show.indexOf(show_date.weekday()) === -1) {
                             days_of_show.push(show_date.weekday());
@@ -109,7 +110,7 @@ exports.get_quickReplies_date_place = function (res, context) {
                     cinemaShow.shows.forEach(show => {
                         //Check if show is for selected date
                         const show_date = moment(show.date);
-                        const now_date = moment().tz("America/Montevideo");
+                        const now_date = moment();
                         if (show_date.dayOfYear() >= now_date.dayOfYear()) {
                             if (days_of_show.indexOf(show_date.weekday()) === -1) {
                                 days_of_show.push(show_date.weekday());
