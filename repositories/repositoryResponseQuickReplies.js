@@ -50,7 +50,7 @@ exports.get_quickReplies_date = function (res, context) {
     const response = { ...res };
 
 
-    const weekdays = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+    const weekdays = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" ]
     //Array so as not to repeat days of show => 2 Saturday options
     const days_of_show = [];
     //Find id of selected movie
@@ -94,7 +94,7 @@ exports.get_quickReplies_date_place = function (res, context) {
     const response = { ...res };
 
 
-    const weekdays = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+    const weekdays = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" ]
     //Array so as not to repeat days of show => 2 Saturday options
     const days_of_show = [];
     //Find id of selected movie
