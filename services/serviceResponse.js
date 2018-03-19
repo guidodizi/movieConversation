@@ -15,7 +15,8 @@ const { sendAPI } = require('./serviceSendAPI');
 *
 */
 module.exports = function handleResponse(sender_psid, text_response) {
-    var message_type = getUserContext(sender_psid).message_type;
+    var context = getUserContext(sender_psid)
+    var message_type = context.message_type;
 
     console.log('CONTEXT: ' + JSON.stringify(context, null))
     console.log('TEXT RESPONSE: ' + text_response)
