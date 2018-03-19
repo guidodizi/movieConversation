@@ -115,14 +115,14 @@ function handleMessage(event) {
       if (err) {
         console.error(err);
       } else {
-        console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
         //Save user context
-        updateUserContext(sender_psid, watsonResponse.context);
+        var context = updateUserContext(sender_psid, watsonResponse.context);
+        console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
         
         //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          serviceResponse(sender_psid, text_response);
+          serviceResponse(sender_psid, text_response, context.message_type, context.payload);
         })
       }
     }
@@ -145,13 +145,13 @@ function handlePostback(event) {
         console.error(err);
       } else {
         //Save user context
-        updateUserContext(sender_psid, watsonResponse.context);
+        var context = updateUserContext(sender_psid, watsonResponse.context);
         console.log("WATSON RESPONSE " + JSON.stringify(watsonResponse))
 
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          serviceResponse(sender_psid, text_response);
+          serviceResponse(sender_psid, text_response, context.message_type, context.payload);
         })
       }
     }

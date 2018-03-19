@@ -14,19 +14,16 @@ const { sendAPI } = require('./serviceSendAPI');
 * text: simply reply with the text Watson gave
 *
 */
-module.exports = function handleResponse(sender_psid, text_response) {
-    const context = getUserContext(sender_psid)
-    const message_type = context.message_type;
+module.exports = function handleResponse(sender_psid, text_response, message_type, payload) {
 
-    console.log('CONTEXT: ' + JSON.stringify(context, null))
     console.log('TEXT RESPONSE: ' + text_response)
     switch (message_type) {
         case "template": {
-            handleTemplateResponse(sender_psid, text_response);
+            handleTemplateResponse(sender_psid, text_response, payload);
             break;
         }
         case "quick_replies": {
-            handelQuickRepliesResponse(sender_psid, text_response);
+            handelQuickRepliesResponse(sender_psid, text_response, payload);
             break;
         }
         case "dont_show": {
@@ -35,7 +32,7 @@ module.exports = function handleResponse(sender_psid, text_response) {
         }
         default: {
             // Directly respond to user
-            sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); } );
+            sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); });
             break;
         }
     }
@@ -52,20 +49,18 @@ module.exports = function handleResponse(sender_psid, text_response) {
 *   data to put on template: context.payload.data
 *
 */
-function handleTemplateResponse(sender_psid, text_response) {
-    const context = getUserContext(sender_psid);
-
-    const watson_payload = context.payload;
+function handleTemplateResponse(sender_psid, text_response, payload) {
 
     //Base response for templates
     let response = { attachment: { type: "template", payload: { elements: [] } } };
-    response.attachment.payload.template_type = watson_payload.template_type || "generic";
-    response.attachment.payload.image_aspect_ratio = watson_payload.image_aspect_ratio || "horizontal";
 
-    //Generate elements depending on what string Watson gave on context.payload.data    
-    for (var template_data in constants.templates){
-        if (constants.templates[template_data] === watson_payload.data){
-            serviceResponseTemplate[constants.templates[template_data]](sender_psid, response).catch((err) => console.log(err));            
+    response.attachment.payload.template_type = payload.template_type || "generic";
+    response.attachment.payload.image_aspect_ratio = payload.image_aspect_ratio || "horizontal";
+
+    for (var template_data in constants.templates) {
+        //Generate elements depending on what string Watson gave on context.payload.data    
+        if (constants.templates[template_data] === payload.data) {
+            serviceResponseTemplate[constants.templates[template_data]](sender_psid, response).catch((err) => console.log(err));
         }
     }
 }
@@ -75,15 +70,14 @@ function handleTemplateResponse(sender_psid, text_response) {
 * data for quick replies:  context.payload.data
 *
 */
-function handelQuickRepliesResponse(sender_psid, text_response) {
-    const context = getUserContext(sender_psid);
-    
-    const watson_payload = context.payload;
+function handelQuickRepliesResponse(sender_psid, text_response, payload) {
+
     let response = { text: text_response, quick_replies: [] };
 
     //Generate elements depending on what string Watson gave on context.payload.data    
-    for (var quickReplies_data in constants.quickReplies){
-        if (constants.quickReplies[quickReplies_data] === watson_payload.data){
+    for (var quickReplies_data in constants.quickReplies) {
+        //Generate elements depending on what string Watson gave on context.payload.data    
+        if (constants.quickReplies[quickReplies_data] === payload.data) {
             serviceResponseQuickReplies[constants.quickReplies[quickReplies_data]](sender_psid, response).catch((err) => console.log(err));
         }
     }

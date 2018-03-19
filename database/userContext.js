@@ -6,6 +6,7 @@ function getUserContext (sender_psid) {
 }
 function updateUserContext (sender_psid, context = {}) {
     USER_CONTEXT[sender_psid] = context;
+    return USER_CONTEXT[sender_psid]
 }
 function mergeUserContext (sender_psid, data){
     if (typeof data !== 'object' || data instanceof Array) throw new Error('Data passed to update user context must be an object. The object attributes will merge with sender_psid context')
