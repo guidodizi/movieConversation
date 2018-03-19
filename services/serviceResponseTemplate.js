@@ -182,9 +182,9 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
         await sendAPI(sender_psid, { text: "Déjame mostrarte los nuevos estrenos..." }).catch(err => { console.log(err); });
 
         //Set pageview to 0 on context
-        if (!context.data || !context.data.movies_pageview) {
+        if (!context.data || !context.data.newReleases_pageview) {
             const data = {
-                movies_pageview: 0
+                newReleases_pageview: 0
             }
             context = mergeUserContext(sender_psid, data)
         }
