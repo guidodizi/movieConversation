@@ -191,8 +191,6 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
 
         response = repositoryContainer.get_template_new_releases(response, context);
 
-        updateUserContext(sender_psid, {});
-
         // Response is now nurtured for user to receive it, send it to user
         console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
         await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
