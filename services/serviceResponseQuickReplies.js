@@ -10,7 +10,7 @@ const repositoryContainer = new RepositoryContainer(database);
 * Get quick replies of locations available for (date, movie)
 *
 */
-exports[constants.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, context) => {
+exports[constants.quickReplies.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, context) => {
     try {
         //Save on context the cinema options for selected movie
         if (context.data) {
@@ -33,7 +33,7 @@ exports[constants.QUICK_REPLIES_LOCATIONS] = async (sender_psid, response, conte
 * Get quick repies of possible dates for selected (movie)
 *
 */
-exports[constants.QUICK_REPLIES_DATE] = async (sender_psid, response, context) => {
+exports[constants.quickReplies.QUICK_REPLIES_DATE] = async (sender_psid, response, context) => {
     try {
         response = repositoryContainer.get_quickReplies_data(response, context)
 
@@ -50,7 +50,7 @@ exports[constants.QUICK_REPLIES_DATE] = async (sender_psid, response, context) =
 * Get quick repies of possible dates for selected (movie, place)
 *
 */
-exports[constants.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, context) => {
+exports[constants.quickReplies.quickReplies.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, context) => {
     try {
         response = repositoryContainer.get_quickReplies_date_place(response, context);
 

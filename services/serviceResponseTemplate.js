@@ -11,7 +11,7 @@ const repositoryContainer = new RepositoryContainer(database);
 * Get movies based on a (date)
 *
 */
-exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, context) => {
     try {
         //Answer user that search has began
         await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
@@ -44,7 +44,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, conte
 * Get movies based on a (date, place)
 *
 */
-exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response, context) => {
     try {
         //Answer user that search has began
         await sendAPI(sender_psid, 
@@ -78,7 +78,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
     try {
         await sendAPI(sender_psid, 
             { text: `Déjame mostrarte que hay del género ${context.data.genre}...` }
@@ -111,7 +111,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
     try {
         await sendAPI(sender_psid, 
             { text: `Déjame mostrarte que hay del género ${context.data.genre} en ${context.data.place}...` }
@@ -144,7 +144,7 @@ exports[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, res
  * Get schedule for selected (date, movie, place)
  * 
  */
-exports[constants.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, context) => {
     try {
         await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
 
@@ -164,7 +164,7 @@ exports[constants.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, con
 * Get movies based on a (date)
 *
 */
-exports[constants.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response, context) => {
     try {
         //Answer user that search has began
         await sendAPI(sender_psid, { text: "Déjame mostrarte los nuevos estrenos..." }).catch(err => { console.log(err); });
