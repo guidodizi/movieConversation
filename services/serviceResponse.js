@@ -59,7 +59,7 @@ function handleTemplateResponse(sender_psid, text_response, context) {
 
     //Generate elements depending on what string Watson gave on context.payload.data    
     for (var template_data in constants.templates){
-        if (template_data === watson_payload.data){
+        if (constants[template_data] === watson_payload.data){
             serviceResponseTemplate[constants[template_data]](sender_psid, response, context).catch((err) => console.log(err));            
         }
     }
@@ -98,7 +98,7 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
 
     //Generate elements depending on what string Watson gave on context.payload.data    
     for (var quickReplies_data in constants.quickReplies){
-        if (quickReplies_data === watson_payload.data){
+        if (constants[quickReplies_data] === watson_payload.data){
             serviceResponseQuickReplies[constants[quickReplies_data]](sender_psid, response, context).catch((err) => console.log(err));
         }
     }
