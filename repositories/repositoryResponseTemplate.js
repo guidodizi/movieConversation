@@ -293,7 +293,7 @@ exports.get_template_new_releases = function (res, context) {
     movies_shown.forEach(movie => {
         response.attachment.payload.elements.push({
             title: movie.content.title,
-            subtitle: `Estreno: ${moment(movie.content.openingDate).format('LLLL')}`,
+            subtitle: `Estreno: ${moment(movie.content.openingDate).format('LL')}`,
             image_url: movie.content.posterUrl,
         })
 
