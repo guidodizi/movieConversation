@@ -76,6 +76,8 @@ function handleTemplateResponse(sender_psid, text_response) {
 *
 */
 function handelQuickRepliesResponse(sender_psid, text_response, context) {
+    const context = getUserContext(sender_psid);
+    
     const watson_payload = context.payload;
     let response = { text: text_response, quick_replies: [] };
 
