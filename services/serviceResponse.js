@@ -57,29 +57,33 @@ function handleTemplateResponse(sender_psid, text_response, context) {
     response.attachment.payload.template_type = watson_payload.template_type || "generic";
     response.attachment.payload.image_aspect_ratio = watson_payload.image_aspect_ratio || "horizontal";
 
-    //Generate elements depending on what string Watson gave on context.payload.data
-    switch (watson_payload.data) {
-        case constants.GENERIC_TEMPLATE_MOVIES: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context).catch((err) => console.log(err));
-            break;
-        }
-        case constants.GENERIC_TEMPLATE_MOVIES_GENRE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context).catch((err) => console.log(err));            
-            break;
-        }
-        case constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context).catch((err) => console.log(err));          
-            break;
-        }
-        case constants.GENERIC_TEMPLATE_SCHEDULE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context).catch((err) => console.log(err));
-            break;
-        }
-        case constants.GENERIC_TEMPLATE_MOVIES_PLACE: {
-            serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context).catch((err) => console.log(err));                             
-            break;
-        }
+    //Generate elements depending on what string Watson gave on context.payload.data    
+    for (var template_data in constants.templates){
+        if (template_data === watson_payload.data)
+            serviceResponseTemplate[template_data](sender_psid, response, context).catch((err) => console.log(err));
     }
+    // switch (watson_payload.data) {
+    //     case constants.GENERIC_TEMPLATE_MOVIES: {
+    //         serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES](sender_psid, response, context).catch((err) => console.log(err));
+    //         break;
+    //     }
+    //     case constants.GENERIC_TEMPLATE_MOVIES_GENRE: {
+    //         serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE](sender_psid, response, context).catch((err) => console.log(err));            
+    //         break;
+    //     }
+    //     case constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE: {
+    //         serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE](sender_psid, response, context).catch((err) => console.log(err));          
+    //         break;
+    //     }
+    //     case constants.GENERIC_TEMPLATE_SCHEDULE: {
+    //         serviceResponseTemplate[constants.GENERIC_TEMPLATE_SCHEDULE](sender_psid, response, context).catch((err) => console.log(err));
+    //         break;
+    //     }
+    //     case constants.GENERIC_TEMPLATE_MOVIES_PLACE: {
+    //         serviceResponseTemplate[constants.GENERIC_TEMPLATE_MOVIES_PLACE](sender_psid, response, context).catch((err) => console.log(err));                             
+    //         break;
+    //     }
+    // }
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -91,20 +95,25 @@ function handelQuickRepliesResponse(sender_psid, text_response, context) {
     const watson_payload = context.payload;
     let response = { text: text_response, quick_replies: [] };
 
-    switch (watson_payload.data) {
-        case constants.QUICK_REPLIES_LOCATIONS: {
-            serviceResponseQuickReplies[constants.QUICK_REPLIES_LOCATIONS](sender_psid, response, context)
-            break;
-        };
-        case constants.QUICK_REPLIES_DATE: {
-            serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE](sender_psid, response, context)            
-            break;
-        }
-        case constants.QUICK_REPLIES_DATE_PLACE: {
-            serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE_PLACE](sender_psid, response, context)            
-            break;
-        }
-    };
+    //Generate elements depending on what string Watson gave on context.payload.data    
+    for (var quickReplies_data in constants.quickReplies){
+        if (quickReplies_data === watson_payload.data)
+            serviceResponseQuickReplies[quickReplies_data](sender_psid, response, context).catch((err) => console.log(err));
+    }
+    // switch (watson_payload.data) {
+    //     case constants.QUICK_REPLIES_LOCATIONS: {
+    //         serviceResponseQuickReplies[constants.QUICK_REPLIES_LOCATIONS](sender_psid, response, context)
+    //         break;
+    //     };
+    //     case constants.QUICK_REPLIES_DATE: {
+    //         serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE](sender_psid, response, context)            
+    //         break;
+    //     }
+    //     case constants.QUICK_REPLIES_DATE_PLACE: {
+    //         serviceResponseQuickReplies[constants.QUICK_REPLIES_DATE_PLACE](sender_psid, response, context)            
+    //         break;
+    //     }
+    // };
 }
 
 
