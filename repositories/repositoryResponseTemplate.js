@@ -291,13 +291,12 @@ exports.get_template_new_releases = function (res, context) {
     var movies_shown = database.movies_newRelease.slice(start, end);
 
     movies_shown.forEach(movie => {
-        if (id_movies.indexOf(movie.content.id) !== -1) {
-            response.attachment.payload.elements.push({
-                title: movie.content.title,
-                subtitle: `Estreno: ${moment(movie.content.openingDate).format('LLLL')}`,
-                image_url: movie.content.posterUrl,
-            })
-        }
+        response.attachment.payload.elements.push({
+            title: movie.content.title,
+            subtitle: `Estreno: ${moment(movie.content.openingDate).format('LLLL')}`,
+            image_url: movie.content.posterUrl,
+        })
+
     });
 
     return response;
