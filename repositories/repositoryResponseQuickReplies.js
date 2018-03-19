@@ -111,9 +111,9 @@ exports.get_quickReplies_date_place = function (res, context) {
                         //Check if show is for selected date
                         const show_date = moment(show.date);
                         const now_date = moment();
-                        console.log(now_date._d);
                         if (show_date.dayOfYear() >= now_date.dayOfYear()) {
                             console.log(show_date._d);
+                            console.log(show_date.weekday());
                             if (days_of_show.indexOf(show_date.weekday()) === -1) {
                                 days_of_show.push(show_date.weekday());
                                 response.quick_replies.push({
