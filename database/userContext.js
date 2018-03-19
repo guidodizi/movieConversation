@@ -15,7 +15,7 @@ function mergeUserContext (sender_psid, data){
         for (const property in data){
             if (data.hasOwnProperty(property)){
                 //all data added to the context must always be on context.data
-                if (new_user_context.data === undefined) new_user_context.data = {};
+                if (!new_user_context.data) new_user_context.data = {};
                 new_user_context.data[property] = data[property];
             } 
         }
