@@ -50,7 +50,7 @@ exports[constants.quickReplies.QUICK_REPLIES_DATE] = async (sender_psid, respons
 * Get quick repies of possible dates for selected (movie, place)
 *
 */
-exports[constants.quickReplies.quickReplies.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, context) => {
+exports[constants.quickReplies.QUICK_REPLIES_DATE_PLACE] = async (sender_psid, response, context) => {
     try {
         response = repositoryContainer.get_quickReplies_date_place(response, context);
 
