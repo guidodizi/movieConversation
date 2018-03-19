@@ -1,4 +1,4 @@
-const { mergeUserContext, updateUserContext } = require('../database/userContext');
+const { mergeUserContext, updateUserContext, getUserContext } = require('../database/userContext');
 const constants = require('../constants');
 const moment = require('moment-timezone');
 const { sendAPI } = require('./serviceSendAPI');
