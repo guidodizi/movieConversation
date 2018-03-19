@@ -286,7 +286,7 @@ exports.get_template_new_releases = function (res, context) {
     const response = { ...res };
 
     //Show always 9 or less movies
-    var start = (context.data.movies_pageview || 0) * 9;
+    var start = (context.data.newReleases_pageview || 0) * 9;
     var end = start + 9;
     var movies_shown = database.movies_newRelease.slice(start, end);
 
