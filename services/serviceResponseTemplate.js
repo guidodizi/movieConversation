@@ -188,8 +188,6 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
             }
             context = mergeUserContext(sender_psid, data)
         }
-        console.log('NEW CONTEXXXXT')
-        console.log(getUserContext(sender_psid))
         response = repositoryContainer.get_template_new_releases(response, context);
 
         // Response is now nurtured for user to receive it, send it to user
