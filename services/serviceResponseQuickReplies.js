@@ -39,7 +39,7 @@ exports[constants.quickReplies.QUICK_REPLIES_DATE] = async (sender_psid, respons
     try {
         var context = getUserContext(sender_psid);
         
-        response = repositoryContainer.get_quickReplies_data(response, context)
+        response = repositoryContainer.get_quickReplies_date(response, context)
 
         /**
         * Response is now nurtured for user to receive it, send it to user
