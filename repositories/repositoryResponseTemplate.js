@@ -296,12 +296,6 @@ exports.get_template_new_releases = function (res, context) {
                 title: movie.content.title,
                 subtitle: `Estreno: ${moment(movie.content.openingDate).format('LLLL')}`,
                 image_url: movie.content.posterUrl,
-                buttons: [{
-                    type: "postback",
-                    title: "Elegir",
-                    payload: movie.content.title
-                }]
-
             })
         }
     });

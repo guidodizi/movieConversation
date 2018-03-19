@@ -179,10 +179,7 @@ exports[constants.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response,
 
         response = repositoryContainer.get_template_new_releases(response, context);
 
-        //No movies found, reset context
-        if (response.text && !response.attachment) {
-            updateUserContext(sender_psid, {});
-        }
+        updateUserContext(sender_psid, {});
 
         // Response is now nurtured for user to receive it, send it to user
         console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
