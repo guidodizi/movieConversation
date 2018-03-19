@@ -134,7 +134,7 @@ const addValuesGenre = () => {
 
 async function loadMovies() {
     await deleteEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
-    await createEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
+    await createEntity('movie', { fuzzy_match: true }).then(result => console.log(result)).catch(err => console.log(err));
     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
 };
 async function loadGenres() {

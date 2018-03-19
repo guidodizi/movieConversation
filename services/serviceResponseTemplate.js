@@ -158,3 +158,35 @@ exports[constants.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, con
         await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
     } catch (err) { console.log(err); }
 };
+
+
+/**
+* Get movies based on a (date)
+*
+*/
+exports[constants.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response, context) => {
+    try {
+        //Answer user that search has began
+        await sendAPI(sender_psid, { text: "Déjame mostrarte los nuevos estrenos..." }).catch(err => { console.log(err); });
+
+        //Set pageview to 0 on context
+        if (!context.data.movies_pageview) {
+            const data = {
+                movies_pageview: 0
+            }
+            mergeUserContext(sender_psid, data)
+        }
+
+        response = repositoryContainer.get_template_new_releases(response, context);
+
+        //No movies found, reset context
+        if (response.text && !response.attachment) {
+            updateUserContext(sender_psid, {});
+        }
+
+        // Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+
+    } catch (err) { console.log(err); }
+};

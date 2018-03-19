@@ -15,6 +15,8 @@ module.exports = {
     GENERIC_TEMPLATE_MOVIES_GENRE_PLACE: "GENERIC_TEMPLATE_MOVIES_GENRE_PLACE",
     //Get schedule for selected (date, movie, place)
     GENERIC_TEMPLATE_SCHEDULE: "GENERIC_TEMPLATE_SCHEDULE",
+    //Get new releases
+    GENERIC_TEMPLATE_NEW_RELEASES : "GENERIC_TEMPLATE_NEW_RELEASES",
     /**
      * Quick Replies Data Constants
      */

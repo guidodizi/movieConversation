@@ -3703,7 +3703,7 @@ exports.movies = JSON.parse(`[
   }
 ]`)
 
-exports.movies_nextRelease = JSON.parse(`[
+exports.movies_newRelease = JSON.parse(`[
   {
     "content": {
       "id": "34944057-299d-460b-904a-1897d7a2da07",

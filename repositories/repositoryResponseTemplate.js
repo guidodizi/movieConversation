@@ -1,4 +1,5 @@
 const moment = require('moment-timezone');
+moment.locale('es');
 
 exports.get_template_movies = function (res, context) {
     //get database from container
@@ -274,6 +275,36 @@ exports.get_template_schedule = function (res, context) {
     if (!response.attachment.payload.elements.length) {
         response = { text: `No encontré horarios para ${context.data.date_synonym}. Recuerda que la cartelera cambia todos los jueves.` };
     }
+
+    return response;
+}
+
+exports.get_template_new_releases = function (res, context) {
+    //get database from container
+    const repositoryContainer = this;
+    const database = this.database;
+    const response = { ...res };
+
+    //Show always 9 or less movies
+    var start = (context.data.movies_pageview || 0) * 9;
+    var end = start + 9;
+    var movies_shown = database.movies_newRelease.slice(start, end);
+
+    movies_shown.forEach(movie => {
+        if (id_movies.indexOf(movie.content.id) !== -1) {
+            response.attachment.payload.elements.push({
+                title: movie.content.title,
+                subtitle: `Estreno: ${moment(movie.content.openingDate).format('LLLL')}`,
+                image_url: movie.content.posterUrl,
+                buttons: [{
+                    type: "postback",
+                    title: "Elegir",
+                    payload: movie.content.title
+                }]
+
+            })
+        }
+    });
 
     return response;
 }
