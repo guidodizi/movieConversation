@@ -15,8 +15,7 @@ const { sendAPI } = require('./serviceSendAPI');
 *
 */
 module.exports = function handleResponse(sender_psid, text_response) {
-    const context = getUserContext(sender_psid)
-    const message_type = context.message_type;
+    var message_type = getUserContext(sender_psid).message_type;
 
     console.log('CONTEXT: ' + JSON.stringify(context, null))
     console.log('TEXT RESPONSE: ' + text_response)
@@ -53,9 +52,7 @@ module.exports = function handleResponse(sender_psid, text_response) {
 *
 */
 function handleTemplateResponse(sender_psid, text_response) {
-    const context = getUserContext(sender_psid);
-
-    const watson_payload = context.payload;
+    var watson_payload = getUserContext(sender_psid).payload;
 
     //Base response for templates
     let response = { attachment: { type: "template", payload: { elements: [] } } };
@@ -75,10 +72,8 @@ function handleTemplateResponse(sender_psid, text_response) {
 * data for quick replies:  context.payload.data
 *
 */
-function handelQuickRepliesResponse(sender_psid, text_response, context) {
-    const context = getUserContext(sender_psid);
-    
-    const watson_payload = context.payload;
+function handelQuickRepliesResponse(sender_psid, text_response, context) {    
+    var watson_payload = getUserContext(sender_psid).payload;
     let response = { text: text_response, quick_replies: [] };
 
     //Generate elements depending on what string Watson gave on context.payload.data    
