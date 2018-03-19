@@ -299,5 +299,23 @@ exports.get_template_new_releases = function (res, context) {
 
     });
 
+    //If movies shown are less than total, add the View more button
+    if (end <= (database.movies_newRelease.length - 1)) {
+        response.attachment.payload.elements.push({
+            title: "Ver más opciones",
+            subtitle: "Clickea el botón debajo para ver más opciones",
+            image_url: "http://iponline.in/images/view-more.png",
+            buttons: [{
+                type: "postback",
+                title: "Ver más",
+                payload: "ver mas"
+            }]
+        })
+    }
+    if (!response.attachment.payload.elements.length) {
+        response = { text: `No encontré estrenos próximos` };
+    }
+
+
     return response;
 }
