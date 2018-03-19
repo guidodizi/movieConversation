@@ -1,4 +1,4 @@
-const { mergeUserContext, updateUserContext } = require('../database/userContext');
+const { mergeUserContext, updateUserContext, getUserContext } = require('../database/userContext');
 const constants = require('../constants');
 const moment = require('moment-timezone');
 const { sendAPI } = require('./serviceSendAPI');
@@ -11,8 +11,10 @@ const repositoryContainer = new RepositoryContainer(database);
 * Get movies based on a (date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         //Answer user that search has began
         await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
 
@@ -21,7 +23,7 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, respo
             const data = {
                 movies_pageview: 0
             }
-            mergeUserContext(sender_psid, data)
+            context = mergeUserContext(sender_psid, data)
         }
 
         response = repositoryContainer.get_template_movies(response, context);
@@ -44,8 +46,10 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, respo
 * Get movies based on a (date, place)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         //Answer user that search has began
         await sendAPI(sender_psid, 
             { text: `Déjame mostrarte que hay en ${context.data.place}...` }
@@ -56,7 +60,7 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid,
             const data = {
                 movies_pageview: 0
             }
-            mergeUserContext(sender_psid, data)
+            context = mergeUserContext(sender_psid, data)
         }
 
         response = repositoryContainer.get_template_movies_place(response, context);
@@ -78,8 +82,10 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         await sendAPI(sender_psid, 
             { text: `Déjame mostrarte que hay del género ${context.data.genre}...` }
         ).catch(err => { console.log(err); });        
@@ -89,7 +95,7 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid,
             const data = {
                 movies_pageview: 0
             }
-            mergeUserContext(sender_psid, data)
+            context = mergeUserContext(sender_psid, data)
         }
 
         response = repositoryContainer.get_template_movies_genre(response, context)
@@ -111,8 +117,10 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         await sendAPI(sender_psid, 
             { text: `Déjame mostrarte que hay del género ${context.data.genre} en ${context.data.place}...` }
         ).catch(err => { console.log(err); });
@@ -122,7 +130,7 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender
             const data = {
                 movies_pageview: 0
             }
-            mergeUserContext(sender_psid, data)
+            context = mergeUserContext(sender_psid, data)
         }
 
         response = repositoryContainer.get_template_movies_genre_place(response, context)
@@ -144,8 +152,10 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender
  * Get schedule for selected (date, movie, place)
  * 
  */
-exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
 
         response = repositoryContainer.get_template_schedule(response, context);
@@ -164,8 +174,10 @@ exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, res
 * Get movies based on a (date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response, context) => {
+exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response) => {
     try {
+        var context = getUserContext(sender_psid);
+
         //Answer user that search has began
         await sendAPI(sender_psid, { text: "Déjame mostrarte los nuevos estrenos..." }).catch(err => { console.log(err); });
 
@@ -174,7 +186,7 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
             const data = {
                 movies_pageview: 0
             }
-            mergeUserContext(sender_psid, data)
+            context = mergeUserContext(sender_psid, data)
         }
 
         response = repositoryContainer.get_template_new_releases(response, context);

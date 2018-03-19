@@ -2,19 +2,18 @@ const { setTimeout } = require('timers');
 
 const constants = require('../constants');
 const serviceResponseTemplate = require('./serviceResponseTemplate');
+const {mergeUserContext, getUserContext} = require('../database/userContext');
 
+var context = {}
 
-let response = { attachment: { type: "template", payload: { elements: [] } } };
-response.attachment.payload.template_type = "generic";
-response.attachment.payload.image_aspect_ratio = "horizontal";
-
-//Generate elements depending on what string Watson gave on context.payload.data    
-for (var template_data in constants.templates) {
-    if (constants.templates[template_data] == "GENERIC_TEMPLATE_MOVIES") {
-        serviceResponseTemplate[constants.templates[template_data]](1, response, {data:{date:'2018-03-19'}}).catch((err) => console.log(err));
+//Set pageview to 0 on context
+if (!context.data || !context.data.movies_pageview) {
+    const data = {
+        movies_pageview: 0
     }
+    mergeUserContext(1, data)
 }
 
-// setTimeout(() => {
-//     console.log(response)
-// },5000)
+var context2 = getUserContext(1)
+console.log(context2)
+console.log(context)

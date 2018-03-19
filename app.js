@@ -122,7 +122,7 @@ function handleMessage(event) {
         //Iterate over Watson Response, procesing each one
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          serviceResponse(sender_psid, watsonResponse.context, text_response);
+          serviceResponse(sender_psid, text_response);
         })
       }
     }
@@ -151,7 +151,7 @@ function handlePostback(event) {
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
           //Generate response from Watson and send it          
-          serviceResponse(sender_psid, watsonResponse.context, text_response);
+          serviceResponse(sender_psid, text_response);
         })
       }
     }

@@ -21,6 +21,8 @@ function mergeUserContext (sender_psid, data){
         }
     }
     updateUserContext(sender_psid, new_user_context);
+    
+    return new_user_context;
 }
 
 exports.getUserContext = getUserContext;
