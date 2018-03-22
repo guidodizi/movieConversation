@@ -132,42 +132,49 @@ const addValuesGenre = () => {
     })
 };
 
-async function loadMovies() {
+async function loadMovies(callback) {
     await deleteEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
     await createEntity('movie', { fuzzy_match: true }).then(result => console.log(result)).catch(err => console.log(err));
     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
+    callback();
 };
-async function loadGenres() {
+async function loadGenres(callback) {
     await deleteEntity('genre').then(result => console.log(result)).catch(err => console.log(err));
     await createEntity('genre', { fuzzy_match: true }).then(result => console.log(result)).catch(err => console.log(err));
     await addValuesGenre().then(result => console.log(result)).catch(err => console.log(err));
+    callback();
 };
 
 (function () {
+    prompt.start();
+    ask();
+})();
+
+function ask() {
     console.log(` Welcome to Movie Conversation Loader:
     Select an action to load to Watson's workspace
         1) loadMovies => Load database movies as entities on Watson
         2) loadGenres => Load genres from database movies as entities on Watson
         3) exit
     `)
-    prompt.start();
     prompt.get(['action'], function (err, result) {
         console.log('Selected action:');
         console.log(result.action);
         switch (result.action) {
             case ("1" || 'loadMovies'): {
-                loadMovies();
+                loadMovies(ask);
                 break;
             }
             case ("2" || 'loadGenres'): {
-                loadGenres();
+                loadGenres(ask);
                 break;
             }
             case ("3" || 'exit'): {
+                console.log(' BYE BYE ...')
                 break;
             }
         }
     });
+}
 
-})();
 
