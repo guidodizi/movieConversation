@@ -150,7 +150,7 @@ function handlePostback(event) {
 
         //Iterate over Watson Response, procesing each one        
         watsonResponse.output.text.forEach(text_response => {
-          //Generate response from Watson and send it          
+          //Generate response from Watson and send it           
           serviceResponse(sender_psid, text_response, context.message_type, context.payload);
         })
       }
