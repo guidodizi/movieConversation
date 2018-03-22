@@ -60,7 +60,7 @@ function handleTemplateResponse(sender_psid, text_response, payload) {
     for (var template_data in constants.templates) {
         //Generate elements depending on what string Watson gave on context.payload.data    
         if (constants.templates[template_data] === payload.data) {
-            serviceResponseTemplate[constants.templates[template_data]](sender_psid, response).catch((err) => console.log(err));
+            serviceResponseTemplate[constants.templates[template_data]](sender_psid, text_response, response).catch((err) => console.log(err));
         }
     }
 }

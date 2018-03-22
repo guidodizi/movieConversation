@@ -11,12 +11,14 @@ const repositoryContainer = new RepositoryContainer(database);
 * Get movies based on a (date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
-        //Answer user that search has began
-        await sendAPI(sender_psid, { text: "Déjame mostrarte..." }).catch(err => { console.log(err); });
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
 
         //Set pageview to 0 on context
         if (!context.data || !context.data.movies_pageview) {
@@ -46,14 +48,14 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES] = async (sender_psid, respo
 * Get movies based on a (date, place)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
-        //Answer user that search has began
-        await sendAPI(sender_psid, 
-            { text: `Déjame mostrarte que hay en ${context.data.place}...` }
-        ).catch(err => { console.log(err); });
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
 
         //Set pageview to 0 on context
         if (!context.data || !context.data.movies_pageview) {
@@ -82,13 +84,14 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_PLACE] = async (sender_psid,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
-        await sendAPI(sender_psid, 
-            { text: `Déjame mostrarte que hay del género ${context.data.genre}...` }
-        ).catch(err => { console.log(err); });        
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
 
         //Set pageview to 0 on context
         if (!context.data || !context.data.movies_pageview) {
@@ -117,14 +120,15 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE] = async (sender_psid,
 * Get movies based on (genre, date)
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
-        await sendAPI(sender_psid, 
-            { text: `Déjame mostrarte que hay del género ${context.data.genre} en ${context.data.place}...` }
-        ).catch(err => { console.log(err); });
-        
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
+
         //Set pageview to 0 on context
         if (!context.data || !context.data.movies_pageview) {
             const data = {
@@ -152,11 +156,14 @@ exports[constants.templates.GENERIC_TEMPLATE_MOVIES_GENRE_PLACE] = async (sender
  * Get schedule for selected (date, movie, place)
  * 
  */
-exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
-        await sendAPI(sender_psid, { text: "Te muestro los horarios..." }).catch(err => { console.log(err); });
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
 
         response = repositoryContainer.get_template_schedule(response, context);
 
@@ -174,12 +181,15 @@ exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, res
 * Get movies that are about to be released
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
 
         //Answer user that search has began
-        await sendAPI(sender_psid, { text: "Déjame mostrarte los nuevos estrenos..." }).catch(err => { console.log(err); });
+        if (text_response) {
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
 
         //Set pageview to 0 on context
         if (!context.data || !context.data.newReleases_pageview) {
@@ -201,9 +211,14 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
 * Get a specific movie that is about to be released
 *
 */
-exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES_MOVIE] = async (sender_psid, response) => {
+exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES_MOVIE] = async (sender_psid, text_response, response) => {
     try {
         var context = getUserContext(sender_psid);
+
+        if (text_response){
+            //Answer user that search has began
+            await sendAPI(sender_psid, { text: text_response }).catch(err => { console.log(err); });
+        }
         
         response = repositoryContainer.get_template_new_releases_movie(response, context);
 
