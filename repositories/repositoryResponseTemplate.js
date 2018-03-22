@@ -327,6 +327,7 @@ exports.get_template_new_releases_movie = function (res, context) {
         movie.content.title.toLowerCase() === context.data.movie
     );
 
+    console.log(movie_shown)
     if (movie_shown.length != 1){
         response = { text: `Lo siento! No encontré ${context.data.movie} dentro de nuestros proximos estrenos` };        
     }
