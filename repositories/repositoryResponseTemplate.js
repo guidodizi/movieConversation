@@ -36,7 +36,7 @@ exports.get_template_movies = function (res, context) {
         response.attachment.payload.elements.push({
             title: "Ver más opciones",
             subtitle: "Clickea el botón debajo para ver más opciones de películas",
-            image_url: "http://www.humboldt.org.co/images/IconsHumboldt/boton_vermas.png",
+            image_url: "http://iponline.in/images/view-more.png",
             buttons: [{
                 type: "postback",
                 title: "Ver más",
@@ -93,7 +93,7 @@ exports.get_template_movies_place = function (res, context) {
         response.attachment.payload.elements.push({
             title: "Ver más opciones",
             subtitle: "Clickea el botón debajo para ver más opciones de películas",
-            image_url: "http://www.humboldt.org.co/images/IconsHumboldt/boton_vermas.png",
+            image_url: "http://iponline.in/images/view-more.png",
             buttons: [{
                 type: "postback",
                 title: "Ver más",
@@ -157,7 +157,7 @@ exports.get_template_movies_genre = function (res, context) {
         response.attachment.payload.elements.push({
             title: "Ver más opciones",
             subtitle: "Clickea el botón debajo para ver más opciones de películas",
-            image_url: "http://www.humboldt.org.co/images/IconsHumboldt/boton_vermas.png",
+            image_url: "http://iponline.in/images/view-more.png",
             buttons: [{
                 type: "postback",
                 title: "Ver más",
@@ -221,7 +221,7 @@ exports.get_template_movies_genre_place = function (res, context) {
         response.attachment.payload.elements.push({
             title: "Ver más opciones",
             subtitle: "Clickea el botón debajo para ver más opciones de películas",
-            image_url: "http://www.humboldt.org.co/images/IconsHumboldt/boton_vermas.png",
+            image_url: "http://iponline.in/images/view-more.png",
             buttons: [{
                 type: "postback",
                 title: "Ver más",
@@ -304,7 +304,7 @@ exports.get_template_new_releases = function (res, context) {
         response.attachment.payload.elements.push({
             title: "Ver más opciones",
             subtitle: "Clickea el botón debajo para ver más opciones",
-            image_url: "http://www.humboldt.org.co/images/IconsHumboldt/boton_vermas.png",
+            image_url: "http://iponline.in/images/view-more.png",
             buttons: [{
                 type: "postback",
                 title: "Ver más",
