@@ -324,7 +324,7 @@ exports.get_template_new_releases_movie = function (res, context) {
     const response = { ...res };
 
     var movie_shown = database.movies_newRelease.filter( movie => 
-        movie.content.title.toLowerCase() === context.data.movie
+        movie.content.title.toLowerCase() === context.data.movie.toLowerCase()
     );
 
     console.log(movie_shown)
