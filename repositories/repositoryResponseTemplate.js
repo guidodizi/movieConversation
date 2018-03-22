@@ -327,14 +327,15 @@ exports.get_template_new_releases_movie = function (res, context) {
         movie.content.title.toLowerCase() === context.data.movie
     );
 
-    response.attachment.payload.elements.push({
-        title: movie_shown.content.title,
-        subtitle: `Estreno: ${moment(movie_shown.content.openingDate).format('LL')}`,
-        image_url: movie_shown.content.posterUrl,
-    })
-
-    if (!response.attachment.payload.elements.length) {
-        response = { text: `Lo siento! No encontré ${context.data.movie} dentro de nuestros proximos estrenos` };
+    if (movie_shown.length != 1){
+        response = { text: `Lo siento! No encontré ${context.data.movie} dentro de nuestros proximos estrenos` };        
+    }
+    else {
+        response.attachment.payload.elements.push({
+            title: movie_shown[0].content.title,
+            subtitle: `Estreno: ${moment(movie_shown[0].content.openingDate).format('LL')}`,
+            image_url: movie_shown[0].content.posterUrl,
+        })
     }
 
     return response;

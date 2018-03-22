@@ -92,6 +92,36 @@ const addValuesMovie = () => {
 };
 
 /**
+ * Add new upcoming movie
+ */
+const addValuesMovieNewReleases = () => {
+    return new Promise((resolve, reject) => {
+        let pushed = 0;
+        database.movies_newRelease.forEach((item, index) => {
+            var params = {
+                workspace_id: process.env.WORKSPACE_ID,
+                entity: 'movie',
+                value: item.content.title
+            };
+
+            conversation.createValue(params, function (err, response) {
+                if (err) {
+                    reject(err);
+                } else {
+                    pushed++;
+                    console.log(`Success adding new release ${item.content.title}: item n° ${index + 1}`);
+                    if (pushed === database.movies_id.length)
+                        resolve("All done here.");
+                }
+            });
+
+        });
+
+
+    })
+};
+
+/**
  * Add new genre values
  */
 const addValuesGenre = () => {
@@ -136,6 +166,7 @@ async function loadMovies(callback) {
     await deleteEntity('movie').then(result => console.log(result)).catch(err => console.log(err));
     await createEntity('movie', { fuzzy_match: true }).then(result => console.log(result)).catch(err => console.log(err));
     await addValuesMovie().then(result => console.log(result)).catch(err => console.log(err));
+    await addValuesMovieNewReleases().then(result => console.log(result)).catch(err => console.log(err));
     callback();
 };
 async function loadGenres(callback) {
