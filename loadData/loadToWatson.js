@@ -1,4 +1,4 @@
-const database = require('./database/database_file');
+const database = require('../database/database_file');
 const moment = require('moment');
 var prompt = require('prompt');
 
