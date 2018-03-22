@@ -37,7 +37,7 @@ Promise.all([
         movies_id,
         movies: results[0].items,
         schedules: results[1],
-        newReleases: results[2].items
+        movies_newRelease: results[2].items
     }, null, 2)}`);
     console.log('All done boy.')
 }).catch((err) => console.log(err));

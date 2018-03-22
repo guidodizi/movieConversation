@@ -23267,7 +23267,7 @@ module.exports = {
       }
     ]
   },
-  "newReleases": [
+  "movies_newRelease": [
     {
       "content": {
         "id": "52ee8433-5ad1-4df0-a533-33616248ee3a",
