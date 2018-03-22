@@ -1,4 +1,4 @@
-exports.movies_id = JSON.parse(`[
+exports.movies_id = JSON.parse (`[
   {
     "id": "eac6bc25-f495-451c-85fe-5e651697ea13",
     "title": "Deseo de Matar"
@@ -97,7 +97,7 @@ exports.movies_id = JSON.parse(`[
   }
 ]`);
 
-exports.movies = JSON.parse(`[
+exports.movies = JSON.parse (`[
   {
     "content": {
       "id": "eac6bc25-f495-451c-85fe-5e651697ea13",
@@ -2910,8 +2910,8 @@ exports.movies = JSON.parse(`[
       "content2D4D": false
     }
   }
-]`)
-exports.schedules = JSON.parse(`{
+]`);
+exports.schedules = JSON.parse (`{
   "contentCinemaShows": [
     {
       "contentId": "8286e13b-682d-4220-b0c3-d1759bc69905",
@@ -9090,4 +9090,4 @@ exports.schedules = JSON.parse(`{
       "dateTime": "2018-03-14T00:00:00"
     }
   ]
-}`)
+}`);

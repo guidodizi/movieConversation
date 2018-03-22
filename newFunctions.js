@@ -1,26 +1,26 @@
-'use strict'
+'use strict';
 
-// filter an array of objects, returning a new array which 
+// filter an array of objects, returning a new array which
 // has only a property of original objects that pass the condition
 function addFilterObject () {
-    Array.prototype.filterObject = function(callback, property, context) {
-        var arr = [];
-        for (var i = 0; i < this.length; i++) {
-            if (callback.call(context, this[i], i, this)){
-                var elem = property.split('.').reduce(function(prev, curr) {
-                    return prev ? prev[curr] : null
-                }, this[i]);
+  Array.prototype.filterObject = function (callback, property, context) {
+    var arr = [];
+    for (var i = 0; i < this.length; i++) {
+      if (callback.call (context, this[i], i, this)) {
+        var elem = property.split ('.').reduce (function (prev, curr) {
+          return prev ? prev[curr] : null;
+        }, this[i]);
 
-                arr.push(elem);
-            }
-        }
-        return arr;
-    };
+        arr.push (elem);
+      }
+    }
+    return arr;
+  };
 }
 
-module.exports = function (){
-    addFilterObject();
-}();
+module.exports = (function () {
+  addFilterObject ();
+}) ();
 // //TEST
 // var arr = [
 //     {a: 1, b:2},

@@ -1,9 +1,8 @@
-
-const constants = require('../constants');
-const serviceResponseTemplate = require('./serviceResponseTemplate');
-const serviceResponseQuickReplies = require('./serviceResponseQuickReplies');
-const { getUserContext } = require('../database/userContext');
-const { sendAPI } = require('./serviceSendAPI');
+const constants = require ('../constants');
+const serviceResponseTemplate = require ('./serviceResponseTemplate');
+const serviceResponseQuickReplies = require ('./serviceResponseQuickReplies');
+const {getUserContext} = require ('../database/userContext');
+const {sendAPI} = require ('./serviceSendAPI');
 
 /*
 * Handle the response to what the user said, based on Waton's response. 
@@ -14,32 +13,38 @@ const { sendAPI } = require('./serviceSendAPI');
 * text: simply reply with the text Watson gave
 *
 */
-module.exports = function handleResponse(sender_psid, text_response, message_type, payload) {
-
-    console.log('TEXT RESPONSE: ' + text_response)
-    switch (message_type) {
-        case "template": {
-            handleTemplateResponse(sender_psid, text_response, payload);
-            break;
-        }
-        case "quick_replies": {
-            handelQuickRepliesResponse(sender_psid, text_response, payload);
-            break;
-        }
-        case "dont_show": {
-            //used when a response is just jumping to another and doesnt need to display anything
-            break;
-        }
-        default: {
-            // Directly respond to user
-            sendAPI(sender_psid, { text: text_response }).catch((err) => { console.log(err); });
-            break;
-        }
+module.exports = function handleResponse (
+  sender_psid,
+  text_response,
+  message_type,
+  payload
+) {
+  console.log ('TEXT RESPONSE: ' + text_response);
+  switch (message_type) {
+    case 'template': {
+      handleTemplateResponse (sender_psid, text_response, payload);
+      break;
     }
-}
+    case 'quick_replies': {
+      handelQuickRepliesResponse (sender_psid, text_response, payload);
+      break;
+    }
+    case 'dont_show': {
+      //used when a response is just jumping to another and doesnt need to display anything
+      break;
+    }
+    default: {
+      // Directly respond to user
+      sendAPI (sender_psid, {text: text_response}).catch (err => {
+        console.log (err);
+      });
+      break;
+    }
+  }
+};
 
 // MOVIE MAIN PROCESS: date -> movie -> place
-// MOVIE MAIN PROCESS*: date -> place -> movie 
+// MOVIE MAIN PROCESS*: date -> place -> movie
 /*
 * Handle responses which are template-based, in which we dont simply reply a text, but a generic/list/.. template
 * This templates are based on Facebook Messenger's possibilities
@@ -49,20 +54,27 @@ module.exports = function handleResponse(sender_psid, text_response, message_typ
 *   data to put on template: context.payload.data
 *
 */
-function handleTemplateResponse(sender_psid, text_response, payload) {
+function handleTemplateResponse (sender_psid, text_response, payload) {
+  //Base response for templates
+  let response = {attachment: {type: 'template', payload: {elements: []}}};
 
-    //Base response for templates
-    let response = { attachment: { type: "template", payload: { elements: [] } } };
+  response.attachment.payload.template_type =
+    payload.template_type || 'generic';
+  response.attachment.payload.image_aspect_ratio =
+    payload.image_aspect_ratio || 'horizontal';
 
-    response.attachment.payload.template_type = payload.template_type || "generic";
-    response.attachment.payload.image_aspect_ratio = payload.image_aspect_ratio || "horizontal";
-
-    for (var template_data in constants.templates) {
-        //Generate elements depending on what string Watson gave on context.payload.data    
-        if (constants.templates[template_data] === payload.data) {
-            serviceResponseTemplate[constants.templates[template_data]](sender_psid, text_response, response).catch((err) => console.log(err));
-        }
+  for (var template_data in constants.templates) {
+    //Generate elements depending on what string Watson gave on context.payload.data
+    if (constants.templates[template_data] === payload.data) {
+      serviceResponseTemplate
+        [constants.templates[template_data]] (
+          sender_psid,
+          text_response,
+          response
+        )
+        .catch (err => console.log (err));
     }
+  }
 }
 /*
 * Handle responses which we offer Quick Replies. 
@@ -70,17 +82,16 @@ function handleTemplateResponse(sender_psid, text_response, payload) {
 * data for quick replies:  context.payload.data
 *
 */
-function handelQuickRepliesResponse(sender_psid, text_response, payload) {
+function handelQuickRepliesResponse (sender_psid, text_response, payload) {
+  let response = {text: text_response, quick_replies: []};
 
-    let response = { text: text_response, quick_replies: [] };
-
-    //Generate elements depending on what string Watson gave on context.payload.data    
-    for (var quickReplies_data in constants.quickReplies) {
-        //Generate elements depending on what string Watson gave on context.payload.data    
-        if (constants.quickReplies[quickReplies_data] === payload.data) {
-            serviceResponseQuickReplies[constants.quickReplies[quickReplies_data]](sender_psid, response).catch((err) => console.log(err));
-        }
+  //Generate elements depending on what string Watson gave on context.payload.data
+  for (var quickReplies_data in constants.quickReplies) {
+    //Generate elements depending on what string Watson gave on context.payload.data
+    if (constants.quickReplies[quickReplies_data] === payload.data) {
+      serviceResponseQuickReplies
+        [constants.quickReplies[quickReplies_data]] (sender_psid, response)
+        .catch (err => console.log (err));
     }
+  }
 }
-
-
