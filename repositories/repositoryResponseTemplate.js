@@ -240,7 +240,6 @@ exports.get_template_movies_genre_place = function (res, context) {
 
 exports.get_template_schedule = function (res, context) {
     //get database from container
-    const repositoryContainer = this;
     const database = this.database;
     const response = { ...res };
 
@@ -281,7 +280,6 @@ exports.get_template_schedule = function (res, context) {
 
 exports.get_template_new_releases = function (res, context) {
     //get database from container
-    const repositoryContainer = this;
     const database = this.database;
     const response = { ...res };
 
@@ -316,6 +314,28 @@ exports.get_template_new_releases = function (res, context) {
         response = { text: `No encontré estrenos próximos` };
     }
 
+
+    return response;
+}
+
+exports.get_template_new_releases_movie = function (res, context) {
+    //get database from container
+    const database = this.database;
+    const response = { ...res };
+
+    var movie_shown = database.movies_newRelease.filter( movie => 
+        movie.content.title.toLowerCase() === context.data.movie
+    );
+
+    response.attachment.payload.elements.push({
+        title: movie_shown.content.title,
+        subtitle: `Estreno: ${moment(movie_shown.content.openingDate).format('LL')}`,
+        image_url: movie_shown.content.posterUrl,
+    })
+
+    if (!response.attachment.payload.elements.length) {
+        response = { text: `Lo siento! No encontré ${context.data.movie} dentro de nuestros proximos estrenos` };
+    }
 
     return response;
 }

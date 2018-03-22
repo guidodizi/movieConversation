@@ -18,6 +18,8 @@ module.exports = {
         GENERIC_TEMPLATE_SCHEDULE: "GENERIC_TEMPLATE_SCHEDULE",
         //Get new releases
         GENERIC_TEMPLATE_NEW_RELEASES: "GENERIC_TEMPLATE_NEW_RELEASES",
+        //Get data of a movie thats about to release
+        GENERIC_TEMPLATE_NEW_RELEASES_MOVIE: "GENERIC_TEMPLATE_NEW_RELEASES_MOVIE",
     },
     /**
      * Quick Replies Data Constants

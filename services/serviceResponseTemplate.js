@@ -171,7 +171,7 @@ exports[constants.templates.GENERIC_TEMPLATE_SCHEDULE] = async (sender_psid, res
 
 
 /**
-* Get movies based on a (date)
+* Get movies that are about to be released
 *
 */
 exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid, response) => {
@@ -189,6 +189,23 @@ exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES] = async (sender_psid,
             context = mergeUserContext(sender_psid, data)
         }
         response = repositoryContainer.get_template_new_releases(response, context);
+
+        // Response is now nurtured for user to receive it, send it to user
+        console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
+        await sendAPI(sender_psid, response, { with_typing: true }).catch(err => { console.log(err); });
+
+    } catch (err) { console.log(err); }
+};
+
+/**
+* Get a specific movie that is about to be released
+*
+*/
+exports[constants.templates.GENERIC_TEMPLATE_NEW_RELEASES_MOVIE] = async (sender_psid, response) => {
+    try {
+        var context = getUserContext(sender_psid);
+        
+        response = repositoryContainer.get_template_new_releases_movie(response, context);
 
         // Response is now nurtured for user to receive it, send it to user
         console.log('\n GENERATED RESPONSE: ' + JSON.stringify(response, null, 1))
